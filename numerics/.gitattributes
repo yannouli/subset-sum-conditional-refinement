@@ -1,0 +1,2 @@
+# Preserve exact bytes so committed evidence hashes survive fresh checkouts.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
