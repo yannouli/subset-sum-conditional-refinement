@@ -1,6 +1,6 @@
 # Conditional Subset Sum exponent 0.4876723
 
-**Author: Yanni Bills. Publicly available at https://github.com/yannouli/subset-sum-conditional-refinement; not yet submitted to Big O Speedrun.**
+**Author: Yanni Bills.** Public repository: https://github.com/yannouli/subset-sum-conditional-refinement. Listed on the [Big O Speedrun Subset Sum leaderboard](https://bigospeedrun.com/subset-sum) as **Claimed** (rank 1 on 21 October 2026).
 
 This note proves a conditional refinement to `O_c(2^(0.4876723 n))` in the
 Big O Speedrun randomized word-RAM model. The internal total work exponent is
@@ -30,11 +30,13 @@ axiom audit of a new formal theorem, or site verification is claimed.
 See `numerics/FORMALIZATION-SCOPE.md`. The campaign's mathematical proof and
 its missing formalization are different matters.
 
-The leaderboard checked on 21 October 2026 displays Wharton's conditional
-`0.487676`; our exponent is lower by `0.0000037`. This is a local proposed
-conditional refinement, not an awarded leaderboard position or an
-unconditional breakthrough. See `source-audit/final-live-observation.json`
-and the bounded source/priority audit. No global novelty guarantee is implied.
+On 21 October 2026, Big O Speedrun listed this conditional result at rank 1
+with evidence level **Claimed**, ahead of Wharton's earlier conditional
+`0.487676` by `0.0000037`. The [listing](https://bigospeedrun.com/subset-sum)
+confirms publication and problem matching; it is **not** independent proof
+review, Lean verification, or an unconditional algorithmic breakthrough.
+`source-audit/final-live-observation.json` preserves the pre-submission
+snapshot; the bounded source/priority audit does not guarantee global novelty.
 
 ## Read and reproduce
 
@@ -42,7 +44,8 @@ and the bounded source/priority audit. No global novelty guarantee is implied.
 - `paper.tex`, `candidate-data.tex`, `certificate-appendix.tex`,
   `references.bib`: complete Overleaf source; select `paper.tex` as main.
 - `review.md` and `review/`: independent findings, corrections and evidence.
-- `submission-draft.md`: unsent publication/submission text and next steps.
+- `submission-draft.md`: archived draft submission wording and listing status
+  (not a verbatim transcript of the Discord post).
 - `numerics/`: exact checker, fixed candidate, negative tests, discovery
   code/record, source pins and implementation attribution.
 - `source-audit/`: source revisions, dependencies, access scope and priority.
@@ -81,5 +84,7 @@ Joshua Wharton supplied the earlier parameter/certificate-transfer refinement.
 AI assistance and the distinct team roles are acknowledged in the note.
 Pinned sources and numerical constants are credited in the provenance files.
 No upstream license is invented, and no blanket repository license is applied
-to third-party material. The author has published the prepared release on GitHub. A leaderboard
-submission has not yet been made or authorized in the agent campaign.
+to third-party material. The author published the public repository and
+subsequently submitted it to Big O Speedrun; the entry is listed as **Claimed**
+as of 21 October 2026. The completed agent campaign itself did not authorize
+external publication, which was performed separately by the author.

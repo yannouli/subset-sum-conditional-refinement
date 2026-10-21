@@ -1,14 +1,17 @@
-# Unsent submission draft
+# Submission record (archived draft wording)
 
-**Author:** Yanni Bills. **Status:** published on GitHub; not yet submitted,
-accepted, or site Lean Verified.
+**Author:** Yanni Bills. **Status:** submitted to Big O Speedrun and listed
+as **Claimed**, rank 1 on 21 October 2026. This is not a site-verified proof.
 
-**Intended submission category:** Claimed (conditional); no category or
-verification status has been awarded by the site.
+**Site evidence level:** Claimed (conditional); no Human Verified or Lean
+Verified status has been awarded.
 
 **Public repository:** https://github.com/yannouli/subset-sum-conditional-refinement
 
-## Proposed text
+## Proposed text preserved for reference
+
+This was the prepared wording, not an authenticated transcript of the
+Discord submission. For current status refer to the [live leaderboard](https://bigospeedrun.com/subset-sum).
 
 We present a conditional classical randomized Subset Sum bound
 `O_c(2^(0.4876723 n))`, improving the displayed conditional exponent
