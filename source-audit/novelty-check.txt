@@ -1,0 +1,100 @@
+BOUNDED SOURCE-COMPARISON / PRIORITY CHECK — 2026-10-21
+
+Question: does the particular filter-3 moved-boundary reuse already appear
+in the pinned papers or current directly relevant Wharton/Kapila source trees?
+
+Result: no such application was identified in the inspected material. This
+supports a change relative to those sources only. It does not establish
+comprehensive priority, an independent unconditional algorithm, or absence
+from uninspected branches, issue discussions, other repositories or literature.
+
+Revisions and retrieval
+----------------------
+Fresh GitHub default-branch resolution and complete recursive tree retrieval:
+Wharton JoshuaQFEX/subset-sum-bound master:
+bed8e18f96db5955c1424abf3005b4fed4bd8d77.
+Kapila a-kapila/maths-proofs main:
+44c34961b56784c220a6e913cc068d57dc37c5a3.
+Both equal the startup HEAD revisions. No new upstream revision was found
+in this refresh. Wharton HEAD differs from the leaderboard's paper link
+dcb002174cb1e06213e171c9f5ff6b063fdf2c40 by later formalization work;
+its paper bytes remain identical. Kapila matches the leaderboard pin.
+
+Full downloaded upstream copies are not redistributed.
+The accompanying novelty-file-inventory.json records exact URLs, UTC retrieval
+times, SHA256 hashes and authenticated Git-blob identities. Both trees report
+truncated=false. Ninety text/source files were retrieved and authenticated.
+The adjacent novelty-file-inventory.json is the exact inspected/screened file
+register; no retrieved upstream code, solver or Lean file was executed.
+
+Inspection scope and findings
+-----------------------------
+All retrieved text was searched for boundary/transfer/refinement/zero/filter-3
+and relevant constants. This was a screening pass, not a claim that every
+unrelated algorithmic Lean lemma received a complete proof review.
+
+Wharton paper.tex, especially its low/band transfer and four regional margins:
+uses the ordinary low-region loss 17.211 K and retains old fixed boundaries.
+This paper was previously read in full; its refreshed bytes match the pin.
+
+Wharton SubsetSum/CertificateTransfer.lean (read in full): generic sampling,
+low/band domination, exponent-shift and integral-transfer results. In
+particular low_domination already discusses the thin interval between the
+old and new low boundary, but handles it with the ordinary Delta/q rule.
+That generic machinery is inherited, not claimed as our contribution.
+
+Wharton SubsetSum/Refinement.lean (read in full): shiftCap.low and
+low_moment_refinement retain 17.211 K. bounded_moment_identity retains
+the old lower-bound row and the ordinary upper-row adjustment. No separate
+filter-3 cutoff at the new Gamma or replacement low loss was identified.
+
+Wharton SubsetSum/Parameters.lean: margin0 explicitly subtracts 17.211 K;
+targetExponent=0.487676 and tau=0.48767595. verify.py lines 170–213 uses
+max(c0)*K for all low certificates and four regional families, not our five.
+parameters.json/source_facts.json and verification.txt agree with that scope.
+
+Wharton SubsetSum/FilterData/Filter03.lean: certificate_3_1 explicitly
+contains the zero lower-row multiplier, as inherited from Kapila. Merely
+observing/transcribing this zero is not new. FilterData/Base.lean,
+FilterData.lean and tools/generate_filter_data.py use the original region
+indices/boundaries and first-multiplier caps. The generator is finite-data
+transcription/validation, not a moved-boundary application. The other
+FilterData/Filter*.lean records were screened as part of the full tree.
+
+Wharton README.md, FORMALIZATION.md, FINITE_DATA_MILESTONE.md and
+LEAN_VERIFICATION.md: inspected relevant transfer/scope passages. They
+describe existing finite-data and conditional transfer results, still with
+the low cap 17.211 and unproved inherited continuous moments. These notes
+do not supply the specific filter-3 refinement. Other text/script/build
+files in the full tree were screened; no additional matching application
+was found. Published workflow success is not our own Lean verification.
+
+Kapila's complete repository tree has only root README.md and subset-sum/
+PROOF_0.4877.tex/.pdf. No separate notes or script files were hidden by a
+directory-only inventory. The TeX includes the actual scripts in Appendix D.
+The PDF is a render of the same source and was not separately downloaded
+for this textual comparison.
+
+Kapila Sec6.1/6.3: defines regions and proves the baseline domination rule.
+Appendix C filter3 rho0/rho1 (lines1198–1199 in refreshed source) supplies
+the exact inherited multipliers, including the zero lower-bound multiplier;
+filter4 rho0 gives 10.6428. Appendix D.1/D.2 (read for this comparison)
+computes the original alias constraints and full-circle integral estimates
+with the original per-region rows. It neither transfers a changed Gamma
+from the old baseline nor applies the special low/extended-band split.
+This is consistent with the earlier full proof-chain reading of Sec2–8.
+
+Precise remaining contribution claim
+-----------------------------------
+The particular application proved in paper.tex uses filter3's low certificate
+only at W<=new Gamma, shifting both Delta and Gamma; reuses its old first
+band down to new Gamma because the lower-row multiplier is exactly zero;
+and uses ordinary transfer for every other region. The resulting five
+margin families and certified candidate differ from the inspected source
+applications. Generic domination, full-circle integral shift, the zero
+coefficient itself, filters and old moments remain fully attributed.
+
+This bounded comparison cannot prove that nobody noticed the mechanism
+earlier. The manuscript now states the checked revisions and this priority
+limit explicitly. No broad literature search, new search, quadrature,
+source execution or formal build was performed for this check.

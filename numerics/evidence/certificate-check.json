@@ -1,0 +1,167 @@
+{
+  "status": "PASS: exact scalar certificate under explicit inherited assumptions",
+  "assumptions": [
+    "Kapila isolation, implementation, alias/preliminary and finite-circle convergence lemmas under their checked parameter conditions, and original moment bounds; not proved here.",
+    "For all43filters, original continuous log2 moment margins are at least0.00025 in rho0/rho1,4 in rho2-rho8,17 in rho9; same conservative assumptions as Wharton, not new quadrature claims.",
+    "Finite filter data, comparison indices and multipliers come from pinned Kapila source; these are checked exactly.",
+    "Wharton general transfer argument/coarse real-circle score bound supplies unchanged non-special regions; special3 low/band changes are proved in transfer-note.tex."
+  ],
+  "baseline_sha256": "b397531cc5997e88c439d5290774861b46a34aa32d9cd71fa7dcced130359298",
+  "finite_source_checks": {
+    "filters": 43,
+    "certificates": 430,
+    "special_lower_multiplier_zero": true
+  },
+  "alias_gaps": {
+    "C1_coverage": {
+      "lower": "9.9999998769490061596503989825057E-10",
+      "upper": "9.9999998769490061596503989825058E-10"
+    },
+    "C2_left_list": {
+      "lower": "4.0065766967529702870711943219076E-9",
+      "upper": "4.0065766967529702870711943219077E-9"
+    },
+    "C3_right_classes": {
+      "lower": "4.006576710466190284739872E-9",
+      "upper": "4.006576710466190284739872E-9"
+    },
+    "C4_pairs": {
+      "lower": "4.0065768401082419929015963360591E-9",
+      "upper": "4.0065768401082419929015963360592E-9"
+    },
+    "C5_right_masks": {
+      "lower": "7.0131535433552717058304020141515E-9",
+      "upper": "7.0131535433552717058304020141516E-9"
+    },
+    "C6_left_map": {
+      "lower": "0.003897048309371",
+      "upper": "0.003897048309371"
+    },
+    "C6_right_map": {
+      "lower": "0.4468831545969226",
+      "upper": "0.4468831545969226"
+    },
+    "C6_right_positive": {
+      "lower": "0.0407891254030774",
+      "upper": "0.0407891254030774"
+    },
+    "C7_sampled_map": {
+      "lower": "0.016087758823729294956004142703148",
+      "upper": "0.016087758823729294956004142703149"
+    },
+    "C8_reduction": {
+      "lower": "0.13935984563355913862234695001590",
+      "upper": "0.13935984563355913862234695001591"
+    },
+    "A7_block_classes": {
+      "lower": "0.0122366370937064",
+      "upper": "0.0122366370937064"
+    },
+    "A7_right_key_sort": {
+      "lower": "0.4345554345959226",
+      "upper": "0.4345554345959226"
+    },
+    "A7_small_prime": {
+      "lower": "0.46106831384102614476690485763006",
+      "upper": "0.46106831384102614476690485763007"
+    },
+    "prime_generation": {
+      "lower": "0.229605440805038",
+      "upper": "0.229605440805038"
+    },
+    "S2_sampled_size": {
+      "lower": "0.032312527133100294956004142703148",
+      "upper": "0.032312527133100294956004142703149"
+    },
+    "S3_layer_size": {
+      "lower": "0.85539536112762661270758919937313",
+      "upper": "0.85539536112762661270758919937314"
+    },
+    "left_masks_cheaper": {
+      "lower": "0.93155619057235307018779288753739",
+      "upper": "0.93155619057235307018779288753740"
+    },
+    "A4_guard_collision": {
+      "lower": "0.069679922815779569311173475007951",
+      "upper": "0.069679922815779569311173475007952"
+    },
+    "A5_remove_bad_halves": {
+      "lower": "0.057352202815779569311173475007951",
+      "upper": "0.057352202815779569311173475007952"
+    },
+    "A5_density_threshold": {
+      "lower": "0.000672279999",
+      "upper": "0.000672279999"
+    }
+  },
+  "moment_margins": {
+    "other_low": {
+      "lower": "1.3596791112110370034787032606610E-7",
+      "upper": "1.3596791112110370034787032606611E-7"
+    },
+    "special3_low": {
+      "lower": "0.0009493209345780108",
+      "upper": "0.0009493209345780108"
+    },
+    "all_first_bands_including_extended3": {
+      "lower": "0.0000019387663087067588359772324218562",
+      "upper": "0.0000019387663087067588359772324218563"
+    },
+    "rho2_to_rho8": {
+      "lower": "3.8505054152355266397340138897136",
+      "upper": "3.8505054152355266397340138897137"
+    },
+    "rho9": {
+      "lower": "11.444343309306167987937950392551",
+      "upper": "11.444343309306167987937950392552"
+    }
+  },
+  "budgets": {
+    "Delta": {
+      "lower": "0.028461398389924",
+      "upper": "0.028461398389924"
+    },
+    "Gamma": {
+      "lower": "0.459210881610076",
+      "upper": "0.459210881610076"
+    },
+    "q": {
+      "lower": "0.99991482114333369624387588459444",
+      "upper": "0.99991482114333369624387588459445"
+    },
+    "K": {
+      "lower": "0.000023822905815469509555723318081137",
+      "upper": "0.000023822905815469509555723318081138"
+    },
+    "delta_slope": {
+      "lower": "0.000051873502047837799794715989289358",
+      "upper": "0.000051873502047837799794715989289359"
+    },
+    "special_low_shift": {
+      "lower": "-0.0006956425446540108",
+      "upper": "-0.0006956425446540108"
+    },
+    "new_sum_bound": {
+      "lower": "418.38170179831673342192211738127",
+      "upper": "418.38170179831673342192211738128"
+    }
+  },
+  "error_exponent": {
+    "lower": "9.7468E-8",
+    "upper": "9.7468E-8"
+  },
+  "work_exponent": {
+    "lower": "0.48767228002",
+    "upper": "0.48767228002"
+  },
+  "target_exponent": {
+    "lower": "0.4876723",
+    "upper": "0.4876723"
+  },
+  "absorption_gap": {
+    "lower": "1.998E-8",
+    "upper": "1.998E-8"
+  },
+  "limitation": "Does not execute or prove a complete Subset Sum solver, certify the original continuous integrals, or establish site Lean verification.",
+  "seconds": 0.05144179999479093
+}

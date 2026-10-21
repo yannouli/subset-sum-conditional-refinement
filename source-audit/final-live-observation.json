@@ -1,0 +1,27 @@
+{
+  "observations": [
+    {
+      "url": "https://bigospeedrun.com/subset-sum",
+      "utc": "2026-10-21T15:39:10.538742+00:00",
+      "status": 200,
+      "bytes": 77816,
+      "sha256": "76802d80de65bad011f6ef10150da5d517d80c6e721feaa8cabb4b15cfd47ee8"
+    },
+    {
+      "url": "https://bigospeedrun.com/about",
+      "utc": "2026-10-21T15:39:10.955577+00:00",
+      "status": 200,
+      "bytes": 43125,
+      "sha256": "13b3c2f3f275f208a575104649bf659e89f1ec508e14e10f3ebff63801dcae3e"
+    }
+  ],
+  "displayed_leader": {
+    "author": "Joshua Wharton",
+    "exponent": "0.487676",
+    "status": "Claimed, conditional"
+  },
+  "our_proposed_exponent": "0.4876723",
+  "awarded_status": null,
+  "submission_route": "After authorization: publish public GitHub repository and post link in Discord submit-a-result. Site problem matching precedes Claimed listing. No outbound submission performed.",
+  "specification_change_detected": false
+}

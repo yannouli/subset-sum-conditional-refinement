@@ -1,0 +1,28 @@
+{
+  "build": "PASS",
+  "builder": "Tectonic 0.17",
+  "bibliography": "BibTeX and required TeX reruns completed from clean stage",
+  "pdf_sha256": "5c212019a757d7ee294c08588824c60e2490bfffbcf8d672113378366f29cbeb",
+  "pages": 10,
+  "visual_review": "all ten pages rendered and inspected; no clipping or missing references",
+  "warnings": [
+    "one inherited underfull paragraph"
+  ],
+  "mathematical_changes": "none; LD definition exposes inherited condition; appendix timing and bibliography observation prose corrected",
+  "source_revision": "47a929c",
+  "overleaf_archive_sha256": "1e372b1d7363740c03a5aa5e22b5fa5f412964c068c18dc47b4e15d531cfa53b",
+  "overleaf_source_files": 4,
+  "overleaf_fresh_bibliography_build": "PASS",
+  "all_ten_pages_pixel_identical": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ]
+}

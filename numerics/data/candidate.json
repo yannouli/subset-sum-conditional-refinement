@@ -1,0 +1,25 @@
+{
+  "construction": "filter3_boundary_split",
+  "parameters": {
+    "tau": "0.48767228",
+    "eta": "0.516133678389924",
+    "a": "0.008148495127574004",
+    "mu": "0.4754356429062936",
+    "gamma": "0.06005543072330252",
+    "l": "0.483775231690629",
+    "epsilon": "0.000000000001",
+    "zeta": "0.000000000001",
+    "input_guard_coefficient": "1000000000000",
+    "alias_margin": "0.0000000001",
+    "finite_moment_margin": "0.0000001",
+    "target_exponent": "0.4876723"
+  },
+  "baseline_revision": "44c34961b56784c220a6e913cc068d57dc37c5a3",
+  "baseline_sha256": "b397531cc5997e88c439d5290774861b46a34aa32d9cd71fa7dcced130359298",
+  "inherited_assumptions": [
+    "Kapila isolation, implementation, alias/preliminary and finite-circle convergence lemmas under their checked parameter conditions, and original moment bounds; not proved here.",
+    "For all43filters, original continuous log2 moment margins are at least0.00025 in rho0/rho1,4 in rho2-rho8,17 in rho9; same conservative assumptions as Wharton, not new quadrature claims.",
+    "Finite filter data, comparison indices and multipliers come from pinned Kapila source; these are checked exactly.",
+    "Wharton general transfer argument/coarse real-circle score bound supplies unchanged non-special regions; special3 low/band changes are proved in transfer-note.tex."
+  ]
+}

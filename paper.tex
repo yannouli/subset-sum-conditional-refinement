@@ -1,0 +1,431 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array,microtype}
+\usepackage[margin=26mm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{remark}\newtheorem*{remark}{Scope}
+\newcommand{\T}{\mathbb T}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\poly}{\operatorname{poly}}
+\newcommand{\lgof}[1]{\log_2\!\left(#1\right)}
+\allowdisplaybreaks
+\setlength{\emergencystretch}{2em}
+\title{A conditional Subset Sum refinement to exponent 0.4876723}
+\author{Yanni Bills}
+\date{21 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We derive a conditional $O_c(2^{0.4876723n})$ bound by modifying the transfer of existing checksum certificates in the claimed
+Subset Sum construction of Kapila, following Wharton's conditional parameter
+refinement. A certificate whose lower-region multiplier is zero remains
+usable when that region's lower boundary moves. For filter~3 this allows
+its low-region certificate to stop at the new sampling boundary, replacing
+an expensive uniform-transfer loss by a smaller two-constant shift.
+We prove the domination and full-circle integral identities, preserving all
+filters and requiring no new quadrature. The resulting algorithmic claim
+remains conditional on explicitly identified inherited algorithmic claims
+and continuous moment inequalities. The internal total work exponent is $0.48767228002$, strictly below the advertised exponent after all stated accuracy costs. Exact rational interval checks establish the new scalar inequalities. No end-to-end Lean or site-verification claim is made.
+\end{abstract}
+
+\section{Problem, antecedents and the conditional claim}
+The problem is to decide, for positive integers $a_1,\ldots,a_n$ and
+nonnegative $t$, whether $\sum_{i\in I}a_i=t$ for some $I\subseteq[n]$.
+Repeated values represent distinct indices; $I=\varnothing$ is permitted.
+We use the live classical randomized word-RAM specification~\cite{benchmark}:
+for $n\ge2$, $b$ is the largest input or target bit length and words have
+$\lceil4(n+b+\log_2(n+2))\rceil$ bits. Overflow is charged through multiword
+operations, all preparation counts, retained randomness occupies storage,
+and there is no advice or external table. One program, independent of $c$,
+must halt on every run, succeed with probability at least $2/3$ on each
+input, and have the stated operation bound on every random outcome for
+every fixed polynomial-bit regime $b\le n^c$.
+
+Write $\mathcal K$ for Kapila's pinned manuscript~\cite{kapila} and
+$\mathcal W$ for Wharton's leaderboard-linked note~\cite{wharton}.
+The latter refines internal work exponent $0.48769$ to $0.48767595$
+and advertises the conditional exponent $0.487676$; its original
+moment bounds remain hypotheses. Both inherit the OpenAI framework~\cite{openai}.
+Our change is the special boundary rule proved in Section~\ref{sec:new},
+not merely choosing a smaller advertised exponent from existing slack.
+The source comparison is bounded: we checked the pinned papers and the
+current Wharton and Kapila default-branch trees on 21 October 2026,
+at revisions \texttt{bed8e18} and \texttt{44c3496}, respectively,
+including the related transfer, finite-data and verification files.
+Those applications retain the uniform low-region transfer or the original
+region rules; we did not identify this particular filter-3 boundary reuse.
+This establishes the distinction from the inspected sources, rather than
+a comprehensive claim of priority. The exact file and hash record is
+\texttt{source-audit/novelty-check.txt} and its accompanying inventory.
+The unchanged algorithms, filters, moment data and earlier transfer ideas
+are credited to those works.
+
+\paragraph{Inherited hypotheses.}
+The conditional result uses the isolation, deficiency and finite
+implementation claims in Sections~2 and~6 of~\cite{openai}; the
+averaged-layer, preliminary-search and alias arguments in
+Sections~3--5 of~$\mathcal K$; and its block-table and sampled-checksum
+analysis in Section~6, with the parameter dependence documented in
+Section~\ref{sec:admissible}. It also assumes the following precise
+continuous moment inequalities for the original 430 certificates:
+\begin{equation}\label{eq:oldmom}
+ \lgof{I_{v,i}}<\eta_b-m_i,\qquad
+ (m_0,m_1,m_{2:8},m_9)=(0.00025,0.00025,4,17),
+\end{equation}
+where $\eta_b=0.51613$ and the integrals are defined below.
+These are inherited claimed inequalities, not integrals established by
+our scalar checker. We do not assume the new boundary-transfer lemma
+or our new scalar feasibility conclusions: they require the proofs and
+exact certificate in this note. Any unresolved new numerical step prevents
+a final exponent claim.
+
+\begin{theorem}[Conditional refinement]\label{thm:main}
+Assume the inherited algorithmic claims specified above and the original
+moment inequalities~\eqref{eq:oldmom}. The fixed rational construction
+parameters in Section~\ref{sec:admissible}, with the filter-3 certificate
+boundary rule of Lemma~\ref{lem:new}, yield a single randomized classical
+word-RAM program that halts on every input and is correct with probability
+at least $2/3$. For each fixed positive integer $c$, there are $C_c,N_c>0$
+such that every random execution on $n\ge N_c$, $b\le n^c$, uses at most
+$C_c2^{0.4876723n}$ word operations in the stated model. The program does
+not depend on $c$.
+\end{theorem}
+The proof combines Lemmas~\ref{lem:old}--\ref{lem:new}, the exact
+feasibility proof in Proposition~\ref{prop:numeric}, and the
+algorithmic/absorption argument in Proposition~\ref{prop:algorithm}.
+This is a new conditional analysis within the existing construction,
+not a proof that the inherited premises have been verified.
+
+\section{Scores, certificates and the existing transfer}
+All logarithms in scores are base two; $\T=\mathbb R/(2\pi\mathbb Z)$
+has normalized measure. The fixed 43 filters define scores
+$u_v=A_v+E_v-D_v$ and $w_v=2D_v-A_v-E_v$ from positive densities,
+as in Section~3 of~\cite{openai} and Section~6.1 of~$\mathcal K$.
+For a pattern, denote its approximate scores by $U_v,W_v$ and select the
+least $v$ maximizing $U_v$. Thus $U_v-U_j\ge0$ for every comparison row.
+The relative-entropy order and its prescribed rounding give $W_v\ge0$.
+Write $U,W$ for the selected scores and put
+\begin{equation}\label{eq:budgets}
+ \Delta=\eta-\tau>0,\qquad\Gamma=2\tau-\eta>0,\qquad
+ \alpha=\begin{cases}1,&W\le\Gamma,\\ \Gamma/W,&W>\Gamma.\end{cases}
+\end{equation}
+Only patterns satisfying $\alpha U<\Delta$ are sampled.
+The old budgets are $\Delta_b=0.02844$ and $\Gamma_b=0.45925$.
+Throughout the transfer assume
+\begin{equation}\label{eq:qK}
+ q=\Gamma/\Gamma_b\in(0,1),\quad
+ A=\Delta/\Gamma,\quad A_b=\Delta_b/\Gamma_b,\quad
+ K=\Delta/q-\Delta_b>0.
+\end{equation}
+In particular $A-A_b=K/\Gamma_b>0$.
+
+For filter $v$ and old region $i$, let $z\ge0$ be its multiplier vector
+and $G_b(x)$ its affine row vector. The old integral is
+\begin{equation}\label{eq:integral}
+ I_{v,i}=\int_{\T}(2+2\cos x)\,2^{z\cdot G_b(x)}\,dx.
+\end{equation}
+For the low region $W\le\Gamma_b$, the first rows are
+$(\Delta_b-u_v,\Gamma_b-w_v)$ and $z_0\ge1$.
+A bounded old band $\Gamma_b L<W\le\Gamma_b H$ has rows
+$(A_bw_v-u_v,w_v-\Gamma_bL,\Gamma_bH-w_v)$ and $z_0L\ge1$.
+The tail $W>15\Gamma_b$ has the first two of those rows, with $L=15$.
+The remaining rows are selected comparisons $u_v-u_j$.
+The old boundaries are
+$1,1.25,1.6,2,2.6,3.5,5,8,15,\infty$, multiplied by $\Gamma_b$.
+
+\begin{lemma}[Existing transfer, with domination]\label{lem:old}
+For unchanged old regions the following modifications give ideal pattern-level
+domination $-\alpha U\le-\Delta+z'\cdot G'^\pi$:
+\begin{enumerate}
+\item In the low region replace $\Delta_b-u_v$ by $\Delta/q-u_v$.
+The integral becomes $2^{z_0K}I_{v,0}$.
+\item In a bounded band replace $A_bw_v-u_v$ by $Aw_v-u_v$ and
+increase the upper-row multiplier by $z_0(A-A_b)$. The integral becomes
+$2^{z_0KH}I_{v,i}$.
+\item In the tail replace $A_b$ by $A$ with unchanged multipliers.
+If $w_v\le B$ pointwise, the integral is at most
+$2^{Bz_0K/\Gamma_b}I_{v,9}$.
+\end{enumerate}
+Here $G'^\pi$ denotes rows evaluated at pattern scores.
+\end{lemma}
+\begin{proof}
+This is the transfer of~$\mathcal W$, included to specify every region
+used in our modification. For $W\le\Gamma_b$, $q\le\alpha\le1$.
+Sampling gives $U<\Delta/\alpha\le\Delta/q$. Hence
+\[
+ -\alpha U=-\Delta+\alpha(\Delta/\alpha-U)
+ \le-\Delta+z_0(\Delta/q-U).
+\]
+All other pattern rows are nonnegative. The pointwise exponent changes
+by $z_0(\Delta/q-\Delta_b)=z_0K$.
+In a bounded band, $\alpha<q/L<1/L\le z_0$ and $\alpha AW=\Delta$,
+so sampling and $AW-U>0$ give
+\[
+ -\alpha U=-\Delta+\alpha(AW-U)\le-\Delta+z_0(AW-U).
+\]
+All remaining rows have nonnegative pattern values. The new upper
+multiplier cancels the changed $w_v$ term:
+\[
+ z_0(A-A_b)w_v+z_0(A-A_b)(\Gamma_bH-w_v)=z_0KH.
+\]
+The tail has $\alpha<q/15\le z_0$ and the same domination. Its exponent
+changes by $z_0(A-A_b)w_v\le Bz_0K/\Gamma_b$. Integrands are nonnegative,
+so integration preserves the asserted comparisons.
+\end{proof}
+
+\section{The moved boundary for filter 3}\label{sec:new}
+Appendix~C of~$\mathcal K$ uses zero-based filter indices. For filter~3
+its low certificate has comparisons $\{5,16\}$ and multipliers
+\[
+ z^{3,0}=(17.211,27.1977,8.3302,3.0053).
+\]
+Its first bounded-band certificate has comparisons $\{5,8,16,35\}$ and
+\[
+ z^{3,1}=(7.7547,0,0,4.2699,2.2635,0.461,3.4032).
+\]
+These terminating decimals are exact rational source data. In particular,
+the multiplier of $w_3-\Gamma_b$ is exactly zero, not approximately zero.
+
+\begin{lemma}[Movable lower boundary]\label{lem:new}
+Use filter~3's modified low certificate only for $W\le\Gamma$,
+replacing both constant rows by $(\Delta-u_3,\Gamma-w_3)$.
+Use its old first-band certificate throughout
+$\Gamma<W\le1.25\Gamma_b$, replacing $A_b$ by $A$ and increasing
+its upper-row multiplier by $7.7547(A-A_b)$.
+Both certificates give ideal domination for every sampled pattern in
+their new regions. Their respective integrals are exactly
+\begin{align}
+ I'_{3,0}&=2^{\Lambda_0}I_{3,0},&
+ \Lambda_0&=17.211(\Delta-\Delta_b)+27.1977(\Gamma-\Gamma_b),\label{eq:speciallow}\\
+ I'_{3,1}&=2^{\Lambda_1}I_{3,1},&
+ \Lambda_1&=7.7547(1.25)K.\label{eq:specialband}
+\end{align}
+These are full-circle integral identities, not integrals restricted to
+patterns satisfying the region inequalities.
+\end{lemma}
+\begin{proof}
+In the new low region $\alpha=1$ and sampling implies $U<\Delta$.
+Since $17.211\ge1$, and since the new upper-region row and all
+comparison rows have nonnegative pattern values,
+\[
+ -U=-\Delta+(\Delta-U)
+ \le-\Delta+17.211(\Delta-U)\le-\Delta+z^{3,0}\cdot G'^\pi.
+\]
+Changing the two constants changes the exponent pointwise by exactly
+$\Lambda_0$, proving~\eqref{eq:speciallow}. Its sign need not be positive.
+
+In the extended band $W>\Gamma$, so $\alpha=\Gamma/W<1<7.7547$.
+Sampling gives $AW-U>0$ and $\alpha AW=\Delta$, whence
+\[
+ -\alpha U\le-\Delta+7.7547(AW-U).
+\]
+For $W<\Gamma_b$, the old lower-region row $W-\Gamma_b$ is negative,
+but its multiplier is zero; thus no nonnegativity of this unused row
+is needed. The upper row remains nonnegative because
+$W\le1.25\Gamma_b$, and its increased multiplier is nonnegative by
+\eqref{eq:qK}. Comparisons also remain nonnegative.
+The same pointwise cancellation as in Lemma~\ref{lem:old} gives
+$7.7547(A-A_b)1.25\Gamma_b=\Lambda_1$.
+
+There is no gap at $W=\Gamma$, which belongs to the new low region.
+The new first band ends at the unchanged upper endpoint; subsequent
+bands and the tail are unchanged. The rule therefore covers every
+possible selected-filter pattern exactly once, apart from the already
+specified endpoint convention.
+\end{proof}
+
+\begin{remark}
+No score function, filter-selection rule or continuous integral has
+been replaced by a newly guessed estimate. The change is in which
+existing certificate is used in the analysis and how its constants
+are shifted. It does not infer positivity of an unused lower-region row.
+\end{remark}
+
+\section{Parameters, scalar certification and error budgets}\label{sec:admissible}
+\input{candidate-data.tex}
+
+\paragraph{Alias and size obligations.}
+Write $r=1-\mu-l$ and $h(x)=-x\log_2x-(1-x)\log_2(1-x)$.
+The eight conditions from Section~2.2 of~$\mathcal K$ are
+\begin{align*}
+ \gamma&<h(2a)/2, & l+(h(a)-\gamma)\mu&<\tau,\\
+ r+(1-\gamma)\mu&<\tau,
+ &1-\mu+(h(a)+h(1/2-a)-\gamma)\mu-\eta&<\tau,\\
+ h(1/2-a)\mu+1/2-\tau&<\tau,
+ &0<r<\tau,\quad l&<\tau,\\
+ \mu(1-2a)&<l, &(\mu/2)\log_2 3&<\eta.
+\end{align*}
+The proof also uses $0<a<1/4$, $\mu(1-2a)<1/2$,
+$h(2a)/2+h(a)<1-2a$, and $h(a)<h(1/2-a)$.
+For $\delta=(\eta-(\mu/2)\log_2 3)/2$, require
+\[
+ \delta>1/2-\tau+\zeta,\qquad \delta>\theta,
+\]
+where $\theta$ is the input-guard exponent. These are the bad-half-block
+and coverage conditions in A4/A5, stronger than $\delta>0$ alone.
+The additional A7 work exponents are
+\[
+ \mu,\qquad r+1/2-\tau,\qquad1/2-\tau+\gamma\mu/2.
+\]
+All must lie below $\tau$ with a common positive work margin after
+preliminary-search and guard costs. The exact checker must certify a
+margin consistently below every relevant cost gap and place
+$\zeta+\theta$ inside it, rather than checking only the displayed eight
+inequalities. Prime generation also costs $2^{\eta n/2}\poly(n+b)$.
+
+\paragraph{All 430 moments and approximation.}
+For ordinary low certificates use loss $z_0K$; for the two special
+certificates use~\eqref{eq:speciallow}--\eqref{eq:specialband}; for the
+remaining finite bands and tail use Lemma~\ref{lem:old}. A per-certificate
+new continuous margin is the inherited $m_i+(\eta-\eta_b)$ minus its loss.
+One may bound ordinary low $z_0$ by $10.6428$ after removing filter~3,
+first-band $z_0$ by $8.4537$, and other coefficients by $Z=418.36$,
+as verified finite source data. The coarse tail bound is $B=256$
+(Lemma~3 of~$\mathcal W$). Use these only with explicit positive
+margins for every case, including the special low case.
+
+For completeness, the score bound follows from eight coefficients of
+absolute value at most2 and $1\le\kappa\le2$. Then $|r_v|,|s_v|\le16$.
+Using the convolution notation $L=\log_2\mathcal P-\log_2(Z_fZ_g)$,
+$B_*=\mathcal Y/\mathcal P-\log_2(Z_fZ_g)$ and
+$H_*=\log_2Z_{f,\kappa}+\log_2Z_{g,\kappa}-\kappa\log_2(Z_fZ_g)$,
+positivity and weighted averaging give $|L|,|B_*|\le64$ and
+$|H_*|\le64\kappa$. Hence
+$|w_v|=|(2-\kappa)B_*-2L+H_*|\le256$.
+The only added multiplier is $z_0(A-A_b)$, so the sum is at most
+$Z'=418.36(1+A-A_b)$.
+
+Choose $m_{\rm fin}$ strictly smaller than the minimum new continuous
+margin. Uniform finite-to-continuous convergence then supplies the
+finite-circle bound $\eta-\log_2 I'_{\rm finite}>m_{\rm fin}$ for all
+sufficiently large fixed prime cutoffs. Positivity and bounded denominators
+of the fixed filters give an effective cutoff as in Lemma~3.2
+of~\cite{openai}; this is an inherited analytical argument, not a new
+numerical integration.
+The prescribed score errors are $3\eps$ for $U$ and $4\eps$ for $W$.
+If $A<1/4$, every modified affine row differs from its coordinate average
+by at most $6\eps$, including comparisons; shifted constants add no error.
+Thus ideal domination gives
+\[
+ -\alpha U\le-\Delta+\frac1n\sum_{j=1}^n z'\cdot G'(x_j)+6Z'\eps.
+\]
+The inherited sampled-pattern mean-square bound has decay exponent
+$m_{\rm fin}-(18+6Z')\eps$, which must be strictly positive.
+The $2^{O(\sqrt n)}$ patterns and polynomially many transformed targets
+are absorbed by this decay. The original good-table argument and finite
+precision then give the same constant absolute-error guarantees.
+
+\section{Correctness, worst-history cost and exponent absorption}
+\begin{proposition}[Conditional algorithmic implication]\label{prop:algorithm}
+Assume the inherited hypotheses stated in Section~1, and suppose the
+fixed rational parameters satisfy all conditions and strict margins
+in Section~\ref{sec:admissible}. The modified construction has
+\[
+ T(n,b)\le2^{(\tau+20\eps)n+O(n^{0.7})}\poly(n+b+2)
+\]
+on every guarded random execution. For every fixed $c$ and any fixed
+$\alpha>\tau+20\eps$, its full program has time
+$O_c(2^{\alpha n})$ on $b\le n^c$, halts on every input, and has
+per-input correctness at least $2/3$ after a fixed small-input fallback.
+\end{proposition}
+\begin{proof}
+Here LD is the inherited low-deficiency condition for the transformed
+weights $c_i=Ca_i+u_i$, with the tie weights $u_i$ fixed:
+\[
+ \begin{gathered}
+ \Sigma_c(V)=\Bigl\{\sum_{i\in I}c_i:I\subseteq V\Bigr\},\qquad
+ d_c(V)=|V|-\log_2|\Sigma_c(V)|,\\
+ \mathbb E_{V\sim\operatorname{Unif}\binom{[n]}{\lfloor n/2\rfloor}}
+ d_c(V)\le(\tfrac12-\tau+\zeta)n.
+ \end{gathered}\tag{LD}
+\]
+The expectation is over all half-blocks of the indicated size, not over
+the tie weights or the observed preliminary-search outcome. The inherited
+transformation takes $N_0$ to be the power of two in $[12n,24n)$,
+$u_i\in\{1,\ldots,N_0\}$ independently uniform before fixing them,
+$C=1+nN_0$, and transformed targets $Ct+s$ for $0\le s\le nN_0$,
+where $a_i$ and $t$ are the original input weights and target.
+This is precisely Kapila's condition (LD) in Section~4, with his $\tau_0$
+written as our $\tau$; see also Section~2.1 and Appendix~B.1
+of~\cite{kapila}. It is the existing case distinction in the inherited
+argument, not an additional assumption on all inputs.
+The preliminary search either gives an exact answer or continues.
+For each fixed choice of tie weights the analysis divides according
+to LD, not according to the observed continuation event. Draw the main
+procedure's independent randomness even if an earlier exact answer
+makes it unused. The inherited preliminary guarantee covers failure
+of LD. Under LD, the source alias proof uses the checked coverage,
+size and work inequalities; caps limit every run, and its expected-work
+estimate makes cap failure $o(1)$. The modified checksum domination
+and moments were proved above; the inherited table/estimator analysis
+therefore has error $o(1)$ uniformly in the guarded fixed input.
+
+Use the same retained phases in the modular checksum and alias
+subtraction. Complete, deduplicated alias phase sums cancel all
+modular representations whose unreduced sum is different from the
+target. The remaining exact bin is zero on a NO input. On a YES input,
+isolation supplies a unique exact bin with probability at least $11/12$,
+and that bin has modulus1. A combined checksum/alias arithmetic error
+less than $1/4$ makes threshold $1/2$ correct on these events.
+All additional failure probabilities are $o(1)$ uniformly above a fixed
+cutoff; choosing their sum below $1/12$ gives success at least $5/6$,
+hence $2/3$.
+
+All samplers, emitted lists, visits and expansions have deterministic
+caps, checked before the next write. Random-prime generation by bounded
+trial division costs $2^{\eta n/2}\poly(n+b)$ and is below the certified
+work budget. Retained randomness and polynomial-bit rational arithmetic
+are charged, as in the inherited implementation. The cap exponents,
+score accuracy and block-pattern factors give the displayed bound;
+none is replaced by an expected running time. Required constants and
+fixed tables are generated by the program, not supplied as advice.
+
+Use the exact meet-in-the-middle fallback below a fixed cutoff and
+when the integer guard fails. For integer $\theta^{-1}$ the guard is
+$\theta^{-1}\lceil\log_2(b+1)\rceil\le n$; it implies
+$b+2\le2^{\theta n+1}$, as required in alias collision estimates.
+For each fixed $c$, every $b\le n^c$ eventually satisfies this guard.
+All cutoffs and algorithm parameters are independent of $c$; only the
+final asymptotic comparison may depend on it. If $\beta=\tau+20\eps$,
+then $O(n^{0.7})+\log_2\poly(n+n^c+2)=o_c(n)$.
+For fixed $\alpha>\beta$ this is eventually at most $(\alpha-\beta)n$,
+proving ordinary $O_c(2^{\alpha n})$. The inherited address-space proof
+stores multiword operands and counts each allocated word; its logarithmic
+storage bound fits $\lceil4(n+b+\log_2(n+2))\rceil$-bit addresses.
+\end{proof}
+
+\section{Verification scope, attribution and limits}
+Floating-point discovery is not certification. The certificate fixes rational parameters, encloses entropy values with justified error, checks every numerical inequality above and the complete finite source transcription, and supplies one small verification command that does not rerun the optimizer (Appendix~\ref{app:certificate}). Continuous moment inequalities remain
+the explicit inherited hypotheses~\eqref{eq:oldmom}; a scalar certificate
+does not establish them or the whole upstream algorithm. No claim of
+framework optimality follows from a failed search.
+
+The current campaign uses no locally verified Lean build: no Lean/elan
+installation was available in the inspected environment. Wharton's
+later formalization has a different, documented finite-data scope, and
+its continuous moment hypotheses do not disappear. The live verifier
+has no trusted Subset Sum statement at startup~\cite{rules}.
+Local certificate validity, manuscript proof completeness, and site
+verification are distinct claims.
+
+\paragraph{Acknowledgments and provenance.}
+The intended author is Yanni Bills. The research team used AI assistance
+for source investigation/exposition (Researcher-Ed\_Lorenz), bounded
+parameter discovery and certificate implementation (Computational-Richardson),
+coordination/integration (Coordinator), and independent criticism
+(Reviewer-Procopius). The inherited construction and proofs are credited
+to OpenAI and Annanay Kapila, and the original scalar transfer and exact
+numerical machinery to Joshua Wharton. The new boundary treatment must
+be assessed separately from those inherited results. Source commits,
+unchanged downloads and verification scope are recorded with the repository.
+\input{certificate-appendix.tex}
+\begingroup\small
+\bibliographystyle{plain}
+\bibliography{references}
+\endgroup
+\end{document}

@@ -1,0 +1,350 @@
+{
+  "release_root": ".",
+  "integration_revision": "47a929c",
+  "utc_started": "2026-10-21T15:42:50.859440+00:00",
+  "python": "3.12.14",
+  "stdlib_only": true,
+  "frozen_input_hashes_before": {
+    ".gitignore": "386009d1256b150b8be9ccbe7dc569dae1090621540907c5f9033ff865d519f3",
+    "CORRECTIONS.md": "348b39e9c3f8b05a7c894787af90755918615b2645648f415aacf166aa366e0d",
+    "README.md": "6b0b8d44c40fbed939b5e3be72fd7ffd0df1481e821492b8362b4ec7ce53f747",
+    "candidate-data.tex": "554505faad079091c251d04092d4edbeb662dd97cc600d6f44ce5cc6a9979856",
+    "certificate-appendix.tex": "7a004caf2b0a4cd096d4326db0e28eb86be8dc5806fcf7b8812913a7a60d4863",
+    "evidence/build-verification.json": "b6b47a509a2bc8810a0b706e849c56930fd6ee48b6ec9cba366134718439b4d1",
+    "evidence/coordinator-certificate.json": "89d6d3d29284a27626fc36901860283ffce6d696a52af787b975b22cc227c071",
+    "evidence/coordinator-independent.json": "da0f86c43e3d74c41d0790279a2da2f51fab354e4ca94d85b0d47e4103498973",
+    "evidence/coordinator-rejections.json": "7c8b75d4caeea343f45bc9604720724ae6efdcd4c0539e6a35c8e3a149c486fd",
+    "numerics/.gitattributes": "da2ca8f2d2c1f96f1a796ca5fc7c0ff9471dfc55d114cd21c88e2daf3b0495b4",
+    "numerics/.gitignore": "809223425c1554cb635ed70d1561e4040b4cc02b88e005c39c801422e9111b80",
+    "numerics/FORMALIZATION-SCOPE.md": "bfd4f0574e313671946a72973dc3735c3c98351c4ce59cf78e268e2fccd1a577",
+    "numerics/README.md": "5954f2093482ffbe3c177fcd6e8fbcc24408b4ee845364c110955d64220dda9d",
+    "numerics/SOURCE-REVISIONS.json": "0d9c3dba06988c67a00fadb235022db343394ff3085a6f4503b0de8569b00d6c",
+    "numerics/batch-plan.json": "18b85d455a309cc7a72d0eb57f22c296da5ff91889abdb0278520b82d858b085",
+    "numerics/data/candidate.json": "75f66f5cc9aedb10aae7632f62bc9a9cdb330142cec488f4937045963dc602c1",
+    "numerics/discover.py": "640eb422415baacd44ccb5bc58fd0f37e554a36ac70a805950f62ece35813e29",
+    "numerics/evidence/certificate-check.json": "9267c12fba47dfe824eae8f10e510567f9ab3495121bb7f4d83b08f062794cf3",
+    "numerics/evidence/discovery.json": "e1b93c7775d5d5f62c8c106b6cae01387f571cce5b912ef8c6630d6dd667224c",
+    "numerics/evidence/rejections.json": "7c8b75d4caeea343f45bc9604720724ae6efdcd4c0539e6a35c8e3a149c486fd",
+    "numerics/evidence/upstream-baseline-check.txt": "6693e5296e77bd816c283d085c7f998571aebd279a218afa36d3994fbf3b901f",
+    "numerics/fetch_baseline.py": "1b98afddcb5611eb7570e9e7299751b70df5b60a56c57184889b825ce8d3d38c",
+    "numerics/manifest.json": "8b9d9b4609af8b24e5b12c3072faa732e5a3e3218d46761a97d1fae4e0571378",
+    "numerics/rational_bounds.py": "a9b100ce3f9afce02de729ae36060aa51c4e4d40bc384e2e33180944751fbdeb",
+    "numerics/test_rejections.py": "63697411dcaf152f60403278ca433c883aeac639b1598a2765168fcb7c0c574d",
+    "numerics/transfer-note.tex": "9c03faf29e4a215d8f10587b8c3e913293b89faba4487220bc40cb988b91b29e",
+    "numerics/verify_certificate.py": "9174f7b254d32a62ccdce66414a6c81f1c2468d76c975623a5fbc55c3e44f3d8",
+    "paper.pdf": "5c212019a757d7ee294c08588824c60e2490bfffbcf8d672113378366f29cbeb",
+    "paper.tex": "c116de491a401af943e345207c2dcc83c281e9e9bfd412d52800b8ac0a40cd8d",
+    "references.bib": "863fa09302e0e9c6566c1069020549cb4e2717fe9784fdde5ae51e4d404016bc",
+    "requirements-discovery.txt": "6fc5195bd520e2226e728f982b6f906cfbcf48088c7bc2f0fde24add10eb19c4",
+    "review.md": "d04ffa41edef08a42b330c38ec06e3014bf84f02d91ee5e94ea9efe55a00b5ff",
+    "review/CANDIDATE-CHECK.md": "a7b429009383b5b62b3783f874b2a9c1f4041f6cafa2c5bfabb6c56a5d4d59d7",
+    "review/EARLY-REVIEW.md": "0f94ddba6db7cac4522961dec95d3ee3b96df8e5b60fa18453dae245218f2bcd",
+    "review/FILTER3-CHECK.md": "3e98c776ce92c3e5107c268ea21e8d8f1d414c6a39b8496c306facff1371963f",
+    "review/MANUSCRIPT-CHECK.md": "1ea4e2410a28589acea6fe8d747838306bc1fb02d637250003785155365d16e8",
+    "review/independent-result.json": "da0f86c43e3d74c41d0790279a2da2f51fab354e4ca94d85b0d47e4103498973",
+    "review/independent_check.py": "6ca4594b45f373d0b7a31a4b4d9310526ab7a36d651352059a8ad145d28730ff",
+    "review/inspected-hashes.json": "979c45d90b658e873a7e8305dc183be2ef428f9baa09eb56cf7f50c77249468b",
+    "review/manuscript-hashes.json": "0a9a887769fce8f9d67eae29270db27dcaccbb7c941c673e28a0e6a407fe1735",
+    "review/producer-rejections.json": "7c8b75d4caeea343f45bc9604720724ae6efdcd4c0539e6a35c8e3a149c486fd",
+    "source-audit/dependency-map.json": "a48b1155d8c65c618e085204358c1ab4acb45ee18b259e8db0364337de9336c0",
+    "source-audit/download-ledger.json": "ff85dbdede550c13fcf9aa78aab093136fa1a8ae923fab362d0712f61e34e608",
+    "source-audit/final-live-observation.json": "8db29480b82483f6a247496ef1dbd09863e1615b594ae83a4341cdadc1142b8a",
+    "source-audit/novelty-check.txt": "075e8bdcf6b50bfb8dbd2d0ff4e0e7f7a299f2214fb78310b249e60bd1ae0168",
+    "source-audit/novelty-file-inventory.json": "ac994e2321fb8c8b7ab55a0a4a63c72b4162413638b3f5f100473d2123b0d08e",
+    "source-audit/source-contract.txt": "598d5abb6a4e6a0bbce61ea977fd823f57655c65fb4e1a27438462831185ad44",
+    "source-audit/source-versions.json": "13390e0b3fd5888839765ffb027d1bf798376e1ce3992c65adef02ce643b62ce",
+    "submission-draft.md": "f9c2c0402d675a62dc9d85f9d9185ba7ce0297a64239fa63ad5963a912115a99"
+  },
+  "commands": [
+    {
+      "command": "python numerics/fetch_baseline.py",
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 1.4824466000136454,
+      "stderr_empty": true,
+      "fresh_stdout_path": null
+    },
+    {
+      "command": "python numerics/verify_certificate.py",
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 1.196789900015574,
+      "stderr_empty": true,
+      "fresh_stdout_path": "evidence/release-certificate.json"
+    },
+    {
+      "command": "python numerics/test_rejections.py",
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 1.4100124000106007,
+      "stderr_empty": true,
+      "fresh_stdout_path": "evidence/release-rejections.json"
+    },
+    {
+      "command": "python review/independent_check.py numerics/data/candidate.json numerics/baseline/PROOF_0.4877.tex independent-result.json",
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 1.1575624000106473,
+      "stderr_empty": true,
+      "fresh_stdout_path": "evidence/release-independent-stdout.json"
+    }
+  ],
+  "fresh_dependency": {
+    "url": "https://raw.githubusercontent.com/a-kapila/maths-proofs/44c34961b56784c220a6e913cc068d57dc37c5a3/subset-sum/PROOF_0.4877.tex",
+    "path": "numerics/baseline/PROOF_0.4877.tex",
+    "sha256": "b397531cc5997e88c439d5290774861b46a34aa32d9cd71fa7dcced130359298",
+    "prior_copy_absent": true,
+    "fresh_fetch_exit_code": 0,
+    "distribution": "Fetched local ignored input; exclude from publication archive."
+  },
+  "mathematical_comparison": {
+    "producer_all_fields_equal_excluding_seconds": true,
+    "old_check_seconds": 0.05144179999479093,
+    "fresh_check_seconds": 0.04701830001431517,
+    "rejection_tests": 8,
+    "rejection_results_equal": true,
+    "independent_all_fields_equal": true,
+    "independent_rows_checked": 430,
+    "internal_work_exponent": {
+      "lower": "0.48767228002",
+      "upper": "0.48767228002"
+    },
+    "advertised_exponent": {
+      "lower": "0.4876723",
+      "upper": "0.4876723"
+    },
+    "exponential_absorption_gap": {
+      "lower": "1.998E-8",
+      "upper": "1.998E-8"
+    },
+    "discovery_not_executed": true
+  },
+  "frozen_input_hashes_after_match": true,
+  "status": "PASS: fresh pinned dependency, three unchanged checkers, identical mathematical outputs, protected-input audit and strict UTF-8 scan",
+  "baseline_integrity": {
+    "baseline_commit": "639d9d13fce9a291c6c00a565dc5ffefda9c2b78",
+    "protected_and_monitored_files": [
+      {
+        "path": "candidate-data.tex",
+        "status": "byte-identical",
+        "baseline_sha256": "554505faad079091c251d04092d4edbeb662dd97cc600d6f44ce5cc6a9979856",
+        "final_sha256": "554505faad079091c251d04092d4edbeb662dd97cc600d6f44ce5cc6a9979856"
+      },
+      {
+        "path": "certificate-appendix.tex",
+        "status": "authorized documentation-only correction; final scientific diff reviewed separately",
+        "baseline_sha256": "736dabc966fe6746aee1a7ca035f6dc5f9fee2c1d57975ba711fb65a0670bbca",
+        "final_sha256": "7a004caf2b0a4cd096d4326db0e28eb86be8dc5806fcf7b8812913a7a60d4863"
+      },
+      {
+        "path": "numerics/data/candidate.json",
+        "status": "byte-identical",
+        "baseline_sha256": "75f66f5cc9aedb10aae7632f62bc9a9cdb330142cec488f4937045963dc602c1",
+        "final_sha256": "75f66f5cc9aedb10aae7632f62bc9a9cdb330142cec488f4937045963dc602c1"
+      },
+      {
+        "path": "numerics/discover.py",
+        "status": "byte-identical",
+        "baseline_sha256": "640eb422415baacd44ccb5bc58fd0f37e554a36ac70a805950f62ece35813e29",
+        "final_sha256": "640eb422415baacd44ccb5bc58fd0f37e554a36ac70a805950f62ece35813e29"
+      },
+      {
+        "path": "numerics/evidence/certificate-check.json",
+        "status": "byte-identical",
+        "baseline_sha256": "9267c12fba47dfe824eae8f10e510567f9ab3495121bb7f4d83b08f062794cf3",
+        "final_sha256": "9267c12fba47dfe824eae8f10e510567f9ab3495121bb7f4d83b08f062794cf3"
+      },
+      {
+        "path": "numerics/evidence/discovery.json",
+        "status": "byte-identical",
+        "baseline_sha256": "e1b93c7775d5d5f62c8c106b6cae01387f571cce5b912ef8c6630d6dd667224c",
+        "final_sha256": "e1b93c7775d5d5f62c8c106b6cae01387f571cce5b912ef8c6630d6dd667224c"
+      },
+      {
+        "path": "numerics/evidence/environment.json",
+        "status": "authorized public omission; original baseline bytes preserved",
+        "baseline_sha256": "debe9f4f7eb89f59c975f0b5b1cb87a8dbe6442cba7e66463980f7aeb0c4eb04",
+        "final_sha256": null
+      },
+      {
+        "path": "numerics/evidence/rejections.json",
+        "status": "byte-identical",
+        "baseline_sha256": "7c8b75d4caeea343f45bc9604720724ae6efdcd4c0539e6a35c8e3a149c486fd",
+        "final_sha256": "7c8b75d4caeea343f45bc9604720724ae6efdcd4c0539e6a35c8e3a149c486fd"
+      },
+      {
+        "path": "numerics/evidence/upstream-baseline-check.txt",
+        "status": "byte-identical",
+        "baseline_sha256": "6693e5296e77bd816c283d085c7f998571aebd279a218afa36d3994fbf3b901f",
+        "final_sha256": "6693e5296e77bd816c283d085c7f998571aebd279a218afa36d3994fbf3b901f"
+      },
+      {
+        "path": "numerics/fetch_baseline.py",
+        "status": "byte-identical",
+        "baseline_sha256": "1b98afddcb5611eb7570e9e7299751b70df5b60a56c57184889b825ce8d3d38c",
+        "final_sha256": "1b98afddcb5611eb7570e9e7299751b70df5b60a56c57184889b825ce8d3d38c"
+      },
+      {
+        "path": "numerics/manifest.json",
+        "status": "byte-identical",
+        "baseline_sha256": "8b9d9b4609af8b24e5b12c3072faa732e5a3e3218d46761a97d1fae4e0571378",
+        "final_sha256": "8b9d9b4609af8b24e5b12c3072faa732e5a3e3218d46761a97d1fae4e0571378"
+      },
+      {
+        "path": "numerics/rational_bounds.py",
+        "status": "byte-identical",
+        "baseline_sha256": "a9b100ce3f9afce02de729ae36060aa51c4e4d40bc384e2e33180944751fbdeb",
+        "final_sha256": "a9b100ce3f9afce02de729ae36060aa51c4e4d40bc384e2e33180944751fbdeb"
+      },
+      {
+        "path": "numerics/test_rejections.py",
+        "status": "byte-identical",
+        "baseline_sha256": "63697411dcaf152f60403278ca433c883aeac639b1598a2765168fcb7c0c574d",
+        "final_sha256": "63697411dcaf152f60403278ca433c883aeac639b1598a2765168fcb7c0c574d"
+      },
+      {
+        "path": "numerics/transfer-note.tex",
+        "status": "byte-identical",
+        "baseline_sha256": "9c03faf29e4a215d8f10587b8c3e913293b89faba4487220bc40cb988b91b29e",
+        "final_sha256": "9c03faf29e4a215d8f10587b8c3e913293b89faba4487220bc40cb988b91b29e"
+      },
+      {
+        "path": "numerics/verify_certificate.py",
+        "status": "byte-identical",
+        "baseline_sha256": "9174f7b254d32a62ccdce66414a6c81f1c2468d76c975623a5fbc55c3e44f3d8",
+        "final_sha256": "9174f7b254d32a62ccdce66414a6c81f1c2468d76c975623a5fbc55c3e44f3d8"
+      },
+      {
+        "path": "references.bib",
+        "status": "authorized documentation-only correction; final scientific diff reviewed separately",
+        "baseline_sha256": "34d579f218e10bed5bf888f6275b605ba9bee0253ff4ab90f547407f01c40434",
+        "final_sha256": "863fa09302e0e9c6566c1069020549cb4e2717fe9784fdde5ae51e4d404016bc"
+      },
+      {
+        "path": "review/independent_check.py",
+        "status": "byte-identical",
+        "baseline_sha256": "6ca4594b45f373d0b7a31a4b4d9310526ab7a36d651352059a8ad145d28730ff",
+        "final_sha256": "6ca4594b45f373d0b7a31a4b4d9310526ab7a36d651352059a8ad145d28730ff"
+      }
+    ],
+    "mathematical_candidate_and_executable_files_unchanged": true,
+    "raw_discovery_and_retained_historical_numerical_logs_unchanged": true,
+    "authorized_text_exceptions": {
+      "certificate-appendix.tex": "Replace unsupported search timing prose; no equation change",
+      "references.bib": "Remove stale future-action observation note; source pins unchanged"
+    },
+    "input_hash": {
+      "path": "numerics/baseline/PROOF_0.4877.tex",
+      "expected_sha256": "b397531cc5997e88c439d5290774861b46a34aa32d9cd71fa7dcced130359298",
+      "actual_sha256": "b397531cc5997e88c439d5290774861b46a34aa32d9cd71fa7dcced130359298"
+    }
+  },
+  "authorized_omissions": [
+    {
+      "path": "PLAN.md",
+      "baseline_sha256": "1a3f65e6e50b399be3542ab9e1f54bc8294e7a3246f1520e76dfc88ff87b3868",
+      "original_preserved": true,
+      "reason": "Authorized exclusion of private operational/path metadata from publication selection"
+    },
+    {
+      "path": "numerics/HANDOFF.md",
+      "baseline_sha256": "2474546aec1e67d92bb93b265025c1cb1ca01918638841d75143d1f4460b5b77",
+      "original_preserved": true,
+      "reason": "Authorized exclusion of private operational/path metadata from publication selection"
+    },
+    {
+      "path": "numerics/evidence/environment.json",
+      "baseline_sha256": "debe9f4f7eb89f59c975f0b5b1cb87a8dbe6442cba7e66463980f7aeb0c4eb04",
+      "original_preserved": true,
+      "reason": "Authorized exclusion of private operational/path metadata from publication selection"
+    },
+    {
+      "path": "review/RESUME.md",
+      "baseline_sha256": "d0c25beef9a039ee0c46bd6ae3dd73fceecb85e8a5c7aaefb46bae8bc1d3d46a",
+      "original_preserved": true,
+      "reason": "Authorized exclusion of private operational/path metadata from publication selection"
+    },
+    {
+      "path": "source-audit/SOURCE_LOCATIONS.txt",
+      "baseline_sha256": "d7f2ae4efe9738a8ac82c8b662323125051b09a68d13b0f8f62b4a57aa3351e6",
+      "original_preserved": true,
+      "reason": "Authorized exclusion of private operational/path metadata from publication selection"
+    }
+  ],
+  "utf8_scan": {
+    "status": "PASS",
+    "strict_utf8_decoding": true,
+    "replacement_characters_absent": true,
+    "file_count": 57,
+    "files": [
+      ".gitattributes",
+      ".gitignore",
+      "candidate-data.tex",
+      "certificate-appendix.tex",
+      "CORRECTIONS.md",
+      "evidence/build-verification.json",
+      "evidence/coordinator-certificate.json",
+      "evidence/coordinator-independent.json",
+      "evidence/coordinator-rejections.json",
+      "evidence/release-build.json",
+      "evidence/release-certificate.json",
+      "evidence/release-checks.json",
+      "evidence/release-independent-stdout.json",
+      "evidence/release-rejections.json",
+      "independent-result.json",
+      "numerics/.gitattributes",
+      "numerics/.gitignore",
+      "numerics/batch-plan.json",
+      "numerics/data/candidate.json",
+      "numerics/discover.py",
+      "numerics/evidence/certificate-check.json",
+      "numerics/evidence/discovery.json",
+      "numerics/evidence/rejections.json",
+      "numerics/evidence/upstream-baseline-check.txt",
+      "numerics/fetch_baseline.py",
+      "numerics/FORMALIZATION-SCOPE.md",
+      "numerics/manifest.json",
+      "numerics/rational_bounds.py",
+      "numerics/README.md",
+      "numerics/SOURCE-REVISIONS.json",
+      "numerics/test_rejections.py",
+      "numerics/transfer-note.tex",
+      "numerics/verify_certificate.py",
+      "paper.blg",
+      "paper.log",
+      "paper.tex",
+      "README.md",
+      "references.bib",
+      "requirements-discovery.txt",
+      "review/CANDIDATE-CHECK.md",
+      "review/EARLY-REVIEW.md",
+      "review/FILTER3-CHECK.md",
+      "review/independent-result.json",
+      "review/independent_check.py",
+      "review/inspected-hashes.json",
+      "review/MANUSCRIPT-CHECK.md",
+      "review/manuscript-hashes.json",
+      "review/producer-rejections.json",
+      "review.md",
+      "source-audit/dependency-map.json",
+      "source-audit/download-ledger.json",
+      "source-audit/final-live-observation.json",
+      "source-audit/novelty-check.txt",
+      "source-audit/novelty-file-inventory.json",
+      "source-audit/source-contract.txt",
+      "source-audit/source-versions.json",
+      "submission-draft.md"
+    ],
+    "exclusions": [
+      "PDF/binary/cache files",
+      "Git metadata, excluded from publication archive",
+      "Downloaded upstream dependency, excluded from publication archive"
+    ]
+  },
+  "publication_path_scan": {
+    "workstation_absolute_path_matches": [],
+    "scope": "Selected publication text; excludes Git metadata, downloaded dependency, caches and binaries"
+  },
+  "utc_completed": "2026-10-21T15:44:44.047075+00:00",
+  "assertions_enabled_for_executed_commands": true
+}

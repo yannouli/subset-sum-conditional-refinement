@@ -1,0 +1,33 @@
+{
+  "kapila": {
+    "repository": "https://github.com/a-kapila/maths-proofs",
+    "revision": "44c34961b56784c220a6e913cc068d57dc37c5a3",
+    "file": "subset-sum/PROOF_0.4877.tex",
+    "sha256": "b397531cc5997e88c439d5290774861b46a34aa32d9cd71fa7dcced130359298",
+    "inspected_locations": [
+      "Sections2.2,5.5-5.7,6,8.2",
+      "AppendicesA,C,D selected certificate definitions/code"
+    ]
+  },
+  "wharton": {
+    "repository": "https://github.com/JoshuaQFEX/subset-sum-bound",
+    "leaderboard_revision": "dcb002174cb1e06213e171c9f5ff6b063fdf2c40",
+    "inspected_revision": "bed8e18f96db5955c1424abf3005b4fed4bd8d77",
+    "files": {
+      "paper.tex": "e480f374cefccd6e368ac7bb5b3b88ff48f90b00b15413ac4db7ff85553a84cf",
+      "verify.py": "f4caf8d88de2141ba32024d591f77eddbe8530d71af59f1729642451dda2c40d",
+      "FORMALIZATION.md": "4273e9a6fa5c531d7e46ac46b57858c9b9d9b4aa3733dc42029a67ece6cb7ee7"
+    },
+    "inspected_locations": [
+      "paper.tex Sections1-7, complete transfer/error/runtime argument",
+      "verify.py complete script inspected before execution",
+      "FORMALIZATION.md scope inspected, no local Lean build"
+    ]
+  },
+  "provenance": {
+    "new": "Moved filter3 boundary/zero-lower-multiplier transfer and scalar parameter optimization. All package Python written for this campaign, not copied upstream source.",
+    "inherited": "Filter/certificate data read directly from pinned source; analytic transfer for ordinary regions/coarse score bound and log-series method credited to Wharton and Kapila. No original continuous integral evaluated.",
+    "upstream_storage": "Complete sources retained outside publishable worktree; baseline input directory ignored. No permission inferred to redistribute full unlicensed manuscripts/code.",
+    "formalization": "No new or upstream Lean build executed. Upstream statements do not verify new candidate."
+  }
+}

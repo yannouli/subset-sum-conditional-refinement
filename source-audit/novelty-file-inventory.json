@@ -1,0 +1,754 @@
+﻿[
+    {
+        "url":  "https://api.github.com/repos/JoshuaQFEX/subset-sum-bound/commits/master",
+        "path":  "wharton\\HEAD.json",
+        "sha256":  "4d496b2822fb3abe51237339e87f763c83d602a7ea02675bc05e8ce0e23de256",
+        "git_blob":  "3c0d40f35774d9a5990914a73ffd0f140153defb",
+        "bytes":  38372,
+        "utc":  "2026-10-21T14:42:06.420323+00:00"
+    },
+    {
+        "url":  "https://api.github.com/repos/JoshuaQFEX/subset-sum-bound/git/trees/bed8e18f96db5955c1424abf3005b4fed4bd8d77?recursive=1",
+        "path":  "wharton\\tree.json",
+        "sha256":  "9b5d3cd40c5099d6ac6ff40f4fb4a191e226e58c2b9f32fe382afa49e5e8eb1f",
+        "git_blob":  "f3c704dcc0511e7bfad554527e55b39bccb73885",
+        "bytes":  24224,
+        "utc":  "2026-10-21T14:42:06.675044+00:00"
+    },
+    {
+        "url":  "https://api.github.com/repos/a-kapila/maths-proofs/commits/main",
+        "path":  "kapila\\HEAD.json",
+        "sha256":  "08e4c04f7a2c356092c796ada78395fb04ec595814768389f018b234d376e5b5",
+        "git_blob":  "5875c2021df167879d1cc7315f9bd60f1b5fffff",
+        "bytes":  7056,
+        "utc":  "2026-10-21T14:42:06.903644+00:00"
+    },
+    {
+        "url":  "https://api.github.com/repos/a-kapila/maths-proofs/git/trees/44c34961b56784c220a6e913cc068d57dc37c5a3?recursive=1",
+        "path":  "kapila\\tree.json",
+        "sha256":  "545eee078d47449f95e01dd3eef7611a23fdb69af7b0c1bc55bdd71edbace7ec",
+        "git_blob":  "673211501612c12a55a70785dba8d77f507384f9",
+        "bytes":  1104,
+        "utc":  "2026-10-21T14:42:07.136850+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/.github/workflows/lean.yml",
+        "path":  "wharton\\files\\.github\\workflows\\lean.yml",
+        "sha256":  "aeba08672fadcf7bc57ac24e9548cd7612cf5324a74ac33984dbe5e05eb03d72",
+        "git_blob":  "5de1f04a54591a08ecb39b5cdec1e31ae2142f16",
+        "bytes":  2330,
+        "utc":  "2026-10-21T14:42:07.307296+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/.github/workflows/filter-data.yml",
+        "path":  "wharton\\files\\.github\\workflows\\filter-data.yml",
+        "sha256":  "a024d14aba73bef77a1ad2a3762183520f7e1fddb812a68724fdb8ea4c3bdffd",
+        "git_blob":  "91becd80e06029f4f6be06b2c2e8b178028fc8e1",
+        "bytes":  5707,
+        "utc":  "2026-10-21T14:42:07.307296+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/.github/workflows/live-lean.yml",
+        "path":  "wharton\\files\\.github\\workflows\\live-lean.yml",
+        "sha256":  "af75bbdc31b097f6ba3a17d2d880839a02aecd463db0d6245149f3aad01e2de6",
+        "git_blob":  "8264e68332e5cd8863e948c6f3bd09bc82a1ea5f",
+        "bytes":  1413,
+        "utc":  "2026-10-21T14:42:07.307296+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/.github/workflows/isolation.yml",
+        "path":  "wharton\\files\\.github\\workflows\\isolation.yml",
+        "sha256":  "5c035d14db72a29793f536f653a8f5b79e62da0c2b8b48e6eb2cfc85dfb6bca4",
+        "git_blob":  "f74ceb74a6928bea6513d3fb43808a7333ab18fd",
+        "bytes":  1034,
+        "utc":  "2026-10-21T14:42:07.322044+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/.github/workflows/proof-environment.yml",
+        "path":  "wharton\\files\\.github\\workflows\\proof-environment.yml",
+        "sha256":  "4a6d7ac4eed0706de3472fd0c3034dc6a5ea7e95d8b4af50bd03e34458551a0e",
+        "git_blob":  "d9258bba9de3df58a12117ac2aa55c2093974b62",
+        "bytes":  1760,
+        "utc":  "2026-10-21T14:42:07.322044+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/.github/workflows/offline-parts.yml",
+        "path":  "wharton\\files\\.github\\workflows\\offline-parts.yml",
+        "sha256":  "86d8a570b8c56834629b3c542bc78803e1652d9740875baed7289e7584283820",
+        "git_blob":  "d137f61868f1d13cb9d58a165ce1f2de9292dab1",
+        "bytes":  2842,
+        "utc":  "2026-10-21T14:42:07.322044+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/FORMALIZATION.md",
+        "path":  "wharton\\files\\FORMALIZATION.md",
+        "sha256":  "c27472ecdb60f93c308da7e48e7dc07f45b8f0150eb7c6ab8d55419b13a2c7e1",
+        "git_blob":  "43ec5ea615c48746e4fc6ac9bb4fed7d36004755",
+        "bytes":  7269,
+        "utc":  "2026-10-21T14:42:07.436920+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/Audit.lean",
+        "path":  "wharton\\files\\Audit.lean",
+        "sha256":  "a87880b5a50c6fc1c124ddeb75587597437d9ae9607f0d9d3e0198f8fbb9d779",
+        "git_blob":  "2c332921cd2606de41e015ffd5c450bb92891c03",
+        "bytes":  781,
+        "utc":  "2026-10-21T14:42:07.436920+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/.github/workflows/publish-paper.yml",
+        "path":  "wharton\\files\\.github\\workflows\\publish-paper.yml",
+        "sha256":  "458deabcae59353972051511416f40443db8fb2e84fdeb3488cae4f8cf97756e",
+        "git_blob":  "4d520e19f8eaf8d8a95533943f57145a633acdab",
+        "bytes":  3786,
+        "utc":  "2026-10-21T14:42:07.453022+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/FiniteDataAudit.lean",
+        "path":  "wharton\\files\\FiniteDataAudit.lean",
+        "sha256":  "0fc6aa9191398ede55d3f23c0aca5eefb67d1fb76ff78e53a9e5615eaa263514",
+        "git_blob":  "79797e5bffc9d9905985238123e3f56889241dec",
+        "bytes":  443,
+        "utc":  "2026-10-21T14:42:07.453022+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/LEAN_VERIFICATION.md",
+        "path":  "wharton\\files\\LEAN_VERIFICATION.md",
+        "sha256":  "b11439ade99c256c0cb5422062691263a81b5efd43b46164136a2137013a8bf0",
+        "git_blob":  "94df83529b77668eb200f6ff61b8cb82731e3635",
+        "bytes":  2659,
+        "utc":  "2026-10-21T14:42:07.479909+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/FINITE_DATA_MILESTONE.md",
+        "path":  "wharton\\files\\FINITE_DATA_MILESTONE.md",
+        "sha256":  "6427b5a8c92946b12a27913f013d9304bde5a94315217d1e6db4100cd229af62",
+        "git_blob":  "c6becaf8e93dc6f1962bdc30b6048c1d61420e4f",
+        "bytes":  5886,
+        "utc":  "2026-10-21T14:42:07.479909+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/README.md",
+        "path":  "wharton\\files\\README.md",
+        "sha256":  "c1927c391cba4325749822ebe9c5057d05c583a93988cf2d07838b941dbd2a22",
+        "git_blob":  "1b8bf3b79556ff9a43872de8649a6276d49d56c4",
+        "bytes":  4785,
+        "utc":  "2026-10-21T14:42:07.537003+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/Scratch.lean",
+        "path":  "wharton\\files\\Scratch.lean",
+        "sha256":  "774ce927a025f84ff16ff796d9df1f710454a8f907311f79805d655412f0d765",
+        "git_blob":  "fb80915c88b1af2db38d036e58c12818a7331a7d",
+        "bytes":  482,
+        "utc":  "2026-10-21T14:42:07.575092+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum.lean",
+        "path":  "wharton\\files\\SubsetSum.lean",
+        "sha256":  "042e08e2b353413d500106093026951f1abd0888d9813f45ccf9ec19785c8962",
+        "git_blob":  "cf9ac33f0a40e5714d74f5be6e92f9e6ed75f3db",
+        "bytes":  414,
+        "utc":  "2026-10-21T14:42:07.591166+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/Asymptotics.lean",
+        "path":  "wharton\\files\\SubsetSum\\Asymptotics.lean",
+        "sha256":  "5b739ea9833b01c92ca26d49284611779a72b96d348bd69105e22d0b893db509",
+        "git_blob":  "bf9c8b1007f2f74a9a36aefa4b084b6823909f00",
+        "bytes":  3028,
+        "utc":  "2026-10-21T14:42:07.600695+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/Decision.lean",
+        "path":  "wharton\\files\\SubsetSum\\Decision.lean",
+        "sha256":  "18665b361b98cddb0d820ea1d63a35b84c08a96067ea5b79a0fd09b72814e07a",
+        "git_blob":  "4a7feaac9e3136b1e9ac3ecf9567593a86636014",
+        "bytes":  3335,
+        "utc":  "2026-10-21T14:42:07.626151+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/CertificateTransfer.lean",
+        "path":  "wharton\\files\\SubsetSum\\CertificateTransfer.lean",
+        "sha256":  "8998ef2fc4bef52eec22d8ca5b4a70c2910cf25709ea9ef98b9468a227ba55fc",
+        "git_blob":  "764b33a65421b44f488dae9ed993e24281d192f1",
+        "bytes":  6981,
+        "utc":  "2026-10-21T14:42:07.642065+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData.lean",
+        "sha256":  "7d18275215e10862bb40df543cf551fbd8982245c46ebae0bb317f9f1a6e718f",
+        "git_blob":  "f873d7d574cd8478916fe721cdae097b3f8eeb87",
+        "bytes":  9702,
+        "utc":  "2026-10-21T14:42:07.693479+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Base.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Base.lean",
+        "sha256":  "86ea663b737bd68a5331da7b371905fde937180698ae56c11cd98d1047a4cbc6",
+        "git_blob":  "3b1b4f5ae330e55a02d451cd3a07339c7b68b0b4",
+        "bytes":  2787,
+        "utc":  "2026-10-21T14:42:07.733938+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter01.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter01.lean",
+        "sha256":  "a2d70f722a9dd4e4dd7d407a315f6b720d2f48c1c23d3b5623103d36cb440e68",
+        "git_blob":  "9c26e2f64077732846f6c5600bc3be5f65569abc",
+        "bytes":  5753,
+        "utc":  "2026-10-21T14:42:07.758434+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter00.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter00.lean",
+        "sha256":  "774c5f871e055cc7d01b4a98c7aaae2f6427230d663170da8b732ecbbc071479",
+        "git_blob":  "f3811a7cc4a6cec076bf884cc49df5a273181461",
+        "bytes":  6496,
+        "utc":  "2026-10-21T14:42:07.775257+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter03.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter03.lean",
+        "sha256":  "f725e849ec421e686f4e063e8ac1d1f62e0bd156bb69f73430fbba5a69a5401c",
+        "git_blob":  "888a2fadd09b6ecace2913632ec7503c78daa6e3",
+        "bytes":  5422,
+        "utc":  "2026-10-21T14:42:07.782123+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter02.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter02.lean",
+        "sha256":  "b560f3905d62a5152aa6de6eb7b6632c2babcf41d39b78bf0a6e9bed8cb1d7cc",
+        "git_blob":  "2b49f34b5b2599706f12d86d0a848c72ea3e9515",
+        "bytes":  5883,
+        "utc":  "2026-10-21T14:42:07.797962+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter04.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter04.lean",
+        "sha256":  "b2081703affbe822c9d3738140e7ad2829c5c1c0d82942c0199ca9e7c0ad5a60",
+        "git_blob":  "c262501754ef4dd02fbecf308cadd274e59c952b",
+        "bytes":  5285,
+        "utc":  "2026-10-21T14:42:07.844063+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter05.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter05.lean",
+        "sha256":  "4ead25951a647d87ee74f86d57ac18fddc2163bfc0e48511307645e56c0ae32d",
+        "git_blob":  "3961a99c2453398ed55a1f3ed2f2b43ec4f32523",
+        "bytes":  5900,
+        "utc":  "2026-10-21T14:42:07.880823+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter06.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter06.lean",
+        "sha256":  "2482f1a82c850b2f03bd21dbf6857ae43f9efd3f0ed68184a38ffd246beef6cb",
+        "git_blob":  "45d62c0037d31fb0f109d427db12ddfdc2e41d49",
+        "bytes":  5514,
+        "utc":  "2026-10-21T14:42:07.907326+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter09.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter09.lean",
+        "sha256":  "b26f513ae802eb0c4488400c27bb30cab60e814329b6d21331fa31444e7ddd27",
+        "git_blob":  "7c4ceebd8bcb8a440ac04aa504b42c104b6c10f9",
+        "bytes":  6538,
+        "utc":  "2026-10-21T14:42:07.933398+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter08.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter08.lean",
+        "sha256":  "167e37da6dbf6264efef828d544ce63b5e81050135eeba8d90e895f71d98ad1c",
+        "git_blob":  "35dab01728d7602fc2c91d0d280d07fee0ed27fd",
+        "bytes":  5730,
+        "utc":  "2026-10-21T14:42:07.937757+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter07.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter07.lean",
+        "sha256":  "2229cfba272e7e1a4924ac23944f3c460f87a9182e957d9a921c4a17c137d184",
+        "git_blob":  "2e5e6642505e0c188302439917a5753aecb7e983",
+        "bytes":  6007,
+        "utc":  "2026-10-21T14:42:07.952120+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter10.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter10.lean",
+        "sha256":  "b2d572ab68f2d4dbe8736bcc525b631572d511227e69b3c2f697db71b5197650",
+        "git_blob":  "005f14e217055104b12c35c5c897a8631edb56ac",
+        "bytes":  5947,
+        "utc":  "2026-10-21T14:42:08.002961+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter11.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter11.lean",
+        "sha256":  "468cc0e5318d03c0e30264e8d3ed25fbc06d0d384bff991e9bfb0469d97c9759",
+        "git_blob":  "b0b10500349708ba4f68f0c4f319db7469e86f07",
+        "bytes":  6228,
+        "utc":  "2026-10-21T14:42:08.023751+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter12.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter12.lean",
+        "sha256":  "82948bcebaf9ca5b20c53fe8d65afe4993d6a45642deec3b828fc82abd200546",
+        "git_blob":  "9a18cadbeebff27250f90817b0548223269555f7",
+        "bytes":  6261,
+        "utc":  "2026-10-21T14:42:08.033691+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter14.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter14.lean",
+        "sha256":  "4fc9311fe14f07ba87a60fc5157e914dd586138e27dcd9c6a2633c62ebd3cae8",
+        "git_blob":  "5a1f8cf040cff4b636b62c4aa5a1945106c70bfd",
+        "bytes":  5815,
+        "utc":  "2026-10-21T14:42:08.073832+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter15.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter15.lean",
+        "sha256":  "eba09d968daffe3bba1de98dda71b732acfc15aeae39ac36a2a91ea0e3fc1bfa",
+        "git_blob":  "a9c624ab911f30a184d5b5d9d6ece5e3319e8895",
+        "bytes":  6422,
+        "utc":  "2026-10-21T14:42:08.102082+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter13.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter13.lean",
+        "sha256":  "540238e3a398eaa79f54387d262a8f71f5b20c0028f3ab930113e8bb17513f91",
+        "git_blob":  "3eec1a9482a1ec5b0f16e9aa970adb8063b9c3d5",
+        "bytes":  6217,
+        "utc":  "2026-10-21T14:42:08.110269+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter18.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter18.lean",
+        "sha256":  "33b1bab4e5a5973c4b203681e475078085900bb5e4c745cac209093b28770cf6",
+        "git_blob":  "a9a184f15d911a83fee457572952cb0b442f6f4d",
+        "bytes":  6804,
+        "utc":  "2026-10-21T14:42:08.184777+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter17.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter17.lean",
+        "sha256":  "2c2de1b305ff6f08c273cb2d9f00fcfd53ecffeb9fa7323dfb10dffb0fd2f19f",
+        "git_blob":  "650a1144c2dec7f2ca98c8b1ac554b23e43ec3e5",
+        "bytes":  6382,
+        "utc":  "2026-10-21T14:42:08.184777+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter16.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter16.lean",
+        "sha256":  "e72b556a595bce84f0e9ea60d059650fd050d63ca487d8b85f2c2d167b00f504",
+        "git_blob":  "d550d452471e37c9ddeac0242dd7186377fd3be2",
+        "bytes":  6616,
+        "utc":  "2026-10-21T14:42:08.202647+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter19.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter19.lean",
+        "sha256":  "08aeeefeac3bb776bbf3697fbab8aaa2cb2c5eac863b4421bddd495f037665dc",
+        "git_blob":  "19f88274892ae3560c5b6e2b2e8c4a596caad2eb",
+        "bytes":  7084,
+        "utc":  "2026-10-21T14:42:08.233422+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter20.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter20.lean",
+        "sha256":  "395e14a409ae2a3e0bde5063a85480b64bed4bff3d03f2b2bfbbc86f4544a6e6",
+        "git_blob":  "f2e1b4a3d866da5c31087d44fa51242abdb3dbae",
+        "bytes":  6070,
+        "utc":  "2026-10-21T14:42:08.237952+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter21.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter21.lean",
+        "sha256":  "2165fe2ca777b635a1933ca4cab29df60055d7d306972923b75702a052525064",
+        "git_blob":  "4c07b9a342405a936cd522216d06550b15f82c8d",
+        "bytes":  5842,
+        "utc":  "2026-10-21T14:42:08.278982+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter23.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter23.lean",
+        "sha256":  "fc9af95a52924a6e6adf25e6eaa21f2342ab3cedc7194f6f14596726c5a7f7b5",
+        "git_blob":  "163607d76f261cb642fd71c7ea6b38ac9ec6fe90",
+        "bytes":  6445,
+        "utc":  "2026-10-21T14:42:08.319608+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter22.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter22.lean",
+        "sha256":  "6a182a6d3630785f3a02216868449f2264ad7f2404ff6515780fa4d632fa7c99",
+        "git_blob":  "c009f6de8c519fa006ba98cc96ee5c9c565197b5",
+        "bytes":  5985,
+        "utc":  "2026-10-21T14:42:08.326246+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter24.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter24.lean",
+        "sha256":  "522075acc237ee8fc7395a8782f7de830fa5fb2a4496570db47576d8e304256b",
+        "git_blob":  "f65bebf7785ed446640891a2932ad174f65a044d",
+        "bytes":  6865,
+        "utc":  "2026-10-21T14:42:08.333161+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter25.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter25.lean",
+        "sha256":  "ea04ed9b40b4705db30f5193700c5694b59e891007a754f4d24b790df5b03646",
+        "git_blob":  "125ad3d66a2e019dcca7e99c85cd597ea253d9fd",
+        "bytes":  6006,
+        "utc":  "2026-10-21T14:42:08.342152+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter26.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter26.lean",
+        "sha256":  "85d07836ead0746001c9dd9ff9dad68ac5789520984288f66745c577e2ba6cea",
+        "git_blob":  "a511c7f8172c0b73f722243cb98defe5a5df0785",
+        "bytes":  6418,
+        "utc":  "2026-10-21T14:42:08.389889+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter27.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter27.lean",
+        "sha256":  "3d28ccd11036a5664bdd13fa0da7357c5bad9dcab916916d00a598471f8455b9",
+        "git_blob":  "9aa292e28402997a054fa7d23e9cf2b126ab24b0",
+        "bytes":  6857,
+        "utc":  "2026-10-21T14:42:08.401805+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter30.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter30.lean",
+        "sha256":  "8451df0f5bdd414409a44aad9cbc35cbbb2e763cf4b8f4f7f9a7d401f2537d60",
+        "git_blob":  "ba3c8fe638719f5a47df88f7190535bbc6fe1799",
+        "bytes":  6431,
+        "utc":  "2026-10-21T14:42:08.469206+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter28.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter28.lean",
+        "sha256":  "bcf62529605d1839399724afdb2d1a33ce13b03c1138e7eaf16827d2213e71ba",
+        "git_blob":  "23f719a944ae468806fe038a8c42e624c1adfc1c",
+        "bytes":  6876,
+        "utc":  "2026-10-21T14:42:08.469206+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter29.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter29.lean",
+        "sha256":  "69dc586f7a977fe6b599e75cf9e2f50a9426bfec9e664d90365a2d55246d4904",
+        "git_blob":  "418e407b1ced434473165f9b0e2ad0018207f152",
+        "bytes":  6399,
+        "utc":  "2026-10-21T14:42:08.482599+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter31.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter31.lean",
+        "sha256":  "25e2987526982e45250fe67b5ad6c949abb9aa99d3bfc29f997ff62b0950c4f3",
+        "git_blob":  "99750ba3378f7c211b6d41cb9e9e54a5c45d67dc",
+        "bytes":  6411,
+        "utc":  "2026-10-21T14:42:08.500029+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter33.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter33.lean",
+        "sha256":  "9be78a20f0f95a6baec95a24a91d75b24c11fd2bdafe3255473f11dfe4e9a03f",
+        "git_blob":  "d5e98bc40b8ac05fd37d7a00c628ad7b8a0844a4",
+        "bytes":  6482,
+        "utc":  "2026-10-21T14:42:08.530196+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter32.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter32.lean",
+        "sha256":  "de1b6e04499c877ab4b56274f050d2f0504f0b0980994c516c9a073da419a5c6",
+        "git_blob":  "19a55697bd5a754b2515f855a6ee83daccae7beb",
+        "bytes":  6600,
+        "utc":  "2026-10-21T14:42:08.535723+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter35.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter35.lean",
+        "sha256":  "f717fa3e61329c66ecf0b00535883e263048f1a1bd77fa52162cc501b784c8ae",
+        "git_blob":  "8fe7784845bcc3ca3829ba6b3662af8ad5b249b5",
+        "bytes":  6541,
+        "utc":  "2026-10-21T14:42:08.635073+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter37.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter37.lean",
+        "sha256":  "1d0843bf1c8fda4349bf7b89a5e7b92a0e1ce8c6a60f33581e852cdf12e9c247",
+        "git_blob":  "c6bee8c9df700ec20c444c10c9b69c2faa778e54",
+        "bytes":  6606,
+        "utc":  "2026-10-21T14:42:08.641096+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter34.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter34.lean",
+        "sha256":  "1c457bd2e589ecf6cc668e4147cbc36416e27be80c0819c8237c3479f41630d6",
+        "git_blob":  "5a879353c66faaad411baf3507a3ee635063001d",
+        "bytes":  6737,
+        "utc":  "2026-10-21T14:42:08.641096+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter36.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter36.lean",
+        "sha256":  "45fe02946ae39dd64c26474b07d98e5d82002e8c2e8631f6a4cc0e3d2a387cf1",
+        "git_blob":  "2d5203b427cca85640ec46dacd16848ce38ec47e",
+        "bytes":  7000,
+        "utc":  "2026-10-21T14:42:08.656839+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter39.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter39.lean",
+        "sha256":  "f47dfca6ce4ae59c2a9f01f6178f1d8eacb35501a9020e4afb3df1abd709aa8d",
+        "git_blob":  "5d05b368250bc3a589a2fe61fb940e64a8e089cb",
+        "bytes":  6517,
+        "utc":  "2026-10-21T14:42:08.672608+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter38.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter38.lean",
+        "sha256":  "bd00f4bf82805898490998af6220984d075db7f878c204ce21c66e1204e68a38",
+        "git_blob":  "b6fda033eeb8a680f12982ce1680dc8c4b7bd9cb",
+        "bytes":  6977,
+        "utc":  "2026-10-21T14:42:08.686433+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter42.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter42.lean",
+        "sha256":  "9e09b87c429960f7b0423a8f00889564489ea16e6b0134379d19331a8ad279b1",
+        "git_blob":  "13ddcc49bf28fac6a0fab380a2c16756a8c917f4",
+        "bytes":  6330,
+        "utc":  "2026-10-21T14:42:08.762760+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter40.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter40.lean",
+        "sha256":  "32e47c95fe7081c2fa4634d9ba9f520ee29c1b74ca338f76b3023a9a70d8404f",
+        "git_blob":  "43db3533b48b6589d3dea1a94628f19f4862b5b2",
+        "bytes":  6697,
+        "utc":  "2026-10-21T14:42:08.774922+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/FilterData/Filter41.lean",
+        "path":  "wharton\\files\\SubsetSum\\FilterData\\Filter41.lean",
+        "sha256":  "6d78f721d80037cadf46ee9bf19df4dd38c8f8420582effffeabd02e97f6604c",
+        "git_blob":  "2e8c7423c8bdbb0b19fae6522009ed8143163af0",
+        "bytes":  7582,
+        "utc":  "2026-10-21T14:42:08.782515+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/Isolation.lean",
+        "path":  "wharton\\files\\SubsetSum\\Isolation.lean",
+        "sha256":  "3ad942dead92af264d4676ff0a8f723ad4ae0cdbea0ee2db1e6d57c710e82cf0",
+        "git_blob":  "7ec5501b0bf84e2ef5252b7a13aefeb0ec3d7ed3",
+        "bytes":  8005,
+        "utc":  "2026-10-21T14:42:08.797844+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/LogBounds.lean",
+        "path":  "wharton\\files\\SubsetSum\\LogBounds.lean",
+        "sha256":  "e9d5b24e2ff79b1de7c15d7491472ecf3c55d57c451cfa64c06fa50d82a8dae5",
+        "git_blob":  "948141a8d28e2f81e0f43519e634f03f06c8ed50",
+        "bytes":  1779,
+        "utc":  "2026-10-21T14:42:08.835436+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/Layers.lean",
+        "path":  "wharton\\files\\SubsetSum\\Layers.lean",
+        "sha256":  "fb62e8bd7b299c4501cd8bda68c20b15c2195024fcd59e74b82b70706e63070a",
+        "git_blob":  "7b52d48a961f6932a65c67a415ad92b3fb52886f",
+        "bytes":  9959,
+        "utc":  "2026-10-21T14:42:08.835436+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/Parameters.lean",
+        "path":  "wharton\\files\\SubsetSum\\Parameters.lean",
+        "sha256":  "e5f3d98cb4c42424184eff2cb758f91655e8790d58bde0913fc6ed7db049eb85",
+        "git_blob":  "b79ae12e66cb5b4bcc8191b4554f6fd34f1a9440",
+        "bytes":  2510,
+        "utc":  "2026-10-21T14:42:08.904632+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/Sampling.lean",
+        "path":  "wharton\\files\\SubsetSum\\Sampling.lean",
+        "sha256":  "5116fb29c79c90e488de76976da2bf1b2b93f2f1b36859f94f43729803eed338",
+        "git_blob":  "1727a2640f4fc08c244cba30cc8db42cb0c02536",
+        "bytes":  7789,
+        "utc":  "2026-10-21T14:42:08.938819+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/Refinement.lean",
+        "path":  "wharton\\files\\SubsetSum\\Refinement.lean",
+        "sha256":  "cf735894cb1504ebd48b090a72bfc750a8108c214e31e50d589f2c328d87af3f",
+        "git_blob":  "0c5a9d55da881ba2049f4ec41728504acea53200",
+        "bytes":  4669,
+        "utc":  "2026-10-21T14:42:08.939695+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/Numerics.lean",
+        "path":  "wharton\\files\\SubsetSum\\Numerics.lean",
+        "sha256":  "203130e8410665f49ed916907390a9a80948a6592ef9356ce857fdaa21cf6d9c",
+        "git_blob":  "9a91aefc3b0578d2f3d975bc4f4d1cf9bebeb66f",
+        "bytes":  8218,
+        "utc":  "2026-10-21T14:42:08.961565+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/Signs.lean",
+        "path":  "wharton\\files\\SubsetSum\\Signs.lean",
+        "sha256":  "b0eb739184a5566e08b934b09f81322a123a01e35225e0118941f24c2eed0960",
+        "git_blob":  "b973aa52d88ddf33984f64bdee0616f136b5323c",
+        "bytes":  4724,
+        "utc":  "2026-10-21T14:42:08.970320+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/SmallLayer.lean",
+        "path":  "wharton\\files\\SubsetSum\\SmallLayer.lean",
+        "sha256":  "fcc0465f5227abb031af71e9859480a2f7f8a9acdfbbc9dd1281751b403afbda",
+        "git_blob":  "a6279c9280f5ccd8d8980bc98e4c75af13f50207",
+        "bytes":  10567,
+        "utc":  "2026-10-21T14:42:09.001441+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/Support.lean",
+        "path":  "wharton\\files\\SubsetSum\\Support.lean",
+        "sha256":  "387464cc115ee6f39644fd17a6913cbf0cee7b7ab649b96e0ae198228e088baf",
+        "git_blob":  "79fbcbbea25c63fc522eda7690de94ac4360a0ba",
+        "bytes":  9805,
+        "utc":  "2026-10-21T14:42:09.048473+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/SubsetSum/Transformation.lean",
+        "path":  "wharton\\files\\SubsetSum\\Transformation.lean",
+        "sha256":  "b2ec68b2652465e0b10ff51dc95261b26981d246f98a807f7db7dc785b1b5c8d",
+        "git_blob":  "d5e1a2b95d977a14202d1353c911b6030966df87",
+        "bytes":  6045,
+        "utc":  "2026-10-21T14:42:09.071761+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/paper.tex",
+        "path":  "wharton\\files\\paper.tex",
+        "sha256":  "86e3cbb6ba63a4ff270661a1e38a651117b58bd67b38dd62ace02916e1deb8ef",
+        "git_blob":  "01ef4091e85a206100ff78700b4fa2d55bc78a69",
+        "bytes":  22499,
+        "utc":  "2026-10-21T14:42:09.071761+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/parameters.json",
+        "path":  "wharton\\files\\parameters.json",
+        "sha256":  "89361952bc471e116c3585db3b3fd3fcad2f56ff88f76bf5e5059aa9d8c978ff",
+        "git_blob":  "e79643529eb5320457f6a4ab5967392085105a22",
+        "bytes":  334,
+        "utc":  "2026-10-21T14:42:09.071761+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/lakefile.toml",
+        "path":  "wharton\\files\\lakefile.toml",
+        "sha256":  "c7b42f06a04e9490bf06ef843da69cdc2171ace90d93268843875d8b05ed3c38",
+        "git_blob":  "e2be94da175fa6b72abe73e26cb2af763bcadee3",
+        "bytes":  248,
+        "utc":  "2026-10-21T14:42:09.103399+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/source_facts.json",
+        "path":  "wharton\\files\\source_facts.json",
+        "sha256":  "7d189ccc1fd7b61ad4c9879b592dc443fccf9fcc6af787d1810b6eaab0d647bb",
+        "git_blob":  "173996686ce570e3a0c46ec3669cbc5a0765a96d",
+        "bytes":  2648,
+        "utc":  "2026-10-21T14:42:09.119067+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/tools/generate_filter_data.py",
+        "path":  "wharton\\files\\tools\\generate_filter_data.py",
+        "sha256":  "f582bdf42751018dc69776ce7a3b3c143277f9675191c798cac84abe9b711618",
+        "git_blob":  "5a356951eb6af2934240807d0d27d9eedcc1b064",
+        "bytes":  9985,
+        "utc":  "2026-10-21T14:42:09.181715+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/tools/live_lean_check.py",
+        "path":  "wharton\\files\\tools\\live_lean_check.py",
+        "sha256":  "5da9365c196f70faceba5e65a924e348bc50aeefdbd0e3f1a88067a616be2ca5",
+        "git_blob":  "3a59dc4db86d5aa96c4fa57d17d1a65bf4ed8744",
+        "bytes":  4369,
+        "utc":  "2026-10-21T14:42:09.201617+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/verification.txt",
+        "path":  "wharton\\files\\verification.txt",
+        "sha256":  "79975170a992eded971e56e21060b4284fa62622276c27c596b35dec79b910f8",
+        "git_blob":  "04b214aa2f7174d11bc2d518a980095f3670eb8a",
+        "bytes":  2465,
+        "utc":  "2026-10-21T14:42:09.234903+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/verification/core-axioms.txt",
+        "path":  "wharton\\files\\verification\\core-axioms.txt",
+        "sha256":  "917299fd51a39b856b11ce58f8f51b4588aa4f3ad16207a22a13888cc2b41ec4",
+        "git_blob":  "cc540a5c0344df1fdefad5869b56186e1dc9ade8",
+        "bytes":  1609,
+        "utc":  "2026-10-21T14:42:09.234903+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/verification/finite-data-axioms.txt",
+        "path":  "wharton\\files\\verification\\finite-data-axioms.txt",
+        "sha256":  "ce81f061227cc1147bf12fdf1f6912fc0f6686b94117797c24d88bb8128a2401",
+        "git_blob":  "e9120e3a08dba965aff0bce82c681d50aa66da5d",
+        "bytes":  743,
+        "utc":  "2026-10-21T14:42:09.245483+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/verification/finite-data-build.txt",
+        "path":  "wharton\\files\\verification\\finite-data-build.txt",
+        "sha256":  "24a7abe715962643945f27dc033c838f26babef1f7bb8dc9298446628290493d",
+        "git_blob":  "df25fa9379d906bef271ad6b36ad387bb95f5a7d",
+        "bytes":  4187,
+        "utc":  "2026-10-21T14:42:09.257207+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/verification/finite-data-smoke.txt",
+        "path":  "wharton\\files\\verification\\finite-data-smoke.txt",
+        "sha256":  "715f13bff4743c88ad0b59fecec45a2394821b0239df9d822b8e422f2dd481c6",
+        "git_blob":  "0d501d3c77ca4ce6764ec1b00e9e0282fdbd7589",
+        "bytes":  274,
+        "utc":  "2026-10-21T14:42:09.307111+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/verify.py",
+        "path":  "wharton\\files\\verify.py",
+        "sha256":  "541b96d2238fecab21c3df474698a04ca015e232a0dd3a2ba132cbb2e1ebeacf",
+        "git_blob":  "da2dae090023eb900f860cf8883d4a2bf4fc9304",
+        "bytes":  9479,
+        "utc":  "2026-10-21T14:42:09.354302+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/verification/finite-data.json",
+        "path":  "wharton\\files\\verification\\finite-data.json",
+        "sha256":  "82741700d94cd72a7b873dbe973cc824840827b8f556b0a2569542517707e2a9",
+        "git_blob":  "0ec21e81263a8076e75e09b7963e1bf5f9d835d0",
+        "bytes":  5462,
+        "utc":  "2026-10-21T14:42:09.361643+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/a-kapila/maths-proofs/44c34961b56784c220a6e913cc068d57dc37c5a3/subset-sum/PROOF_0.4877.tex",
+        "path":  "kapila\\files\\subset-sum\\PROOF_0.4877.tex",
+        "sha256":  "b397531cc5997e88c439d5290774861b46a34aa32d9cd71fa7dcced130359298",
+        "git_blob":  "526c2622038a633cbc1bef9ef5e3f4514843cd91",
+        "bytes":  141708,
+        "utc":  "2026-10-21T14:42:09.365655+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/verification/numeric-check.txt",
+        "path":  "wharton\\files\\verification\\numeric-check.txt",
+        "sha256":  "79975170a992eded971e56e21060b4284fa62622276c27c596b35dec79b910f8",
+        "git_blob":  "04b214aa2f7174d11bc2d518a980095f3670eb8a",
+        "bytes":  2465,
+        "utc":  "2026-10-21T14:42:09.384278+00:00"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/a-kapila/maths-proofs/44c34961b56784c220a6e913cc068d57dc37c5a3/README.md",
+        "path":  "kapila\\files\\README.md",
+        "sha256":  "6087f2e1e0a954d1d8206773f1443b451ec14dfc48adf329f78af98237e83caf",
+        "git_blob":  "7453d0bb3db3a507f04438d1f980f27232f9e385",
+        "bytes":  1319,
+        "utc":  "2026-10-21T14:42:09.386023+00:00"
+    }
+]

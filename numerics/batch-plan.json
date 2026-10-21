@@ -1,0 +1,10 @@
+{
+  "scope": "At most32 SLSQP starts, max400iterations each, seed20261021, one workstation process. No quadrature/newfilters.",
+  "baseline": "Reproduce Wharton exact rational interval checker and Kapila430finite data transcription before search.",
+  "families": [
+    "Existing Wharton uniform low-region transfer.",
+    "One bounded analytic modification: split filter3 at newGamma and extend its oldrho1 certificate down to that boundary; originalrho1 lower multiplier is exactlyzero. Otherfilters/regions unchanged."
+  ],
+  "acceptance": "Floating exit is discovery only. Exact terminating decimals and all source/transfer/guard/error inequalities must be certified independently. Lower internal tau, not simply reduced display slack.",
+  "time_check": "Record wall time/evaluations; stop batch if total30seconds. No further expensive search without estimating cost and reporting."
+}

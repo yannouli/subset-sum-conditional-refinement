@@ -1,0 +1,439 @@
+{
+  "classification": "FLOATING DISCOVERY ONLY, NOT CERTIFIED",
+  "seed": 20261021,
+  "seconds": 0.4465753000113182,
+  "runs": [
+    {
+      "family": "uniform",
+      "start": 0,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876758746807037",
+        "eta": "0.5161286493058048",
+        "a": "0.008145250568314397",
+        "mu": "0.4754427671157691",
+        "gamma": "0.06003623643834399",
+        "l": "0.4837803319398334"
+      },
+      "minimum_scaled_slack": -8.37930827569647e-12,
+      "nfev": 1650,
+      "nit": 104,
+      "seconds": 0.04830799999763258
+    },
+    {
+      "family": "uniform",
+      "start": 1,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876758746807038",
+        "eta": "0.5161286493058049",
+        "a": "0.008145250568314374",
+        "mu": "0.4754427671157693",
+        "gamma": "0.06003623643834381",
+        "l": "0.4837803319398334"
+      },
+      "minimum_scaled_slack": -2.828193152570687e-12,
+      "nfev": 53,
+      "nit": 6,
+      "seconds": 0.0019283000001451
+    },
+    {
+      "family": "uniform",
+      "start": 2,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876758746807037",
+        "eta": "0.5161286493058047",
+        "a": "0.00814525056831447",
+        "mu": "0.475442767115769",
+        "gamma": "0.06003623643834442",
+        "l": "0.4837803319398333"
+      },
+      "minimum_scaled_slack": -4.215971933352133e-12,
+      "nfev": 35,
+      "nit": 5,
+      "seconds": 0.001327700010733679
+    },
+    {
+      "family": "uniform",
+      "start": 3,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876758746807036",
+        "eta": "0.5161286493058047",
+        "a": "0.008145250568314418",
+        "mu": "0.475442767115769",
+        "gamma": "0.06003623643834415",
+        "l": "0.4837803319398334"
+      },
+      "minimum_scaled_slack": -8.37930827569647e-12,
+      "nfev": 875,
+      "nit": 63,
+      "seconds": 0.025399299993296154
+    },
+    {
+      "family": "uniform",
+      "start": 4,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876758746807036",
+        "eta": "0.5161286493058047",
+        "a": "0.008145250568314531",
+        "mu": "0.4754427671157679",
+        "gamma": "0.06003623643834478",
+        "l": "0.4837803319398333"
+      },
+      "minimum_scaled_slack": -2.828193152570687e-12,
+      "nfev": 1244,
+      "nit": 84,
+      "seconds": 0.03609870000218507
+    },
+    {
+      "family": "uniform",
+      "start": 5,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876758746807036",
+        "eta": "0.5161286493058047",
+        "a": "0.008145250568314428",
+        "mu": "0.475442767115769",
+        "gamma": "0.06003623643834419",
+        "l": "0.4837803319398334"
+      },
+      "minimum_scaled_slack": -8.37930827569647e-12,
+      "nfev": 553,
+      "nit": 41,
+      "seconds": 0.01608739999937825
+    },
+    {
+      "family": "uniform",
+      "start": 6,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876758746807037",
+        "eta": "0.5161286493058047",
+        "a": "0.008145250568314442",
+        "mu": "0.475442767115769",
+        "gamma": "0.06003623643834426",
+        "l": "0.4837803319398334"
+      },
+      "minimum_scaled_slack": -2.828193152570687e-12,
+      "nfev": 88,
+      "nit": 11,
+      "seconds": 0.0030168999946909025
+    },
+    {
+      "family": "uniform",
+      "start": 7,
+      "success": false,
+      "message": "Positive directional derivative for linesearch",
+      "parameters": {
+        "tau": "0.4876758746807032",
+        "eta": "0.5161286493058043",
+        "a": "0.008145250568314657",
+        "mu": "0.4754427671157685",
+        "gamma": "0.06003623643834581",
+        "l": "0.4837803319398332"
+      },
+      "minimum_scaled_slack": -9.164603512258321e-11,
+      "nfev": 392,
+      "nit": 35,
+      "seconds": 0.011771100005717017
+    },
+    {
+      "family": "uniform",
+      "start": 8,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876758746807036",
+        "eta": "0.5161286493058047",
+        "a": "0.008145250568314444",
+        "mu": "0.4754427671157692",
+        "gamma": "0.06003623643834428",
+        "l": "0.4837803319398334"
+      },
+      "minimum_scaled_slack": -1.3930423398822253e-11,
+      "nfev": 616,
+      "nit": 46,
+      "seconds": 0.01797769998665899
+    },
+    {
+      "family": "uniform",
+      "start": 9,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876758746807036",
+        "eta": "0.5161286493058047",
+        "a": "0.008145250568314617",
+        "mu": "0.4754427671157693",
+        "gamma": "0.06003623643834522",
+        "l": "0.4837803319398333"
+      },
+      "minimum_scaled_slack": -4.1685999014451166e-11,
+      "nfev": 270,
+      "nit": 30,
+      "seconds": 0.008505999998305924
+    },
+    {
+      "family": "uniform",
+      "start": 10,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876758746807037",
+        "eta": "0.5161286493058048",
+        "a": "0.0081452505683144",
+        "mu": "0.4754427671157692",
+        "gamma": "0.06003623643834405",
+        "l": "0.4837803319398335"
+      },
+      "minimum_scaled_slack": -5.6037507141335785e-12,
+      "nfev": 36,
+      "nit": 5,
+      "seconds": 0.0013463999930536374
+    },
+    {
+      "family": "uniform",
+      "start": 11,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876758746807036",
+        "eta": "0.5161286493058048",
+        "a": "0.008145250568314446",
+        "mu": "0.4754427671157691",
+        "gamma": "0.06003623643834428",
+        "l": "0.4837803319398334"
+      },
+      "minimum_scaled_slack": -1.3930423398822253e-11,
+      "nfev": 297,
+      "nit": 30,
+      "seconds": 0.009151499994914047
+    },
+    {
+      "family": "split_filter3",
+      "start": 0,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876722769934232",
+        "eta": "0.516133678389924",
+        "a": "0.008148495127574004",
+        "mu": "0.4754356429062936",
+        "gamma": "0.06005543072330252",
+        "l": "0.483775231690629"
+      },
+      "minimum_scaled_slack": -8.37930827569647e-12,
+      "nfev": 3706,
+      "nit": 226,
+      "seconds": 0.10577589999593329
+    },
+    {
+      "family": "split_filter3",
+      "start": 1,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876722769934232",
+        "eta": "0.516133678389924",
+        "a": "0.008148495127573988",
+        "mu": "0.4754356429062938",
+        "gamma": "0.06005543072330242",
+        "l": "0.483775231690629"
+      },
+      "minimum_scaled_slack": -8.37930827569647e-12,
+      "nfev": 111,
+      "nit": 17,
+      "seconds": 0.003759300001547672
+    },
+    {
+      "family": "split_filter3",
+      "start": 2,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876722769934232",
+        "eta": "0.5161336783899239",
+        "a": "0.008148495127574071",
+        "mu": "0.4754356429062935",
+        "gamma": "0.06005543072330294",
+        "l": "0.4837752316906289"
+      },
+      "minimum_scaled_slack": -1.3930423398822253e-11,
+      "nfev": 685,
+      "nit": 49,
+      "seconds": 0.020100299996556714
+    },
+    {
+      "family": "split_filter3",
+      "start": 3,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876722769934232",
+        "eta": "0.516133678389924",
+        "a": "0.008148495127574026",
+        "mu": "0.4754356429062938",
+        "gamma": "0.06005543072330263",
+        "l": "0.483775231690629"
+      },
+      "minimum_scaled_slack": -8.37930827569647e-12,
+      "nfev": 581,
+      "nit": 44,
+      "seconds": 0.018576199989183806
+    },
+    {
+      "family": "split_filter3",
+      "start": 4,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876722769934232",
+        "eta": "0.516133678389924",
+        "a": "0.008148495127574061",
+        "mu": "0.4754356429062936",
+        "gamma": "0.06005543072330282",
+        "l": "0.4837752316906289"
+      },
+      "minimum_scaled_slack": -1.9481538521948035e-11,
+      "nfev": 159,
+      "nit": 21,
+      "seconds": 0.005251599999610335
+    },
+    {
+      "family": "split_filter3",
+      "start": 5,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876722769934232",
+        "eta": "0.516133678389924",
+        "a": "0.008148495127574049",
+        "mu": "0.4754356429062937",
+        "gamma": "0.06005543072330276",
+        "l": "0.4837752316906289"
+      },
+      "minimum_scaled_slack": -3.2185059346654688e-12,
+      "nfev": 403,
+      "nit": 33,
+      "seconds": 0.01200839999364689
+    },
+    {
+      "family": "split_filter3",
+      "start": 6,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876722769934232",
+        "eta": "0.516133678389924",
+        "a": "0.008148495127574002",
+        "mu": "0.4754356429062935",
+        "gamma": "0.06005543072330241",
+        "l": "0.4837752316906288"
+      },
+      "minimum_scaled_slack": -3.05837687681996e-11,
+      "nfev": 368,
+      "nit": 33,
+      "seconds": 0.011269399998127483
+    },
+    {
+      "family": "split_filter3",
+      "start": 7,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876722769934232",
+        "eta": "0.516133678389924",
+        "a": "0.00814849512757408",
+        "mu": "0.4754356429062936",
+        "gamma": "0.06005543072330302",
+        "l": "0.4837752316906289"
+      },
+      "minimum_scaled_slack": -3.52208254296141e-12,
+      "nfev": 620,
+      "nit": 44,
+      "seconds": 0.01805719999538269
+    },
+    {
+      "family": "split_filter3",
+      "start": 8,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876722769934232",
+        "eta": "0.516133678389924",
+        "a": "0.008148495127574051",
+        "mu": "0.4754356429062937",
+        "gamma": "0.06005543072330274",
+        "l": "0.4837752316906289"
+      },
+      "minimum_scaled_slack": -4.215971933352133e-12,
+      "nfev": 434,
+      "nit": 36,
+      "seconds": 0.012962399996467866
+    },
+    {
+      "family": "split_filter3",
+      "start": 9,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876722769934231",
+        "eta": "0.5161336783899239",
+        "a": "0.008148495127574111",
+        "mu": "0.4754356429062936",
+        "gamma": "0.06005543072330311",
+        "l": "0.4837752316906287"
+      },
+      "minimum_scaled_slack": -1.9481538521948035e-11,
+      "nfev": 1090,
+      "nit": 74,
+      "seconds": 0.031516500006546266
+    },
+    {
+      "family": "split_filter3",
+      "start": 10,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876722769934232",
+        "eta": "0.516133678389924",
+        "a": "0.008148495127574065",
+        "mu": "0.4754356429062937",
+        "gamma": "0.06005543072330287",
+        "l": "0.4837752316906289"
+      },
+      "minimum_scaled_slack": -2.828193152570687e-12,
+      "nfev": 297,
+      "nit": 25,
+      "seconds": 0.008833700005197898
+    },
+    {
+      "family": "split_filter3",
+      "start": 11,
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "parameters": {
+        "tau": "0.4876722769934232",
+        "eta": "0.5161336783899239",
+        "a": "0.008148495127574028",
+        "mu": "0.4754356429062935",
+        "gamma": "0.06005543072330268",
+        "l": "0.4837752316906289"
+      },
+      "minimum_scaled_slack": -8.37930827569647e-12,
+      "nfev": 586,
+      "nit": 42,
+      "seconds": 0.01711980000254698
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "id": "SPEC",
+    "source": "live",
+    "location": "raw/leaderboard.html, full computation rules",
+    "claim": "Exact input/model/every-history time/uniform-c requirements",
+    "status": "Observed live specification; preserve snapshot; refetch before delivery"
+  },
+  {
+    "id": "ISO",
+    "source": "OpenAI setup.tex",
+    "location": "Lemma2.1, transformed-weight equation",
+    "claim": "Exact solution equivalence, unique transformed target probability>=11/12",
+    "status": "Written argument inspected directly; inherited algorithmic component"
+  },
+  {
+    "id": "DEF",
+    "source": "OpenAI setup.tex",
+    "location": "Lemmas2.2-2.3",
+    "claim": "Deficiency monotonicity/exchange Lipschitz/variance; bounded samplers",
+    "status": "Written argument inspected directly; K invokes Azuma extension"
+  },
+  {
+    "id": "LAYER",
+    "source": "Kapila PROOF",
+    "location": "Section3 Lemmas3.1-3.3 and CorollaryD",
+    "claim": "Average small-layer mass under size/entropy conditions",
+    "status": "Counting argument reconstructed directly; no new novelty claimed"
+  },
+  {
+    "id": "PRE",
+    "source": "Kapila PROOF",
+    "location": "Section4 PropositionP; OpenAI Proposition2.4",
+    "claim": "Capped preliminary exact search and complementary LD regime",
+    "status": "Written argument inspected; CONTINUE not an LD certificate"
+  },
+  {
+    "id": "ALIAS",
+    "source": "Kapila PROOF",
+    "location": "Section5.1-5.8 TheoremA and A1-A7",
+    "claim": "Class phase sums, fixed signing, coverage, expected work and all-run caps",
+    "status": "Primary proof inspected in full; preserve common positive work margin and delta conditions"
+  },
+  {
+    "id": "FILTER",
+    "source": "OpenAI filtering.tex",
+    "location": "Score definitions, relative entropy order, finite filtering lemma3.2",
+    "claim": "Positive densities and score approximations with continuum/finite-circle relation",
+    "status": "Definitions and written argument inspected; original numerical proposition not rerun"
+  },
+  {
+    "id": "MOMENTS",
+    "source": "Kapila PROOF",
+    "location": "Section6.1 PropositionB; Section8.2; AppendicesA,C,D.2",
+    "claim": "43 filters and430 continuous moment bounds; finite-circle transfer",
+    "status": "Inherited CLAIMED numerical inequalities; source output alone is not our independent reproduction"
+  },
+  {
+    "id": "CHECKSUM",
+    "source": "Kapila PROOF",
+    "location": "Section6.2-6.4, especially B2/B3 and TheoremB; OpenAI checksum.tex",
+    "claim": "Per-pattern selection, domination, mean-square error, target union bounds",
+    "status": "K written adaptation inspected; original full checksum proof remains inherited dependency"
+  },
+  {
+    "id": "TRANSFER",
+    "source": "Wharton paper",
+    "location": "Sections4-5, certificate-transfer lemma/score bound/new margin proposition",
+    "claim": "Fixed-old-region transfer losses and updated approximation error",
+    "status": "Complete written proof reconstructed; no new lemma claimed by us"
+  },
+  {
+    "id": "IMPLEMENT",
+    "source": "OpenAI implementation.tex",
+    "location": "Sections6.2-6.3; Kapila Section7",
+    "claim": "Finite precision, retained randomness, bounded draws, storage/addressing, fallback and uniformity",
+    "status": "Primary implementation argument inspected directly; not an executable implementation reproduced by Ed"
+  },
+  {
+    "id": "ABSORB",
+    "source": "Wharton paper",
+    "location": "Section6 correctness and pure exponential time",
+    "claim": "beta=tau+20epsilon; alpha>beta absorbs o(n) exponent and polynomial factors",
+    "status": "Logical asymptotic implication inspected; unchanged display-slack use alone not original"
+  },
+  {
+    "id": "LEAN",
+    "source": "Wharton current formalization",
+    "location": "FORMALIZATION.md and README at startup HEAD",
+    "claim": "Expanded finite-data numerical formalization retains continuous moment hypotheses",
+    "status": "Documented scope only; Ed did not inspect/build all Lean declarations; Richardson/Procopius audit required"
+  }
+]

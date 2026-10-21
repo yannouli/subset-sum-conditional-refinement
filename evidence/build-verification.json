@@ -1,0 +1,27 @@
+{
+  "source_revision": "04febba50ba2d2e4359b069d6e69055625b1340c",
+  "pdf_sha256": "a6254a11d2e82b0abc35bbdcceacf848a3b4995b340437c41c68104bd8846347",
+  "overleaf_files": 4,
+  "overleaf_fresh_build": "PASS Tectonic 0.17",
+  "pages": 9,
+  "all_page_pixel_equivalence": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "source_zip_tracked_files_byte_verified": 49,
+  "cold_checks": [
+    "exact scalar checker PASS",
+    "eight rejection tests PASS",
+    "independent 430-row rational checker PASS"
+  ],
+  "producer_hashes_unchanged": 19,
+  "complete_solver_or_original_quadrature": false,
+  "local_lean_build": false
+}

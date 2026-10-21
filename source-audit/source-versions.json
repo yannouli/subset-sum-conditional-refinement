@@ -1,0 +1,41 @@
+{
+  "wharton": {
+    "leaderboard_commit": "dcb002174cb1e06213e171c9f5ff6b063fdf2c40",
+    "startup_HEAD": "bed8e18f96db5955c1424abf3005b4fed4bd8d77",
+    "paper_bytes_equal": true,
+    "status": "Later HEAD adds formal finite-data development; paper remains conditional."
+  },
+  "kapila": {
+    "leaderboard_commit": "44c34961b56784c220a6e913cc068d57dc37c5a3",
+    "startup_HEAD": "44c34961b56784c220a6e913cc068d57dc37c5a3",
+    "source_git_blob": "526c2622038a633cbc1bef9ef5e3f4514843cd91",
+    "source_git_blob_verified": true
+  },
+  "openai": {
+    "leaderboard_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "startup_HEAD": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "directory_git_objects_at_startup": {
+      "README.md": {
+        "pinned": "02d00a7d702e70ff88e6e75d4e8257a64890df50",
+        "HEAD": "02d00a7d702e70ff88e6e75d4e8257a64890df50",
+        "equal": true
+      },
+      "build": {
+        "pinned": "70506dd60611ba38f707a394a91f5d145915928a",
+        "HEAD": "70506dd60611ba38f707a394a91f5d145915928a",
+        "equal": true
+      },
+      "subset-sum.pdf": {
+        "pinned": "9e5e9c5ce69013c7c3daa276bdda8fc41d639fd6",
+        "HEAD": "9e5e9c5ce69013c7c3daa276bdda8fc41d639fd6",
+        "equal": true
+      }
+    },
+    "all_fetched_build_source_git_blobs_verified": true
+  },
+  "verifier": {
+    "startup_HEAD": "182000f4b89ce8528e9936ee709d5a4f3e79236e",
+    "subset_sum_trusted_statement_at_startup": false,
+    "scope": "README lists dft/3sum/apsp only; About explicitly says subset-sum has no trusted statement."
+  }
+}

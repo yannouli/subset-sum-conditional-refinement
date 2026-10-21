@@ -1,0 +1,69 @@
+All terminating decimals below denote exact rationals. Here $\tau$ is the alias/checksum work parameter, $\eta n$ the large-prime bit scale, $\mu n$, $ln$ and $rn$ the sizes of the three alias blocks, $a$ the mask fraction within the large block, and $\gamma\mu n$ the small-prime bit scale. The constants $\eps$, $\zeta$ and $\theta$ specify pattern accuracy, preliminary-search slack and the bit-length guard. The frozen scalar certificate uses
+\begin{center}\small
+\begin{tabular}{@{}ll@{}}\toprule
+Parameter & Value\\\midrule
+$\tau$ & $0.48767228$\\
+$\eta$ & $0.516133678389924$\\
+$a$ & $0.008148495127574004$\\
+$\mu$ & $0.4754356429062936$\\
+$\gamma$ & $0.06005543072330252$\\
+$l$ & $0.483775231690629$\\
+$r=1-\mu-l$ & $0.0407891254030774$\\
+$\eps,\zeta,\theta$ & $10^{-12}$ each\\
+Common alias margin $s_*$ & $10^{-10}$\\
+$m_{\rm fin}$ & $10^{-7}$\\
+Advertised $\alpha$ & $0.4876723$\\\bottomrule
+\end{tabular}
+\end{center}
+The exact budgets and internal total exponent are
+\begin{align*}
+ \Delta&=0.028461398389924,&\Gamma&=0.459210881610076,\\
+ \beta=\tau+20\eps&=0.48767228002,&\alpha-\beta&=1.998\cdot10^{-8}.
+\end{align*}
+The construction parameters are changed, rather than only reducing the
+rounding allowance in an unchanged theorem: $\tau<0.48767595$, the
+internal parameter of~$\mathcal W$.
+
+\begin{proposition}[Scalar feasibility]\label{prop:numeric}
+The stated tuple satisfies every inequality in this section, with the
+common alias margin $s_*=10^{-10}$, finite moment margin $10^{-7}$,
+and error exponent $9.7468\cdot10^{-8}$. The continuous margin conclusion
+is conditional on~\eqref{eq:oldmom}; the scalar comparisons themselves
+use exact rational arithmetic with rigorous logarithm intervals.
+\end{proposition}
+\begin{proof}
+The complete list of tested gaps and their definitions is in
+Appendix~\ref{app:certificate}. In particular, all twenty alias/auxiliary
+gaps exceed $s_*$, and $\zeta+\theta=2\cdot10^{-12}<s_*$.
+The following decimal lower bounds have been rounded down from their
+exact rational interval endpoints; their signs do not depend on a
+floating-point tolerance.
+\begin{center}\small
+\begin{tabular}{@{}lr@{}}\toprule
+Continuous margin family & Lower bound\\\midrule
+Other 42 low certificates & $1.35967911\cdot10^{-7}$\\
+Special filter-3 low certificate & $0.000949320934578$\\
+All first bands, including extended filter 3 & $1.93876630\cdot10^{-6}$\\
+Regions 2--8 & $3.8505054152$\\
+Tail & $11.4443433093$\\\bottomrule
+\end{tabular}
+\end{center}
+For clarity, the bounds are obtained from precisely these rational formulas:
+\begin{align*}
+ m_{\rm low}&=.00025+\eta-\eta_b-10.6428K,\\
+ m_{3,0}&=.00025+\eta-\eta_b-\Lambda_0,\\
+ m_{\rm first}&=.00025+\eta-\eta_b-8.4537(1.25)K,\\
+ m_{2:8}&=4+\eta-\eta_b-418.36(15)K,\\
+ m_9&=17+\eta-\eta_b-418.36(256)K/\Gamma_b.
+\end{align*}
+Every family bound exceeds $m_{\rm fin}=10^{-7}$.
+Also $0<q<1$, $K>0$, $A<1/4$ and
+$418.36(1+K/\Gamma_b)<419$.
+Consequently the rounding-error exponent has the exact lower bound
+\[
+ m_{\rm fin}-(18+6\cdot419)\eps
+ =10^{-7}-2532\cdot10^{-12}=9.7468\cdot10^{-8}>0.
+\]
+The logarithm enclosures and the exhaustive finite data checks supporting
+these comparisons are proved/explained in Appendix~\ref{app:certificate}.
+\end{proof}

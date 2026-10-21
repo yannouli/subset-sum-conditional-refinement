@@ -1,0 +1,25 @@
+{
+  "algorithm": "sha256",
+  "scope": "Producer numerics leaf, excluding ignored upstream inputs and caches; mathematical assumptions not certified by hashes",
+  "files": {
+    ".gitattributes": "da2ca8f2d2c1f96f1a796ca5fc7c0ff9471dfc55d114cd21c88e2daf3b0495b4",
+    ".gitignore": "809223425c1554cb635ed70d1561e4040b4cc02b88e005c39c801422e9111b80",
+    "batch-plan.json": "18b85d455a309cc7a72d0eb57f22c296da5ff91889abdb0278520b82d858b085",
+    "data/candidate.json": "75f66f5cc9aedb10aae7632f62bc9a9cdb330142cec488f4937045963dc602c1",
+    "discover.py": "640eb422415baacd44ccb5bc58fd0f37e554a36ac70a805950f62ece35813e29",
+    "evidence/certificate-check.json": "9267c12fba47dfe824eae8f10e510567f9ab3495121bb7f4d83b08f062794cf3",
+    "evidence/discovery.json": "e1b93c7775d5d5f62c8c106b6cae01387f571cce5b912ef8c6630d6dd667224c",
+    "evidence/environment.json": "debe9f4f7eb89f59c975f0b5b1cb87a8dbe6442cba7e66463980f7aeb0c4eb04",
+    "evidence/rejections.json": "7c8b75d4caeea343f45bc9604720724ae6efdcd4c0539e6a35c8e3a149c486fd",
+    "evidence/upstream-baseline-check.txt": "6693e5296e77bd816c283d085c7f998571aebd279a218afa36d3994fbf3b901f",
+    "fetch_baseline.py": "1b98afddcb5611eb7570e9e7299751b70df5b60a56c57184889b825ce8d3d38c",
+    "FORMALIZATION-SCOPE.md": "0d94ae07c10a22def772e56a3ce6df85d50b90069d28e0d0cd728f6ac758509c",
+    "HANDOFF.md": "2474546aec1e67d92bb93b265025c1cb1ca01918638841d75143d1f4460b5b77",
+    "rational_bounds.py": "a9b100ce3f9afce02de729ae36060aa51c4e4d40bc384e2e33180944751fbdeb",
+    "README.md": "2f2bf77a99718149df45f3f800211422a478edd62bf73d9606d595759db897c7",
+    "SOURCE-REVISIONS.json": "0d9c3dba06988c67a00fadb235022db343394ff3085a6f4503b0de8569b00d6c",
+    "test_rejections.py": "63697411dcaf152f60403278ca433c883aeac639b1598a2765168fcb7c0c574d",
+    "transfer-note.tex": "9c03faf29e4a215d8f10587b8c3e913293b89faba4487220bc40cb988b91b29e",
+    "verify_certificate.py": "9174f7b254d32a62ccdce66414a6c81f1c2468d76c975623a5fbc55c3e44f3d8"
+  }
+}

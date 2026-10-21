@@ -1,0 +1,310 @@
+[
+  {
+    "url": "https://bigospeedrun.com/subset-sum",
+    "file": "leaderboard.html",
+    "status": 200,
+    "bytes": 77449,
+    "sha256": "e4967fdeffce466bfa70a4b77522315a7d0ddb3422f61af2b497674a83214389",
+    "utc": "2026-10-21T14:15:31.193840+00:00"
+  },
+  {
+    "url": "https://bigospeedrun.com/about",
+    "file": "about.html",
+    "status": 200,
+    "bytes": 42758,
+    "sha256": "2c092de1c93442307df10c9fef190098cae5733fb22a59f3bd7b18062cabeec4",
+    "utc": "2026-10-21T14:15:31.417016+00:00"
+  },
+  {
+    "url": "https://board.bigospeedrun.com/subset-sum",
+    "file": "board.html",
+    "status": 200,
+    "bytes": 5818,
+    "sha256": "7ac0cafde4ec7d06faae006739470556b673c8eb77efcc3621a3c2dde98bdd8c",
+    "utc": "2026-10-21T14:15:31.879854+00:00"
+  },
+  {
+    "url": "https://board.bigospeedrun.com/api/posts?board=subset-sum&format=md",
+    "file": "board-feed.md",
+    "status": 200,
+    "bytes": 504,
+    "sha256": "4068d75aad848e2e7373f0d76f51c7ca50b7e6b7b4ac7f28ae8289cd090aeccf",
+    "utc": "2026-10-21T14:15:32.302961+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/JoshuaQFEX/subset-sum-bound/commits/master",
+    "file": "wharton-HEAD.json",
+    "status": 200,
+    "bytes": 38372,
+    "sha256": "4d496b2822fb3abe51237339e87f763c83d602a7ea02675bc05e8ce0e23de256",
+    "utc": "2026-10-21T14:15:32.691228+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/a-kapila/maths-proofs/commits/main",
+    "file": "kapila-HEAD.json",
+    "status": 200,
+    "bytes": 7056,
+    "sha256": "08e4c04f7a2c356092c796ada78395fb04ec595814768389f018b234d376e5b5",
+    "utc": "2026-10-21T14:15:33.166300+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/openai/math/commits/main",
+    "file": "openai-HEAD.json",
+    "status": 200,
+    "bytes": 5884,
+    "sha256": "33077a6b8b0b3fd2b542c5ed0c0b9d8fcb9f585bf5605a6f3fea5f302e1f02e6",
+    "utc": "2026-10-21T14:15:33.402719+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/bigospeedrun/verifier/commits/main",
+    "file": "verifier-HEAD.json",
+    "status": 200,
+    "bytes": 11645,
+    "sha256": "862cef0a0623499c4bb4d5c24f989995ac1a4d5d9adeee0851a2b43aeb605805",
+    "utc": "2026-10-21T14:15:33.640929+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/JoshuaQFEX/subset-sum-bound/git/trees/master?recursive=1",
+    "file": "wharton-tree.json",
+    "status": 200,
+    "bytes": 24224,
+    "sha256": "9b5d3cd40c5099d6ac6ff40f4fb4a191e226e58c2b9f32fe382afa49e5e8eb1f",
+    "utc": "2026-10-21T14:15:33.958974+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/a-kapila/maths-proofs/contents/subset-sum?ref=44c34961b56784c220a6e913cc068d57dc37c5a3",
+    "file": "kapila-pinned-directory.json",
+    "status": 200,
+    "bytes": 2109,
+    "sha256": "8add69aea463323c866ead37b4301871ef45fc342abe6f676d7f34bfe7e01374",
+    "utc": "2026-10-21T14:15:34.368081+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/openai/math/contents/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026?ref=fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "file": "openai-pinned-directory.json",
+    "status": 200,
+    "bytes": 3502,
+    "sha256": "f8fbded41fd9b3b6f163ed4be3068ffd54d7288e2b17b1f2e7f28010656ecfb4",
+    "utc": "2026-10-21T14:15:34.556458+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/dcb002174cb1e06213e171c9f5ff6b063fdf2c40/paper.tex",
+    "file": "wharton-pinned-paper.tex",
+    "status": 200,
+    "bytes": 22499,
+    "sha256": "86e3cbb6ba63a4ff270661a1e38a651117b58bd67b38dd62ace02916e1deb8ef",
+    "utc": "2026-10-21T14:15:34.714243+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/master/README.md",
+    "file": "wharton-HEAD-README.md",
+    "status": 200,
+    "bytes": 4785,
+    "sha256": "c1927c391cba4325749822ebe9c5057d05c583a93988cf2d07838b941dbd2a22",
+    "utc": "2026-10-21T14:15:34.867302+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/master/parameters.json",
+    "file": "wharton-HEAD-parameters.json",
+    "status": 200,
+    "bytes": 334,
+    "sha256": "89361952bc471e116c3585db3b3fd3fcad2f56ff88f76bf5e5059aa9d8c978ff",
+    "utc": "2026-10-21T14:15:35.001308+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/master/source_facts.json",
+    "file": "wharton-HEAD-source_facts.json",
+    "status": 200,
+    "bytes": 2648,
+    "sha256": "7d189ccc1fd7b61ad4c9879b592dc443fccf9fcc6af787d1810b6eaab0d647bb",
+    "utc": "2026-10-21T14:15:35.174254+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/master/verify.py",
+    "file": "wharton-HEAD-verify.py",
+    "status": 200,
+    "bytes": 9479,
+    "sha256": "541b96d2238fecab21c3df474698a04ca015e232a0dd3a2ba132cbb2e1ebeacf",
+    "utc": "2026-10-21T14:15:35.299216+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/master/FORMALIZATION.md",
+    "file": "wharton-HEAD-FORMALIZATION.md",
+    "status": 200,
+    "bytes": 7269,
+    "sha256": "c27472ecdb60f93c308da7e48e7dc07f45b8f0150eb7c6ab8d55419b13a2c7e1",
+    "utc": "2026-10-21T14:15:35.444866+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/a-kapila/maths-proofs/44c34961b56784c220a6e913cc068d57dc37c5a3/subset-sum/PROOF_0.4877.tex",
+    "file": "kapila-pinned-PROOF.tex",
+    "status": 200,
+    "bytes": 141708,
+    "sha256": "b397531cc5997e88c439d5290774861b46a34aa32d9cd71fa7dcced130359298",
+    "utc": "2026-10-21T14:15:35.616992+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/bigospeedrun/verifier/main/README.md",
+    "file": "verifier-README.md",
+    "status": 200,
+    "bytes": 4529,
+    "sha256": "9ef27500f4e50e340af1882f58f460fd2b4acac24016fe5323f8faf5b355c30e",
+    "utc": "2026-10-21T14:15:35.761925+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/paper.tex",
+    "file": "wharton-resolved-paper.tex",
+    "bytes": 22499,
+    "sha256": "86e3cbb6ba63a4ff270661a1e38a651117b58bd67b38dd62ace02916e1deb8ef",
+    "utc": "2026-10-21T14:17:06.164395+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/verify.py",
+    "file": "wharton-resolved-verify.py",
+    "bytes": 9479,
+    "sha256": "541b96d2238fecab21c3df474698a04ca015e232a0dd3a2ba132cbb2e1ebeacf",
+    "utc": "2026-10-21T14:17:06.278741+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/source_facts.json",
+    "file": "wharton-resolved-source_facts.json",
+    "bytes": 2648,
+    "sha256": "7d189ccc1fd7b61ad4c9879b592dc443fccf9fcc6af787d1810b6eaab0d647bb",
+    "utc": "2026-10-21T14:17:06.417005+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/parameters.json",
+    "file": "wharton-resolved-parameters.json",
+    "bytes": 334,
+    "sha256": "89361952bc471e116c3585db3b3fd3fcad2f56ff88f76bf5e5059aa9d8c978ff",
+    "utc": "2026-10-21T14:17:06.521276+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/FORMALIZATION.md",
+    "file": "wharton-resolved-FORMALIZATION.md",
+    "bytes": 7269,
+    "sha256": "c27472ecdb60f93c308da7e48e7dc07f45b8f0150eb7c6ab8d55419b13a2c7e1",
+    "utc": "2026-10-21T14:17:06.667820+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/JoshuaQFEX/subset-sum-bound/bed8e18f96db5955c1424abf3005b4fed4bd8d77/README.md",
+    "file": "wharton-resolved-README.md",
+    "bytes": 4785,
+    "sha256": "c1927c391cba4325749822ebe9c5057d05c583a93988cf2d07838b941dbd2a22",
+    "utc": "2026-10-21T14:17:06.787524+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/openai/math/git/trees/70506dd60611ba38f707a394a91f5d145915928a?recursive=1",
+    "file": "openai-build-tree.json",
+    "bytes": 2386,
+    "sha256": "0d7be57c6fa06fa1add6ece949f794f3121c6f3be185d966335320da5ce04b1b",
+    "utc": "2026-10-21T14:17:07.048840+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/subset-sum.pdf",
+    "file": "openai-pinned-subset-sum.pdf",
+    "bytes": 530957,
+    "sha256": "69f9398e325a2628d32edc73109e2d008466170e35d8f7015636dc4f3f457566",
+    "utc": "2026-10-21T14:17:07.269430+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/README.md",
+    "file": "openai-pinned-README.md",
+    "bytes": 545,
+    "sha256": "1826bf86612a2983f86c105bfccae13fbc8b8ef13401e8112f5898bf8d7ff6cd",
+    "utc": "2026-10-21T14:17:07.432892+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/a-kapila/maths-proofs/contents/subset-sum",
+    "file": "kapila-HEAD-directory.json",
+    "bytes": 1749,
+    "sha256": "3f69488fd64e9de17e75fd3abc822fc4ff5f3204ab85786473933f68c02fed77",
+    "utc": "2026-10-21T14:17:07.645746+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/main.tex",
+    "file": "openai-main.tex",
+    "bytes": 1939,
+    "git_blob": "c764b7664d4c8123fca173b74eee0652e4bc320e",
+    "sha256": "a5b27fd289b5a62e08d6cb34b59d2f8b40ac1ea60f2b6ac1fb1f73a8250804d1",
+    "utc": "2026-10-21T14:17:39.659681+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/references.bib",
+    "file": "openai-references.bib",
+    "bytes": 6157,
+    "git_blob": "5602c0b0945a1620180587af7b898c2c31e5461e",
+    "sha256": "2c263bceacb7e8db0ca535634e96d4a6dfbfde0e0509186bb4327a226ae3d395",
+    "utc": "2026-10-21T14:17:39.820643+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/aliases.tex",
+    "file": "openai-sections-aliases.tex",
+    "bytes": 19836,
+    "git_blob": "7926a962f4881c148daf2f86bc01c2ffffc147bb",
+    "sha256": "828e8ef5b3173a4e0a9818679ad658e291ef7f2a3cbe56334a12a271f88b2e5f",
+    "utc": "2026-10-21T14:17:39.956846+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/checksum.tex",
+    "file": "openai-sections-checksum.tex",
+    "bytes": 24436,
+    "git_blob": "54d5006b574d2d42ab9584e78ed8d0001dbee418",
+    "sha256": "3c0d8f4ae1810e420c4a1e2ee098e4878e9ad39c152c5395eb7ab273078d9818",
+    "utc": "2026-10-21T14:17:40.128927+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/filtering.tex",
+    "file": "openai-sections-filtering.tex",
+    "bytes": 7995,
+    "git_blob": "10e51d44c63f76560ba0926e345e20f4eaa7dc80",
+    "sha256": "17443991a51fa09b86c8523ec4cada86cb32833d37b9e9fef0b38b56eb814b8e",
+    "utc": "2026-10-21T14:17:40.264900+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/implementation.tex",
+    "file": "openai-sections-implementation.tex",
+    "bytes": 18224,
+    "git_blob": "2ce7f750e341220b1509f913e5210ae8bb7b3dbd",
+    "sha256": "ef78713f1e782ccb8c0360aa2ff68e0145cef9105371423e2617215d0d6e3aea",
+    "utc": "2026-10-21T14:17:40.423533+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/introduction.tex",
+    "file": "openai-sections-introduction.tex",
+    "bytes": 12375,
+    "git_blob": "052634c7597641f4d0bba6d09413ffe3c7c99b8d",
+    "sha256": "583a20059e520cff2aa5d99c5c7a457da6d6deae83a664813cc2b474a1920376",
+    "utc": "2026-10-21T14:17:40.571809+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/numerical.tex",
+    "file": "openai-sections-numerical.tex",
+    "bytes": 13885,
+    "git_blob": "d9b2531441fcd7ac10b434746088de7d6d4e7576",
+    "sha256": "a4cc12248568d90368197466f562944f119b8f68535f72c576dd2f342b33b6dd",
+    "utc": "2026-10-21T14:17:40.695995+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/sections/setup.tex",
+    "file": "openai-sections-setup.tex",
+    "bytes": 10736,
+    "git_blob": "d48a87b8e11448732a0fd85fcb5db177f5cf3ab6",
+    "sha256": "7a5681c2a0ec43838737d517978a49d6b2d68125f6419526a00d053a283c00ba",
+    "utc": "2026-10-21T14:17:40.832683+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/openai/math/contents/preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026",
+    "file": "openai-HEAD-directory.json",
+    "bytes": 2998,
+    "sha256": "9f8f7e3f2426ddf05c1e8ed54c3738175c4f17be161daa5c10fcb125493d31ee",
+    "utc": "2026-10-21T14:20:29.960692+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/bigospeedrun/verifier/182000f4b89ce8528e9936ee709d5a4f3e79236e/README.md",
+    "file": "verifier-resolved-README.md",
+    "bytes": 4529,
+    "sha256": "9ef27500f4e50e340af1882f58f460fd2b4acac24016fe5323f8faf5b355c30e",
+    "utc": "2026-10-21T14:20:30.254229+00:00"
+  }
+]

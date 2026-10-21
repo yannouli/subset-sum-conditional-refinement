@@ -1,0 +1,152 @@
+% Supporting derivation, not a standalone manuscript. Ed owns the integrated paper.
+\section{Numerical lane: moved-boundary certificate lemma}
+All notation and hypotheses in this supporting derivation refer to Kapila's
+\texttt{PROOF\_0.4877.tex} at revision
+\texttt{44c34961b56784c220a6e913cc068d57dc37c5a3}, and Wharton's
+\texttt{paper.tex}, Sections 4--6, inspected at revision
+\texttt{bed8e18f96db5955c1424abf3005b4fed4bd8d77}.
+The latter manuscript is unchanged from the leaderboard-linked revision.
+The old continuous moments and algorithmic lemmas are assumptions, not
+consequences of our scalar checker. The new contribution is a different
+division of the proof regions for filter 3, with a complete transfer proof.
+
+Write $D_b=0.02844$, $G_b=0.45925$, $\eta_b=0.51613$,
+$D=\eta-\tau$, $G=2\tau-\eta$, and
+\[
+ q=G/G_b,\qquad A_b=D_b/G_b,\qquad A=D/G,\qquad
+ K=D/q-D_b,\qquad d=A-A_b=K/G_b.
+\]
+The fixed rational certificate verifies $0<q<1$, $K>0$, $d>0$ and
+$0<A<1/4$. The algorithm retains the same filters, selection rule and
+comparison rows, but uses the new budgets and sampling fraction
+$\alpha=1$ for $W\le G$ and $\alpha=G/W$ otherwise. A sampled pattern
+satisfies $\alpha U<D$. Score and comparison rows here are initially ideal
+pattern-level quantities; approximation error is accounted for below.
+
+For a selected filter $v$, the comparison rows $U_v-U_j$ are nonnegative.
+For a nonnegative multiplier vector $z$ and an affine row vector $R$,
+write its full-circle integral as
+\[
+ I(R,z)=\int_{\mathbb T}(2+2\cos x)\,2^{z\cdot R(x)}\,dx,
+\]
+with normalized circle measure. Every integral identity below is pointwise
+before integration. In particular the integral is never restricted to the
+pattern's score region.
+
+\paragraph{The special low region.}
+For filter 3 use its original low certificate only on $W\le G$, with rows
+$(D-U,G-W,U-U_j)$ instead of $(D_b-U,G_b-W,U-U_j)$.
+Its first two multipliers, checked directly from Appendix C, are
+$z_0=17.211$ and $z_1=27.1977$. Since $\alpha=1$, $U<D$, and $z_0\ge1$,
+\[
+ -U=-D+(D-U)\le -D+z_0(D-U).
+\]
+All remaining rows are nonnegative, so this is the required domination.
+The multipliers are unchanged and the exact integral identity is
+\[
+ I'_{3,0}=2^{S_0}I_{3,0},\qquad
+ S_0=17.211(D-D_b)+27.1977(G-G_b).
+\]
+
+\paragraph{The extended first band.}
+For this same filter use the original first-band certificate on the
+larger interval $G<W\le 1.25G_b$. Its original first three multipliers
+are exactly $(c_0,c_1,c_2)=(7.7547,0,0)$.
+Replace its rows by
+$(AW-U,W-G,1.25G_b-W,U-U_j)$, and its upper-row multiplier by
+$c_2+c_0d$. The changed lower row costs zero because $c_1=0$.
+All rows are nonnegative on this band: sampling gives $AW-U>0$,
+and $0<\alpha=G/W<1<c_0$. Thus
+\[
+ -\alpha U=-D+\alpha(AW-U)\le-D+c_0(AW-U).
+\]
+The exponent change on the entire circle is exactly
+\[
+ c_0d\,w+c_0d(1.25G_b-w)=1.25c_0K,
+ \qquad I'_{3,1}=2^{1.25c_0K}I_{3,1}.
+\]
+This proves the extension even on $G<W\le G_b$; no old-region
+domination assertion is invoked there. At $W=G$ use the low certificate;
+at $W=1.25G_b$ use the first band.
+
+\paragraph{All other regions, with derivation.}
+For $v\ne3$ on $W\le G_b$, use the old low rows with the first row
+replaced by $D/q-U$. Here $q\le\alpha\le1$ and
+$D/\alpha\le D/q$. With $z_0\ge1$ and $U<D/\alpha$,
+\[
+ -\alpha U=-D+\alpha(D/\alpha-U)
+ \le-D+z_0(D/q-U).
+\]
+The old upper row $G_b-W$ and comparisons are nonnegative. The integral
+multiplier is exactly $2^{z_0K}$.
+For any ordinary finite band $LG_b<W\le HG_b$, replace
+$A_bw-U$ by $Aw-U$ and increase the upper-row multiplier by $z_0d$.
+Its exponent shift is $z_0dHG_b=z_0KH$. The old condition
+$z_0L\ge1$ and $\alpha<q/L<1/L\le z_0$ prove domination by the
+same identity as in the special band. For the tail $W>15G_b$ replace
+only the first row. The exponent increases by $z_0d\,w(x)$, at most
+$256z_0d$, using the real-circle bound from Wharton's score lemma.
+That bound follows from the checked eight coefficients of each of the
+two trigonometric polynomials having absolute value at most 2, and
+$1\le\kappa\le2$; normalized positive averages give
+$|L|,|B_*|\le64$, $|H_*|\le64\kappa$, whence
+$|w|\le64(2-\kappa)+128+64\kappa=256$.
+The finite bands have endpoints $1,1.25,1.6,2,2.6,3.5,5,8,15$ times
+$G_b$. For filter 3, bands two through nine remain unchanged; for the
+other filters all old boundaries remain unchanged. Thus there is no
+missing region, duplication of algorithmic filters, or changed selector.
+
+\paragraph{Moment and error budget.}
+Assume each original full-circle moment has log-margin at least
+$0.00025$ for regions zero and one, 4 for regions two through eight,
+and 17 for the tail. These are exactly the conservative inherited
+hypotheses, not new quadrature results.
+The finite table checker finds
+$\max_{v\ne3}z^{v,0}_0=10.6428$,
+$\max_v z^{v,1}_0=8.4537$ and every old multiplier sum at most
+$Z=418.36$. Hence lower bounds for new log-margins are
+\begin{align*}
+ 0.00025+\eta-\eta_b-10.6428K&>1.35967911\,10^{-7},\\
+ 0.00025+\eta-\eta_b-S_0&>9.49320934\,10^{-4},\\
+ 0.00025+\eta-\eta_b-8.4537(1.25)K&>1.93876630\,10^{-6},\\
+ 4+\eta-\eta_b-Z(15)K&>3.8505054,\\
+ 17+\eta-\eta_b-Z(256)d&>11.4443433.
+\end{align*}
+All exceed $\nu=10^{-7}$. Every new multiplier sum is at most
+$Z(1+d)<419$. Finite-circle convergence for these finitely many fixed
+modified certificates therefore supplies margin $\nu$ eventually.
+Coordinate score errors are at most $3\varepsilon$ and $4\varepsilon$;
+each row error is at most $6\varepsilon$ (in particular
+$4A+3<4$). Applying the inherited pattern/checksum error argument leaves
+\[
+ \nu-(18+6\cdot419)\varepsilon=9.7468\,10^{-8}>0,
+ \qquad \varepsilon=10^{-12}.
+\]
+This strict decay absorbs the inherited $2^{O(\sqrt n)}$ patterns and
+polynomially many targets. The unmodified algorithmic premises supply
+the remaining probability and correctness claims. We do not claim to
+have implemented or independently proved the underlying solver.
+
+\paragraph{Auxiliary work and ordinary exponential time.}
+The checker verifies every C1--C8 inequality, the small-layer entropy
+and size inequalities, $\mu<\tau$, right-key sorting and small-prime
+enumeration costs, prime generation, the A4 guard/collision condition,
+the A5 bad-half removal and density threshold. All receive a common
+strict margin $10^{-10}$. The input guard is
+$10^{12}\lceil\log_2(b+1)\rceil\le n$; its bit-factor exponent and
+the preliminary slack $\zeta=10^{-12}$ consume only $2\,10^{-12}$,
+strictly less than that margin. Integer rounding and fixed cutoffs
+are absorbed exactly as under the inherited implementation hypotheses.
+Those hypotheses give, on every random history,
+\[
+ T(n,b)\le 2^{\beta n+O(n^{0.7})}\operatorname{poly}(n+b),\qquad
+ \beta=\tau+20\varepsilon=0.48767228002.
+\]
+For any fixed $c>0$ with $b\le n^c$, the guard eventually holds and
+the polynomial contributes only $O_c(\log n)$ to the exponent.
+As $0.4876723-\beta=1.998\,10^{-8}>0$, the sublinear overhead divided
+by $n$ tends to zero and is eventually less than this gap.
+Thus the bound is ordinary $O_c(2^{0.4876723n})$, not only $O^*$.
+Fixed fallback rules and the guarded capped program are independent of
+$c$. These are conditional implications of the stated implementation
+and moment premises; neither a Lean proof nor benchmark acceptance.

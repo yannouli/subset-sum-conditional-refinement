@@ -1,0 +1,105 @@
+﻿\appendix
+\section{Exact certificate, gap definitions and verification scope}\label{app:certificate}
+\paragraph{Logarithm enclosures.}
+For $1\le x\le2$, put $z=(x-1)/(x+1)\in[0,1/3]$. Integrating the
+geometric series for $1/(1-z^2)$ gives
+\[
+ \ln x=2\sum_{j=0}^{N-1}\frac{z^{2j+1}}{2j+1}+R_N,
+ \qquad
+ 0\le R_N\le\frac{2z^{2N+1}}{(2N+1)(1-z^2)}.
+\]
+The tail bound follows by replacing every remaining denominator by
+$2N+1$ and summing the resulting geometric series. For positive rational
+$x$, multiply or divide by powers of2 to write $x=2^k y$ with $1\le y<2$.
+Then $\log_2x=k+\ln y/\ln2$. Use the same series with $N=48$ to enclose
+both logarithms; the lower endpoint for $\ln2$ is positive.
+Interval division therefore gives a rational enclosure for every
+$\log_2x$. The entropy bounds follow by interval arithmetic in
+$-x\log_2x-(1-x)\log_2(1-x)$. No floating-point number is used to decide
+an inequality. Addition and multiplication use the extremal endpoint
+combinations; division is used only on intervals not containing zero.
+These operations preserve enclosure by elementary order properties.
+
+\paragraph{Exhaustive scalar gap definitions.}
+Let $H=h(1/2-a)$ and $d=(\eta-(\mu/2)\log_2 3)/2$.
+Each row below is a positive gap; the reported lower bounds are conservative
+roundings, not the values used for exact decisions. These are all the
+alias/auxiliary gap families checked, including those hidden in the source's
+``far below'' estimates.
+\begin{center}\scriptsize
+\begin{tabular}{@{}p{.70\linewidth}r@{}}\toprule
+Gap & Lower bound\\\midrule
+$h(2a)/2-\gamma$ & $9.99999\cdot10^{-10}$\\
+$\tau-l-(h(a)-\gamma)\mu$ & $4.00657\cdot10^{-9}$\\
+$\tau-r-(1-\gamma)\mu$ & $4.00657\cdot10^{-9}$\\
+$\tau-1+\mu-(h(a)+H-\gamma)\mu+\eta$ & $4.00657\cdot10^{-9}$\\
+$2\tau-1/2-H\mu$ & $7.01315\cdot10^{-9}$\\
+$\tau-l$ & $0.00389704$\\
+$\tau-r$ & $0.44688315$\\
+$r$ & $0.04078912$\\
+$l-\mu(1-2a)$ & $0.01608775$\\
+$\eta-(\mu/2)\log_2 3$ & $0.13935984$\\
+$\tau-\mu$ & $0.01223663$\\
+$2\tau-1/2-r-\zeta$ & $0.43455543$\\
+$2\tau-1/2-\zeta-\gamma\mu/2$ & $0.46106831$\\
+$\tau-\eta/2$ & $0.22960544$\\
+$1/2-\mu(1-2a)$ & $0.03231252$\\
+$1-2a-h(2a)/2-h(a)$ & $0.85539536$\\
+$H-h(a)$ & $0.93155619$\\
+$d-\theta$ & $0.06967992$\\
+$d-(1/2-\tau+\zeta)$ & $0.05735220$\\
+$0.013-(1/2-\tau+\zeta)$ & $0.00067227$\\\bottomrule
+\end{tabular}
+\end{center}
+All exceed $s_*$. The work inequalities without an explicit $\zeta$ in
+the table have at least $s_*$ before spending preliminary-search slack;
+the sorting/prime inequalities listed with $\zeta$ already have that
+slack charged. Charging it once more everywhere is harmless because
+$\zeta+\theta<s_*$ and leaves a positive margin. Rounding of subset
+sizes contributes $O(1)$ or $O(\log n)$ terms, dominated by those strict
+linear gaps. The small-layer entropy inequality implies the source's
+binomial size condition with exponential slack, and its complementary
+sizes use $0<a<1/4$ and $\mu(1-2a)<\min(l,1/2)$.
+Thus the concentration/coverage estimates in A3--A6 and every A7 work
+item retain their prescribed asymptotic inequalities, not only C1--C8.
+
+\paragraph{Finite source data and complete region coverage.}
+The original baseline TeX has SHA256
+\begin{center}\scriptsize
+\texttt{b397531cc5997e88c439d5290774861b46a34aa32d9cd71fa7dcced130359298}.
+\end{center}
+The checker requires exactly filter indices0--42 and all ten regions for
+each, rejecting missing or duplicate entries. It checks sixteen rational
+coefficients per filter, each of absolute value at most2, and
+$1\le\kappa\le2$. Each certificate has the required number of multipliers,
+nonnegative entries with sum at most418.36, valid distinct comparison
+indices excluding its own filter, and the source's domination condition
+$z_0\ge1$ or $z_0L\ge1$. It authenticates the special rows used in
+Lemma~\ref{lem:new}, verifies the zero lower multiplier exactly, and
+checks the maxima10.6428 and8.4537 used in the family estimates.
+The complete $43\cdot10$ index product, the explicit partition in
+Lemma~\ref{lem:new} and the unchanged remaining boundaries establish
+coverage of all selected-filter patterns; a floating sample of regions
+would not suffice. Numerical source transcription does not prove any
+continuous moment integral in~\eqref{eq:oldmom}.
+
+\paragraph{Compact verification and discovery separation.}
+The independently written Python checker is
+\texttt{numerics/verify\_certificate.py}; exact inputs are
+\texttt{numerics/data/candidate.json}. Given the unchanged pinned
+baseline, run from the delivery repository
+\begin{quote}\small\ttfamily
+python numerics/verify\_certificate.py --baseline /path/to/PROOF\_0.4877.tex
+\end{quote}
+The baseline remains an explicit external input rather than an unlicensed
+full manuscript redistributed in the repository. Its URL, revision and
+hash are recorded. The checker needs Python's standard library and does
+not run the optimizer or require a numerical integration library.
+The separate discovery batch used 24 floating optimizer starts with a
+recorded batch time of approximately $0.447$ seconds; this is parameter-search
+time, not a Subset Sum solver runtime, and its success is not evidence for
+the inequalities.
+The exact checker result and independent review are separate recorded
+outputs. Negative tests must reject broken parameters, changed special
+rows and incomplete source coverage; their precise executed scope is
+reported with the code. No end-to-end Subset Sum implementation was run.
