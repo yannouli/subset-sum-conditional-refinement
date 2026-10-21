@@ -1,12 +1,12 @@
 # Unsent submission draft
 
-**Author:** Yanni Bills. **Status:** locally prepared conditional mathematical
-refinement; not published, submitted, accepted, or site Lean Verified.
+**Author:** Yanni Bills. **Status:** published on GitHub; not yet submitted,
+accepted, or site Lean Verified.
 
 **Intended submission category:** Claimed (conditional); no category or
 verification status has been awarded by the site.
 
-**Public repository:** [PUBLIC_REPOSITORY_URL]
+**Public repository:** https://github.com/yannouli/subset-sum-conditional-refinement
 
 ## Proposed text
 
@@ -27,7 +27,7 @@ part of the explicitly inherited algorithmic dependency chain.
 This is not a proof of the original moment inequalities or a full formal
 verification of Subset Sum. The local standard-library checker and eight
 rejection tests pass, as do independent rational checks and manuscript review.
-No Lean build or site verification is claimed. The intended author is Yanni
+No Lean build or site verification is claimed. The author is Yanni
 Bills, with AI assistance and OpenAI/Kapila/Wharton contributions credited.
 
 The source audit limits the priority claim to inspected directly relevant

@@ -4,7 +4,7 @@
     ".gitattributes": "da2ca8f2d2c1f96f1a796ca5fc7c0ff9471dfc55d114cd21c88e2daf3b0495b4",
     ".gitignore": "386009d1256b150b8be9ccbe7dc569dae1090621540907c5f9033ff865d519f3",
     "CORRECTIONS.md": "348b39e9c3f8b05a7c894787af90755918615b2645648f415aacf166aa366e0d",
-    "README.md": "6b0b8d44c40fbed939b5e3be72fd7ffd0df1481e821492b8362b4ec7ce53f747",
+    "README.md": "1fa639ff0d36a8437ca6bfe7334658df3c3a3f408187d8416eb889e9168e25ac",
     "candidate-data.tex": "554505faad079091c251d04092d4edbeb662dd97cc600d6f44ce5cc6a9979856",
     "certificate-appendix.tex": "7a004caf2b0a4cd096d4326db0e28eb86be8dc5806fcf7b8812913a7a60d4863",
     "evidence/build-verification.json": "b6b47a509a2bc8810a0b706e849c56930fd6ee48b6ec9cba366134718439b4d1",
@@ -55,7 +55,7 @@
     "source-audit/novelty-file-inventory.json": "ac994e2321fb8c8b7ab55a0a4a63c72b4162413638b3f5f100473d2123b0d08e",
     "source-audit/source-contract.txt": "598d5abb6a4e6a0bbce61ea977fd823f57655c65fb4e1a27438462831185ad44",
     "source-audit/source-versions.json": "13390e0b3fd5888839765ffb027d1bf798376e1ce3992c65adef02ce643b62ce",
-    "submission-draft.md": "f9c2c0402d675a62dc9d85f9d9185ba7ce0297a64239fa63ad5963a912115a99"
+    "submission-draft.md": "7f6dd5f59c6cb2d4556328aa78123261f9529a429b2c98b4711e0012e77e556d"
   },
   "baseline_file_hashes": {
     ".gitignore": "ffe2c7458e5fcbed173e2fbbb1f9c16e0f14f0d30b10faea7c5106dc64dc47c0",
@@ -212,7 +212,7 @@
     "README.md": {
       "status": "authorized documentary/encoding/build change",
       "baseline_sha256": "44262d63c8a231cbe4eca5606f359025b2859f1bc9f0783b44a8185e13f27c2e",
-      "release_sha256": "6b0b8d44c40fbed939b5e3be72fd7ffd0df1481e821492b8362b4ec7ce53f747"
+      "release_sha256": "1fa639ff0d36a8437ca6bfe7334658df3c3a3f408187d8416eb889e9168e25ac"
     },
     "certificate-appendix.tex": {
       "status": "authorized documentary/encoding/build change",
@@ -303,7 +303,7 @@
     "submission-draft.md": {
       "status": "authorized documentary/encoding/build change",
       "baseline_sha256": "ece669b6ccd7c9b3d92811732ba35ac80fca57927816213674cb9b3600a2cdf1",
-      "release_sha256": "f9c2c0402d675a62dc9d85f9d9185ba7ce0297a64239fa63ad5963a912115a99"
+      "release_sha256": "7f6dd5f59c6cb2d4556328aa78123261f9529a429b2c98b4711e0012e77e556d"
     },
     "evidence/release-rejections.json": {
       "status": "new publication packaging, correction or verification record",

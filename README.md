@@ -1,6 +1,6 @@
 # Conditional Subset Sum exponent 0.4876723
 
-**Intended author: Yanni Bills. Prepared locally; not published or submitted.**
+**Author: Yanni Bills. Publicly available at https://github.com/yannouli/subset-sum-conditional-refinement; not yet submitted to Big O Speedrun.**
 
 This note proves a conditional refinement to `O_c(2^(0.4876723 n))` in the
 Big O Speedrun randomized word-RAM model. The internal total work exponent is
@@ -81,5 +81,5 @@ Joshua Wharton supplied the earlier parameter/certificate-transfer refinement.
 AI assistance and the distinct team roles are acknowledged in the note.
 Pinned sources and numerical constants are credited in the provenance files.
 No upstream license is invented, and no blanket repository license is applied
-to third-party material. Publication and any outbound submission require
-Yanni's separate authorization. No remote is configured by this campaign.
+to third-party material. The author has published the prepared release on GitHub. A leaderboard
+submission has not yet been made or authorized in the agent campaign.
