@@ -1,0 +1,15 @@
+﻿.venv/
+__pycache__/
+.lake/
+*.aux
+*.log
+*.out
+.DS_Store
+
+*.blg
+*.bbl
+
+delivery-manifest.json
+release-manifest.json
+independent-result.json
+release-check-outputs/
