@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "filters": 43,
+  "distinct_pairs": 430,
+  "all_strict_thresholds": true,
+  "mathematical_output_fields_identical": true,
+  "reference_seconds": 36.80986569999368,
+  "replay_seconds": 33.48752289998811,
+  "source_sha256": "b397531cc5997e88c439d5290774861b46a34aa32d9cd71fa7dcced130359298",
+  "reference_sha256": "9646407eba82509f62c6464293d9fb472370d2e2c08a45ae07636c7bd0c84476",
+  "replay_sha256": "22f0c170024af2a5df3508ad406550ed06a3bef2139f63a02b7127b4e03d4239",
+  "scope": "Correspondence/positivity/strict-gap check of full validated outputs; outside-Lean Python/FLINT/Arb and written-analysis trust."
+}

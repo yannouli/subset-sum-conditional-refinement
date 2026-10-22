@@ -1,0 +1,361 @@
+\section{The actual analytic functions}\label{sec:analytic}
+All integrals in this section use the probability average
+\[
+ \langle h\rangle=\frac1{2\pi}\int_0^{2\pi}h(t)\,dt.
+\]
+In particular this is not an integral over a region selected by a pattern.
+For each of the 43 rational coefficient records of Kapila's Appendix~A,
+put
+\[
+ r_v(x)=\sum_{j=1}^8r_{v,j}\cos(jx),\quad
+ s_v(x)=\sum_{j=1}^8s_{v,j}\cos(jx),\quad
+ F_v=\exp((\ln2)r_v),\quad G_v=\exp((\ln2)s_v).
+\]
+Suppress $v$ temporarily. The exponent $\kappa=\kappa_v$ is the exact
+source rational; $1\le\kappa\le2$. Define
+\begin{align*}
+ Z_f&=\langle F\rangle,& Z_g&=\langle G\rangle,&
+ Z_{f,\kappa}&=\langle F^\kappa\rangle,&
+ Z_{g,\kappa}&=\langle G^\kappa\rangle,\\
+ f&=F/Z_f,&g&=G/Z_g,& f_*&=F^\kappa/Z_{f,\kappa},&
+ g_*&=G^\kappa/Z_{g,\kappa}.
+\end{align*}
+\begin{align*}
+ \mathcal P(x)&=\langle F(x+t)G(t)\rangle_t,\\
+ \mathcal Y(x)&=\langle F(x+t)G(t)(r(x+t)+s(t))\rangle_t,\\
+ Q(x)&=\mathcal P(x)/(Z_fZ_g),\\
+ K_x(t)&=f(x+t)g(t)/Q(x).
+\end{align*}
+The intended scores, following the definitions rather than their names,
+are
+\begin{align*}
+ D(x)&=\langle K_x\log_2K_x\rangle,&
+ A_s(x)&=\langle K_x(t)\log_2f_*(x+t)\rangle_t,\\
+ E_s(x)&=\langle K_x\log_2g_*\rangle,&
+ u(x)&=A_s(x)+E_s(x)-D(x),\quad
+ w(x)=2D(x)-A_s(x)-E_s(x).
+\end{align*}
+The subscripts distinguish scores $A_s,E_s$ from a budget ratio or an
+exponent. All logarithms in scores are real base-two logarithms.
+
+\begin{lemma}[Concrete existence and score bound]\label{lem:exist}
+For these definitions all denominators are strictly positive, the four
+density normalizations and $K_x$ have average one, and all real scores
+are continuous and bounded. Every affine-certificate moment integrand
+is continuous and integrable. If each coefficient has absolute value
+at most two, then $|w(x)|\le256$ for every $x$.
+\end{lemma}
+\begin{proof}
+The coefficient assumption gives $|r|,|s|\le16$. Hence
+$2^{-16}\le F,G,Z_f,Z_g\le2^{16}$ and
+$2^{-32}\le\mathcal P\le2^{32}$. The tilted quantities satisfy the
+corresponding bounds with $16\kappa$ in place of 16.
+All assertions of positivity follow before taking any logarithm or
+quotient. Periodicity and substitution show that the averages of the
+normalized functions are one. The average of $K_x$ is one by the
+definition of $Q$. Integration of continuous functions depending
+continuously on $x$ on a compact rectangle preserves continuity;
+the strictly positive denominator bounds preserve it through division
+and logarithms. This proves integrability as well as continuity, and
+prevents a totalized logarithm or integral from masking a missing hypothesis.
+
+Put
+\[
+ L=\log_2\mathcal P-\log_2(Z_fZ_g),\quad
+ B=\mathcal Y/\mathcal P-\log_2(Z_fZ_g),\quad
+ H=\log_2(Z_{f,\kappa}Z_{g,\kappa})-\kappa\log_2(Z_fZ_g).
+\]
+Here $B$ is the $K_x$-average of $r(x+t)+s(t)-\log_2(Z_fZ_g)$.
+Substitution gives $D=B-L$ and $A_s+E_s=\kappa B-H$, so
+\begin{equation}\label{eq:score-identities}
+ u=L+(\kappa-1)B-H,\qquad w=(2-\kappa)B-2L+H.
+\end{equation}
+The quotient $\mathcal Y/\mathcal P$ is an average of $r+s$ with
+positive weights summing to one, hence has absolute value at most 32.
+Also $|\log_2(Z_fZ_g)|\le32$ and $|\log_2\mathcal P|\le32$.
+Thus $|B|,|L|\le64$. The tilted normalizer bounds give $|H|\le64\kappa$.
+Since $0\le2-\kappa\le1$,
+\[
+ |w|\le64(2-\kappa)+128+64\kappa=256.
+\]
+This derives the score bound through the actual definitions, rather
+than stopping at a bound on trigonometric coefficients.
+\end{proof}
+
+\begin{lemma}[The required entropy order]\label{lem:entropy-order}
+The actual scores satisfy $D\ge0$, $D-A_s\ge0$, $D-E_s\ge0$,
+and hence $w\ge0$. The same is true for their exact finite-circle
+versions.
+\end{lemma}
+\begin{proof}
+If $p,q$ are strictly positive normalized densities, the elementary
+inequality $\ln t\le t-1$ gives
+\[
+ \langle p\ln(q/p)\rangle\le\langle q-p\rangle=0.
+\]
+Apply this with $p=K_x$ and $q=1,f_*(x+\cdot),g_*$ respectively,
+and divide by $\ln2>0$. Each $q$ is normalized; for the shifted
+one this follows from periodic translation invariance. The same
+argument uses only normalized sums on the finite circle, where grid
+translations permute the summands. Finally
+$w=(D-A_s)+(D-E_s)\ge0$.
+\end{proof}
+
+\paragraph{Independent normalization check.}
+Eliminating all untilted normalizers from~\eqref{eq:score-identities}
+gives the exact equivalent formulas
+\begin{align}
+ u&=\log_2\mathcal P+(\kappa-1)\mathcal Y/\mathcal P
+       -\log_2(Z_{f,\kappa}Z_{g,\kappa}),\label{eq:cancel-u}\\
+ w&=(2-\kappa)\mathcal Y/\mathcal P-2\log_2\mathcal P
+       +\log_2(Z_{f,\kappa}Z_{g,\kappa}).\label{eq:cancel-w}
+\end{align}
+The tilted normalizers do not cancel. These identities are useful for
+an independent implementation check, not alternative definitions that
+avoid the density correspondence.
+
+\section{A validated integration contract}\label{sec:quadrature}
+This section proves a sufficient error bound. It does not assert that
+any numerical inequality has passed until the specified enclosures
+have actually been produced and checked. All source decimals are
+exact rationals, including coefficients and multipliers.
+
+\begin{lemma}[Periodic trapezoid bound]\label{lem:trap}
+Suppose a $2\pi$-periodic function $h$ is holomorphic on a neighborhood
+of the closed strip $|\operatorname{Im}z|\le\sigma$, where $\sigma>0$,
+and $|h|\le B_0$ there. For $N\ge1$,
+\[
+ \left|\frac1N\sum_{j=0}^{N-1}h(2\pi j/N)-\langle h\rangle\right|
+ \le \mathcal E_N(B_0,\sigma):=\frac{2B_0}{e^{N\sigma}-1}.
+\]
+\end{lemma}
+\begin{proof}
+For a nonzero Fourier index $k$, shift the integral for its coefficient
+to $\operatorname{Im}z=-\sigma\operatorname{sgn}k$. Periodicity cancels
+the vertical contour sides and gives
+$|\widehat h(k)|\le B_0e^{-|k|\sigma}$. Thus the Fourier series is
+absolutely convergent on the real axis. Averaging its terms at the
+$N$ nodes kills every index not divisible by $N$. The error is at most
+$2B_0\sum_{j\ge1}e^{-jN\sigma}$, the claimed geometric sum.
+\end{proof}
+
+\paragraph{Inner integrals and arithmetic.}
+Define $R(t)=\sum_j|r_j|\cosh(jt)$ and
+$S(t)=\sum_j|s_j|\cosh(jt)$. For an inner strip width $\sigma>0$,
+$|r(z)|\le R(\sigma)$ and $|s(z)|\le S(\sigma)$.
+Lemma~\ref{lem:trap} therefore applies with the following strip bounds:
+\begin{center}\small
+\begin{tabular}{ll}\toprule
+Inner quantity & Valid $B_0$\\\midrule
+$Z_f,Z_g$ & $2^{R(\sigma)},\ 2^{S(\sigma)}$\\
+$Z_{f,\kappa},Z_{g,\kappa}$ & $2^{\kappa R(\sigma)},\ 2^{\kappa S(\sigma)}$\\
+$\mathcal P(x_j)$ & $2^{R(\sigma)+S(\sigma)}$\\
+$\mathcal Y(x_j)$ & $(R(\sigma)+S(\sigma))2^{R(\sigma)+S(\sigma)}$\\
+$\langle2^{2r_\beta}\rangle$ &
+ $2^{2\sum_j|r_j|\cosh(j\beta)\cosh(j\sigma)}$\\
+$\langle2^{2s_\beta}\rangle$ &
+ $2^{2\sum_j|s_j|\cosh(j\beta)\cosh(j\sigma)}$\\\bottomrule
+\end{tabular}
+\end{center}
+Here $r_\beta(x)=\sum_jr_j\cosh(j\beta)\cos(jx)$; $s_\beta$ is
+defined similarly. The node $x_j$ is real, so the same convolution bounds
+hold uniformly for all outer nodes.
+Outward interval arithmetic must enclose the exact node sums, including
+the trigonometric arguments, exponentials, logarithms and all normalizers.
+Enlarge each inner interval by its own $\mathcal E_N$ before performing
+division or taking logarithms. Every denominator/logarithm interval used
+must have a verified strictly positive lower endpoint. A larger precision
+or agreement of two meshes is not a substitute for these error bounds.
+
+\paragraph{The finite DFT acceleration is an exact sum identity.}
+For node arrays $a_j=F(2\pi j/N)$ and $b_j=G(2\pi j/N)$ define
+$\widehat a_\ell=\sum_j a_j e^{-2\pi i\ell j/N}$ and use the inverse
+transform with prefactor $1/N$. Orthogonality of the finite geometric
+sum gives, with all indices read modulo $N$,
+\[
+ \operatorname{DFT}^{-1}
+       (\widehat a_\ell\widehat b_{-\ell})_j
+ =\sum_t a_{j+t}b_t.
+\]
+Indeed, expansion of the left side retains exactly the terms with
+$-j_a+j_b+j=0\pmod N$. Thus the raw convolution node average is this
+inverse transform divided by $N$ once more. For $\mathcal Y$, add the
+correlations of $(Fr,G)$ and $(F,Gs)$ and make the same division.
+The identity applies to exact node values. Rigorous ball DFT arithmetic
+must enclose that finite calculation; the analytic remainders above
+still have to be added afterward. An ordinary floating FFT without
+outward error control would not be a validated replacement.
+
+\begin{lemma}[A genuine zero-free strip]\label{lem:strip}
+Let $\beta>0$, and suppose rigorously computed bounds enclose
+\[
+ A_f=\frac{\langle2^{2r_\beta}\rangle}{Z_f^2},\quad
+ A_g=\frac{\langle2^{2s_\beta}\rangle}{Z_g^2},\quad
+ q_0=\sqrt{(A_f-1)(A_g-1)}<1.
+\]
+Then on $|\operatorname{Im}z|\le2\beta$,
+\[
+ |Q(z)-1|\le q_0,
+ \qquad |L(z)|\le-\log_2(1-q_0),
+\]
+and $Q$ has a holomorphic logarithm real on the real axis. Moreover
+\begin{equation}\label{eq:B-strip-bound}
+ |B(z)|\le
+ \frac{\sqrt{A_fA_g}(R(\beta)+S(\beta))}{1-q_0}
+       +|\log_2(Z_fZ_g)|.
+\end{equation}
+\end{lemma}
+\begin{proof}
+The entire periodic functions $f,g$ are real and even on the real circle
+because their defining trigonometric polynomials use only real cosines.
+They have shifted means one by contour shifting. For a function real
+on the real circle, its Fourier coefficients
+satisfy $\widehat f(-k)=\overline{\widehat f(k)}$. Parseval therefore
+writes the squared shifted $L^2$ norm as its constant term plus
+nonnegative multiples of $\cosh(2ky)$, so it is nondecreasing in $|y|$.
+This also bounds both positive and negative imaginary shifts.
+At $y=\beta$ that squared norm is precisely $A_f$, since
+$|F(t+i\beta)|^2=2^{2r_\beta(t)}$. In particular $A_f,A_g\ge1$.
+
+For $z=x+iy$ with $|y|\le2\beta$, split the convolution contour:
+\[
+ Q(z)=\langle f(x+t+iy/2)g(t-iy/2)\rangle_t.
+\]
+Subtract the product of the shifted means and apply Cauchy--Schwarz
+to $f-1,g-1$. Their squared norms are at most $A_f-1,A_g-1$;
+Here the centered identity is
+$\langle|f(\cdot+iy)-1|^2\rangle
+=\langle|f(\cdot+iy)|^2\rangle-2\operatorname{Re}\langle f(\cdot+iy)\rangle+1
+=\langle|f(\cdot+iy)|^2\rangle-1$, and similarly for $g$.
+This proves the disk bound. The power series for $\operatorname{Log}(1+h)$,
+with $h=Q-1$, supplies the holomorphic branch and gives
+$|\operatorname{Log}Q|\le\sum_{j\ge1}q_0^j/j=-\ln(1-q_0)$.
+Divide by $\ln2$ for the stated base-two bound. The strict inequality
+$q_0<1$ also supplies a neighborhood of the closed strip.
+
+Apply the same split contour to $\mathcal Y/(Z_fZ_g)$.
+The absolute value of $r+s$ there is at most $R(\beta)+S(\beta)$;
+Cauchy--Schwarz bounds the integral of $|fg|$ by $\sqrt{A_fA_g}$.
+Since $|Q|\ge1-q_0$ and
+$B=\mathcal Y/(Z_fZ_gQ)-\log_2(Z_fZ_g)$, this gives
+\eqref{eq:B-strip-bound}. Real positivity alone would not justify
+the complex logarithm used in this proof.
+\end{proof}
+
+\begin{proposition}[Per-certificate validated upper bound]\label{prop:validated}
+For every filter occurring in a certificate or one of its comparison rows,
+suppose Lemma~\ref{lem:strip}'s bounds are enclosed independently. Let
+$L_v^*,B_v^*,H_v^*$ bound $|L_v|,|B_v|,|H_v|$ on the strip, and put
+\[
+ U_v^*=L_v^*+|\kappa_v-1|B_v^*+H_v^*,\qquad
+ W_v^*=|2-\kappa_v|B_v^*+2L_v^*+H_v^*.
+\]
+For an old row vector $G_{v,i}$ form the following real-part upper bounds:
+\begin{align*}
+ \rho_0:&\quad (\Delta_b+U_v^*,\ \Gamma_b+W_v^*,\
+                       (U_v^*+U_j^*)_{j\in C}),\\
+ \rho_{1:8}:&\quad (A_bW_v^*+U_v^*,\ W_v^*-\Gamma_bL,\
+                  \Gamma_bH+W_v^*,\ (U_v^*+U_j^*)_{j\in C}),\\
+ \rho_9:&\quad (A_bW_v^*+U_v^*,\ W_v^*-15\Gamma_b,\
+                       (U_v^*+U_j^*)_{j\in C}).
+\end{align*}
+Call the resulting vector $S_{v,i}$ and set
+\[
+ B_{v,i}^*=(2+2\cosh(2\beta))\,2^{z_{v,i}\cdot S_{v,i}}.
+\]
+If the interval $T_{v,i}$ encloses the average of the true outer node
+values after all inner/arithmetic errors, then
+\[
+ I_{v,i}\le \sup T_{v,i}+\mathcal E_N(B_{v,i}^*,2\beta).
+\]
+Certification requires this upper bound to be strictly below an
+independently enclosed lower bound for $2^{\eta_b-m_i}$.
+\end{proposition}
+\begin{proof}
+Each affine row's real part is bounded by the displayed entry;
+$A_b>0$ and all multipliers are nonnegative. Hence the real part of
+the exponent is at most $z\cdot S$. The holomorphic extension uses
+$2^z=\exp((\ln2)z)$ and the log branch already justified. Also
+$|2+2\cos z|\le2+2\cosh(2\beta)$. Lemma~\ref{lem:trap}, followed
+by the enclosing node interval, gives the result. Negative entries
+such as $W_v^*-\Gamma_bL$ may be retained: they are valid upper bounds,
+not assumed nonnegative rows at complex points.
+\end{proof}
+
+\paragraph{Exact target and pilot.}
+The targets needed by the released theorem are $m_0=m_1=.00025$,
+$m_2=\cdots=m_8=4$, and $m_9=17$, with $\eta_b=.51613$.
+Kapila's common Proposition-B threshold alone is insufficient.
+The bounded pilot consists of $(3,0),(3,1),(4,0)$ and at most one tail
+certificate, using the actual source comparisons for each. A separate
+record must classify every attempted pair as certified, unresolved or
+refuted. A failed sufficient bound is unresolved, not a refutation;
+a certified lower bound above threshold would be a refutation.
+If bounds are rigorous and the measured cost permits the finite full
+batch, the same contract can be applied to all 430 distinct pairs.
+
+\section{Finite-circle convergence and effective evaluation}\label{sec:finite}
+\begin{proposition}[All normalizers are part of the limit]\label{prop:finite}
+Replace every inner average above by the normalized $P$-point average,
+including the tilted normalizers. At the grid points the resulting
+scores are precisely the finite-circle scores, and they converge
+uniformly to the continuous scores. The corresponding outer finite
+moments converge to their continuous moments. All convergence bounds
+can be made effective for this fixed finite coefficient family.
+\end{proposition}
+\begin{proof}
+For any continuously differentiable periodic real function $h$, comparison
+on each interval of length $2\pi/P$ with its left endpoint gives
+\[
+ |T_Ph-\langle h\rangle|\le 2\pi\|h'\|_\infty/P.
+\]
+The same estimate holds uniformly in an additional real parameter
+when its derivative bound is uniform. In this coefficient family,
+$|r'|,|s'|\le2\sum_{j=1}^8j=72$. Thus valid bounds on the
+integration-variable derivatives of $FG$ and $FG(r+s)$ are respectively
+\[
+ 144(\ln2)2^{32},\qquad 144(32\ln2+1)2^{32}.
+\]
+For $F^\kappa,G^\kappa$ a bound is $144(\ln2)2^{32}$.
+The raw normalizers and convolutions therefore differ from their
+continuous versions by explicitly bounded constants divided by $P$.
+Their positive lower bounds, for example $\mathcal P_P,\mathcal P\ge2^{-32}$
+and $Z_{f,P},Z_f\ge2^{-16}$, hold on either circle without a limiting
+argument. On these fixed positive compact intervals the quotient and
+logarithm operations are Lipschitz; for the latter use
+$|\log_2x-\log_2y|\le |x-y|/(\min(x,y)\ln2)$.
+Substitution in~\eqref{eq:score-identities} gives computable constants
+$C_u,C_w$ such that the uniform score errors are at most $C_u/P,C_w/P$.
+
+For a fixed certificate, the exponent error is at most a computable
+$C_E/P$. Its real exponents are uniformly bounded by another computable
+constant $J$. The mean-value bound for $2^x$ on this interval, and
+$0\le2+2\cos x\le4$, bound the change in the node integrand by a
+constant divided by $P$. The continuous integrand is itself continuously
+differentiable with a computable derivative bound, so applying the
+Riemann estimate once more proves an explicit $C_I/P$ moment error.
+All constants are finite expressions in the fixed rational coefficients,
+$\pi,\ln2$ and elementary-function bounds, not input-dependent advice.
+Consequently a certified continuous upper bound separated from a desired
+finite threshold by $d>0$ gives the effective choice $P>C_I/d$.
+There are finitely many modified certificates, so the maximum cutoff
+works for all of them, with any strictly smaller finite margin.
+
+For a prescribed fixed accuracy, choose a rational mesh from these
+bounds and evaluate the continuous elementary functions by rational
+Taylor series with explicit remainders. Bounded positive logarithm
+arguments admit the convergent series for
+$\ln y=2\sum_{j\ge0}((y-1)/(y+1))^{2j+1}/(2j+1)$.
+Below the fixed cutoff compute finite averages directly; above it use
+the continuous approximation and the uniform error bound. Approximating
+the input residue angle uses polynomially many operations in $\log P$;
+all meshes and accuracy constants are fixed. This gives an effective
+uniform evaluation procedure, though not a claim that our Lean project
+has already formalized this analytic argument.
+\end{proof}
+
+These arguments reconstruct the analytic steps in the pinned OpenAI
+filtering/numerical sections and Kapila's finite-family adaptation
+\cite{openai,kapila}. The proofs above supply their applicability to the
+actual 43-filter definitions; the numerical moment thresholds remain
+separate obligations until validated bounds are produced.

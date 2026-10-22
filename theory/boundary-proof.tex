@@ -1,0 +1,144 @@
+\section{Reconstructing the changed certificate}\label{sec:boundary}
+This proof starts from the two exact source records, not from the
+released note's conclusion. Use zero-based filter indices and the
+actual functions of Section~\ref{sec:analytic}. Kapila's Appendix~C gives
+\begin{align*}
+ E_{3,0}^{b}(x)={}&17.211(\Delta_b-u_3(x))
+  +27.1977(\Gamma_b-w_3(x))\\
+ &+8.3302(u_3(x)-u_5(x))+3.0053(u_3(x)-u_{16}(x)),\\
+ E_{3,1}^{b}(x)={}&7.7547(A_bw_3(x)-u_3(x))
+  +0(w_3(x)-\Gamma_b)+0(1.25\Gamma_b-w_3(x))\\
+ &+4.2699(u_3(x)-u_5(x))+2.2635(u_3(x)-u_8(x))\\
+ &+.461(u_3(x)-u_{16}(x))+3.4032(u_3(x)-u_{35}(x)).
+\end{align*}
+Here $\Delta_b=.02844$, $\Gamma_b=.45925$, $A_b=\Delta_b/\Gamma_b$.
+In particular both zero entries are exact rationals; they are not small
+floating-point estimates. The complete finite-data authentication must
+identify exactly the expected pairs $(v,i)\in\{0,\ldots,42\}\times
+\{0,\ldots,9\}$ and these comparison orders, not only a row count.
+
+For the fixed published tuple put
+\[
+ \Delta=\eta-\tau,\quad\Gamma=2\tau-\eta,\quad
+ A=\Delta/\Gamma,\quad q=\Gamma/\Gamma_b,\quad
+ K=\Delta/q-\Delta_b.
+\]
+The numerical obligations include $\Delta>0$, $0<\Gamma<\Gamma_b$,
+$K>0$, so $A-A_b=K/\Gamma_b>0$.
+For pattern values $U_j,W_j$ select filter~3 only when $U_3\ge U_j$
+for every $j$. Set $U=U_3,W=W_3$ and
+$\alpha=1$ for $W\le\Gamma$, $\alpha=\Gamma/W$ otherwise.
+Only $\alpha U<\Delta$ is the sampled case.
+Define $E_{3,0}'$ by replacing the first two constants in $E_{3,0}^b$
+by $\Delta,\Gamma$. Define $E_{3,1}'$ by replacing $A_b$ by $A$
+and replacing the zero upper-row multiplier by $7.7547(A-A_b)$;
+the lower-row multiplier remains exactly zero.
+
+\begin{theorem}[Concrete domination and integral identities]\label{thm:boundary}
+On sampled selected-filter-3 patterns, use $E_{3,0}'$ for
+$W\le\Gamma$ and $E_{3,1}'$ for $\Gamma<W\le1.25\Gamma_b$.
+Then, with exponents evaluated at the pattern values,
+\[
+ -\alpha U\le-\Delta+E_{3,i}'{}^{\pi}.
+\]
+For the actual analytic functions and the full normalized circle,
+\begin{align*}
+ \langle(2+2\cos x)2^{E_{3,0}'(x)}\rangle
+   &=2^{\Lambda_0}\langle(2+2\cos x)2^{E_{3,0}^{b}(x)}\rangle,\\
+ \langle(2+2\cos x)2^{E_{3,1}'(x)}\rangle
+   &=2^{\Lambda_1}\langle(2+2\cos x)2^{E_{3,1}^{b}(x)}\rangle,
+\end{align*}
+where
+\[
+ \Lambda_0=17.211(\Delta-\Delta_b)+27.1977(\Gamma-\Gamma_b),
+ \qquad \Lambda_1=7.7547(1.25)K.
+\]
+\end{theorem}
+\begin{proof}
+In the low case $\alpha=1$, $\Delta-U>0$, $\Gamma-W\ge0$,
+and all listed comparisons are nonnegative. Since $17.211\ge1$,
+$E_{3,0}'{}^\pi\ge\Delta-U$.
+For the extended first band, $W>\Gamma>0$ implies $0<\alpha<1$,
+$\alpha AW=\Delta$, and $AW-U>0$. The new upper multiplier is
+nonnegative and its row $1.25\Gamma_b-W$ is nonnegative. The comparison
+rows are nonnegative. Therefore
+\[
+ E_{3,1}'{}^\pi\ge7.7547(AW-U)\ge\alpha(AW-U)=\Delta-\alpha U.
+\]
+The lower row $W-\Gamma_b$ may be negative. Its contribution is zero
+because its multiplier is exactly zero; no lower-boundary assumption
+was silently added to this proof.
+
+For every real $x$, direct subtraction gives
+$E_{3,0}'-E_{3,0}^b=\Lambda_0$. In the first band the changed terms are
+\[
+ 7.7547(A-A_b)w_3(x)
+ +7.7547(A-A_b)(1.25\Gamma_b-w_3(x))
+ =7.7547(A-A_b)1.25\Gamma_b=\Lambda_1.
+\]
+These are identities at every point of the circle, including those
+unrelated to any selected pattern. Lemma~\ref{lem:exist} supplies actual
+continuity/integrability. The identity $2^{a+b}=2^a2^b$ and linearity
+of the normalized integral permit pulling the constant factor out.
+No integration domain was shortened or selected by a pattern condition.
+\end{proof}
+
+\begin{lemma}[Ordinary transfer and complete coverage]\label{lem:ordinary}
+For every other low record use $\Delta/q-u_v$ in place of
+$\Delta_b-u_v$. For every bounded old band
+$\Gamma_bL<W\le\Gamma_bH$, replace $A_b$ by $A$ and add
+$z_0(A-A_b)$ to its upper-row multiplier. For the tail make only the
+change $A_b\mapsto A$. These give sampled-pattern domination, with
+pointwise shifts $z_0K$, $z_0KH$, and $z_0(A-A_b)w_v(x)$ respectively.
+For filter~3 use Theorem~\ref{thm:boundary} in its first two regions.
+Together the regions are disjoint and exhaustive, with every finite
+upper endpoint assigned to the preceding region.
+\end{lemma}
+\begin{proof}
+For an ordinary low pattern $W\le\Gamma_b$, $q\le\alpha\le1$.
+If $U\ge0$, sampling and $\alpha\ge q$ imply
+$\alpha U\le U$ and $U<\Delta/q$; more directly in either sign case
+$\alpha U<\Delta\le\alpha\Delta/q$, so $\Delta/q-U>0$.
+Also $\alpha\Delta/q\ge\Delta$. Since $z_0\ge1\ge\alpha$,
+$z_0(\Delta/q-U)\ge\Delta-\alpha U$. The remaining rows are
+nonnegative with nonnegative weights. The exponent difference is $z_0K$.
+
+In a bounded old band, $W>\Gamma_bL\ge\Gamma_b>\Gamma$ and
+$\alpha<1/L\le z_0$. Again $\alpha AW=\Delta$ and $AW-U>0$.
+The old lower and upper rows are nonnegative; the upper multiplier
+only increases. Domination follows. The $w_v(x)$ terms cancel in the
+exponent difference, leaving $z_0(A-A_b)\Gamma_bH=z_0KH$.
+The tail proof is identical except for the missing upper row. Its
+shift is bounded above by $256z_0(A-A_b)$ using Lemma~\ref{lem:exist}.
+
+The ordered old endpoints are
+$\Gamma_b,1.25\Gamma_b,1.6\Gamma_b,2\Gamma_b,2.6\Gamma_b,
+3.5\Gamma_b,5\Gamma_b,8\Gamma_b,15\Gamma_b$.
+Replacing only filter~3's first endpoint by $\Gamma$ preserves order
+because $0<\Gamma<\Gamma_b<1.25\Gamma_b$.
+An ordered list partitions the real line into the initial closed ray,
+successive intervals open on the left and closed on the right, and a
+final open ray. Thus $W=\Gamma$ belongs to the low case, while
+$W=1.25\Gamma_b$ belongs to the extended first band; no gap or
+overlap occurs. All other endpoints and record assignments are unchanged.
+\end{proof}
+
+\paragraph{Connection to the fixed certificate.}
+For a nonnegative old weight vector of sum at most $Z=418.36$, the
+bounded-band update has sum at most $Z(1+A-A_b)<419$ once the fixed
+scalar inequality has been proved. Other updates do not increase the
+sum. The source maxima required for the five moment families are
+$10.6428$ for the 42 ordinary low rows and $8.4537$ for the first bands;
+the two special filter-3 rows have the shifts just proved. Every row's
+pattern-to-coordinate-average error is at most $6\epsilon$ when
+$A<1/4$: a first band row has error at most $(4A+3)\epsilon<4\epsilon$,
+a comparison has at most $6\epsilon$, and low/boundary rows have at
+most $4\epsilon$. Constants contribute no error and the zero row
+contributes zero. This yields the released allowance $6Z'\epsilon$.
+The $18\epsilon$ estimator allowance remains an algorithmic dependency,
+not something implied by this row-error calculation.
+
+The identities above transfer each old full-circle moment with its own
+record. The fixed-data margin theorem must connect every one of those
+records to the corresponding proved transfer; a generic lemma and an
+unconnected table check would not establish that conjunction.

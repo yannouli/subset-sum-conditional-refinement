@@ -1,0 +1,117 @@
+\section{Accepted concrete Lean checkpoints}\label{sec:formal-results}
+The completed checkpoint is implementation commit \texttt{7f9548e},
+with target \nolinkurl{Verification.DataBridge} importing
+\texttt{Concrete}, \texttt{Boundary} and \texttt{Regularity}.
+It uses Lean 4.24.0 with the following dependency pins:
+\begin{quote}
+Wharton: \nolinkurl{bed8e18f96db5955c1424abf3005b4fed4bd8d77}\\
+mathlib: \nolinkurl{f897ebcf72cd16f89ab4577d0c826cd14afaafc7}.
+\end{quote}
+The full lockfile retains the other dependency pins.
+The accepted theorem-to-manuscript mapping is deliberately scoped:
+\begin{enumerate}
+\item \textbf{Pattern domination.}
+\nolinkurl{Verification.Published.low_pattern_domination} and
+\nolinkurl{Verification.Published.extended_pattern_domination}
+establish Theorem~\ref{thm:boundary}'s two domination inequalities
+for the actual filter-3 records and published budgets. Their explicit
+hypotheses are the relevant interval bounds, the listed nonnegative
+comparisons and the sampled-pattern inequality; the desired domination
+is not assumed. The exact zero lower multiplier is proved and used.
+\item \textbf{Actual normalized-circle moments.}
+\nolinkurl{Verification.Published.concrete_low_moment_identity} and
+\nolinkurl{Verification.Published.concrete_band_moment_identity}
+prove the full-circle shift conclusions of Theorem~\ref{thm:boundary},
+together with integrability of both actual integrands and strict
+positivity of the old moment. The definitions are the original
+entropy-score integrals, not arbitrary functions called moments.
+The measure is Lebesgue measure restricted to $[0,2\pi]$, with
+the prefactor $(2\pi)^{-1}$ in the average. The positive-support proof
+is inside that full interval. Continuity and positive denominators
+are proved in \texttt{Regularity}, rather than assumed to avoid a
+totalized-integral or totalized-logarithm artifact.
+\item \textbf{Data bridges.}
+\nolinkurl{filter_transcription}, \nolinkurl{certificate_transcription},
+\nolinkurl{exact_pair_coverage}, \nolinkurl{source_filter_dimensions},
+\nolinkurl{rawFilter_index_in_bounds} and
+\nolinkurl{comparison_zip_no_truncation} in the same namespace
+check the exact ordered 43-filter/430-record data and their dimensions.
+The other bridge theorems give exact list lengths, comparison uniqueness
+and the ordinary-low cap excluding filter~3. The literal data equalities
+are kernel checked; correspondence of those literals to the authenticated
+external TeX tables was also independently parsed and compared.
+\item \textbf{Limited interval result.}
+\nolinkurl{Verification.Published.complete_region_coverage} proves the
+disjunction of the ten modified filter-3 intervals, with the indicated
+open/closed endpoints. At this checkpoint it does \emph{not} prove
+uniqueness, disjointness, or a region assignment for every ordinary
+filter. Those broader claims have the written proof in
+Lemma~\ref{lem:ordinary}, but their subsequent formal certificate links
+are not credited to this checkpoint.
+\end{enumerate}
+
+\paragraph{Build, axioms and separate checks.}
+The target and audit built from source, and Procopius independently
+replayed all four completed modules using the pinned built imports.
+The separately rerun transitive axiom report contains only
+\texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}.
+No accepted proof uses \texttt{sorry}, native-evaluation trust shortcuts
+or a custom mathematical axiom supplying missing conclusions.
+Explicit mathematical hypotheses were inspected separately from the
+axiom report. The source/statement/axiom receipt is under
+\texttt{evidence/boundary-checkpoint/}; independent acceptance is
+review commit \texttt{097e859}, receipt \texttt{30e28528}.
+
+The stronger all-import \texttt{lean4checker --fresh} attempt exceeded
+its five-minute cap and is \emph{unfinished}, not passed. Successful
+module source replay using built dependencies does not replace that
+stronger imported-environment recheck. A separate automated Comparator
+statement check was not run; the pinned Lake provides no such command.
+Actual definitions and statements received independent meaning review.
+No official challenge statement, website check or status upgrade is
+claimed. The exact replay commands, elapsed times, hashes and timeout
+are preserved in the checkpoint receipt.
+
+\paragraph{Accepted fixed-certificate extension.}
+Implementation commit \texttt{605cf983} adds \texttt{LogScalar},
+\texttt{Scalar}, \texttt{RowMargins}, \texttt{Regions} and
+\texttt{AllRows} to target \texttt{Verification}.
+The combined source build and \texttt{AuditScalar.lean} pass.
+Procopius independently replayed all five added modules and checked
+the statements and permitted axioms: review commit \texttt{bd3cf784},
+receipt \texttt{e3f55627}. Its accepted correspondence is as follows. The three
+\nolinkurl{entropy_a}, \nolinkurl{entropy_twoa} and
+\nolinkurl{entropy_hma} statements concern actual real logarithms
+and binary entropy, not merely inequalities between supplied interval
+endpoints. \nolinkurl{all_alias_gaps} checks the twenty fixed
+alias and auxiliary gaps. \nolinkurl{all_430_transferred_margins} and
+\nolinkurl{all_430_weight_sums} link the actual records to the
+transfer allowances and rounding budget.
+\nolinkurl{full_region_partition} states existence and uniqueness of
+region assignment for every filter, including the boundary conventions.
+These broader results are distinct from the earlier filter-3
+interval disjunction.
+
+The analytic link is
+\nolinkurl{all_430_conditional_moment_bounds}: for each imported record,
+it transfers the actual normalized-circle old moment to the new
+threshold. Its explicit premises include the old moment inequality
+and $w_v(x)\le256$ for every real $x$. We discharge these respectively
+with the accepted outside-Lean certificates in
+Section~\ref{sec:validated-results} and the written score proof in
+Section~\ref{sec:analytic}; neither is a Lean conclusion of this theorem.
+The reduced-score identities used by the numerical validation also
+retain their written proofs. Moreover, per-record analytic
+exponent/moment transfer is distinct from assembling sampled-pattern
+domination in every ordinary region: the latter remains written,
+while the new filter-3 pattern inequalities are already formalized.
+
+Finally, \nolinkurl{exact_error_and_display_gap} and
+\nolinkurl{fixed_tuple_ordinary_O} concern the fixed work exponent
+$0.48767228002$, its strict allowance below $0.4876723$, and absorption
+of the stated sublinear and logarithmic overhead. They do not prove
+that the full algorithm satisfies that resource premise.
+The 430 moment thresholds remain outside-Lean validated results,
+and the full algorithmic obligations in Section~\ref{sec:remaining}
+remain open. This extension retains the unfinished fresh-replay and
+separate statement-check limitations described above.
