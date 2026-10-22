@@ -1,8 +1,0 @@
-{
-  "status": "PASS",
-  "filters": 43,
-  "ordered_distinct_pairs": 430,
-  "source_sha256": "b397531cc5997e88c439d5290774861b46a34aa32d9cd71fa7dcced130359298",
-  "lean_data_sha256": "763c7447a081e90a9a56fe5e42f53ee3b9ebb4e1bf31bdf2eda9677050ee1275",
-  "scope": "Exact primary-source versus Lean transcription; not integral or complete algorithm verification."
-}
