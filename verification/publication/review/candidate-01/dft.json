@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "comparisons": 103,
+  "bits": 160,
+  "seconds": 0.016536800016183406,
+  "fixtures": "non-even asymmetric integer vectors and actual filter3 P, Fr/G and F/Gs correlations; all shifts checked by direct normalized sums",
+  "limitation": "regression fixture, not an independent analytic quadrature proof"
+}

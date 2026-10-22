@@ -1,0 +1,15 @@
+{
+  "source_count": 136,
+  "source_crc": null,
+  "manifest_bad": [],
+  "unexpected": [],
+  "overleaf_count": 7,
+  "overleaf_crc": null,
+  "overleaf_source_diff": [],
+  "accepted_code_diff": [],
+  "archive_hashes": {
+    "subset-sum-verification-source.zip": "558d0ee3b778d5433dfaf073a5a014dafb654b6b5069cfc4c57be21885d39ea0",
+    "verification-overleaf.zip": "a12108c4e6c8ab7b21e85e98ef4212365a19a20123b3d2d4fb57f0fc4d123834",
+    "verification.pdf": "13643f168094ebc234f693e1cc6b89783320cbabfde32b1455be5aee013e1d7b"
+  }
+}

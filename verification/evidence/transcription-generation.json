@@ -1,0 +1,9 @@
+{
+  "source_sha256": "b397531cc5997e88c439d5290774861b46a34aa32d9cd71fa7dcced130359298",
+  "filters": 43,
+  "rows": 430,
+  "method": "parse exact decimal tables with Fraction, emit actual full records and kernel equality targets",
+  "generator_note": "Equality to imported records must build; generation alone is not proof.",
+  "normalized_decoded_text_sha256": "b70eb50c9c2f7046b6bdb153f16fa6c6418a18363fc693371d016a43ef74ca05",
+  "provenance_correction": "The initial generator note hashed newline-normalized decoded text. Authentication and the committed generator use raw source bytes, whose SHA256 is recorded in source_sha256; the decoded-text hash is retained separately."
+}

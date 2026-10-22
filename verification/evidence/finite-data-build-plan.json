@@ -1,0 +1,10 @@
+{
+  "scope": "Build pinned upstream finite-data source prerequisites once, then aggregate; no new mathematical claims from a build alone",
+  "target_count": 43,
+  "worker_processes": 2,
+  "lean_runtime_threads_per_worker": 1,
+  "per_target_timeout_seconds": 120,
+  "batch_wall_stop_seconds": 1200,
+  "probe_file_seconds": 26.186742899997625,
+  "expected_batch_seconds_from_probe": 563.014972349949
+}

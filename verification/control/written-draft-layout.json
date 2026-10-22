@@ -1,0 +1,13 @@
+{
+    "kind":  "written-supplement-draft-layout",
+    "source_commit":  "05ddbf0",
+    "pdf_sha256":  "34928ba02dc9163b43842bc956e1947b67feaf19d3c953d30bb1c3da61e25021",
+    "pages":  13,
+    "compiler":  "Tectonic 0.17.0",
+    "tex_layout_warnings":  0,
+    "renderer":  "PyMuPDF 1.2 scale",
+    "all_pages_visually_inspected":  true,
+    "clipping_or_overlap":  false,
+    "scientific_status":  "Written-proof review recorded separately; no completed Lean or moment claims",
+    "receipt":  "fae5e853-3547-4ce8-9316-da4da97d6d64"
+}

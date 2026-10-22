@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "released_commit": "5380ae2c6411f70769df6076ca82a54d43ff09c3",
+  "protected_released_files": 56,
+  "changed_or_missing": [],
+  "candidate_sha256": "75f66f5cc9aedb10aae7632f62bc9a9cdb330142cec488f4937045963dc602c1",
+  "accepted_moments_sha256": "9646407eba82509f62c6464293d9fb472370d2e2c08a45ae07636c7bd0c84476",
+  "scope": "Only new verification/ artifacts; immutable published files, candidate, discovery evidence and executable logic unchanged."
+}

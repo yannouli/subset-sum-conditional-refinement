@@ -17,18 +17,17 @@ establish the new scalar feasibility conditions.
 
 ## What remains conditional
 
-The OpenAI/Kapila isolation, implementation, alias/preliminary-search and
-finite-circle arguments, and the original 430 continuous moment inequalities,
-remain explicit inherited premises. They are identified in the note and
-`source-audit/`. The checker does not prove those integrals or execute a
-Subset Sum solver. No unresolved new mathematical step is being substituted
-as an inherited assumption. Independent review assesses the full conditional
-implication, separately from code execution.
+The original v1.0.0 note records its inherited algorithmic and continuous-moment
+premises. The separately documented [verification supplement](verification/README.md)
+reduces those premises without changing the exponent or rewriting that note.
 
-No Lean toolchain was available in the inspected environment; no Lean build,
-axiom audit of a new formal theorem, or site verification is claimed.
-See `numerics/FORMALIZATION-SCOPE.md`. The campaign's mathematical proof and
-its missing formalization are different matters.
+This verification supplement supplies validated enclosures for all 430 original continuous moment inequalities and Lean-checked components of the fixed-certificate and boundary-transfer analysis. The numerical validation has an explicit outside-Lean computational trust boundary. The complete Subset Sum running-time theorem remains conditional on the stated alias-coverage, checksum-estimator, and implementation claims.
+
+The supplement distinguishes reviewed written arguments, validated FLINT/Arb
+calculations and Lean theorems with explicit hypotheses. Internal agent review
+and source replay are not independent human peer review or a site-awarded status.
+The historical `numerics/FORMALIZATION-SCOPE.md` describes v1.0.0; the current
+formalization scope is [verification/lean/FINAL_SCOPE.md](verification/lean/FINAL_SCOPE.md).
 
 On 21 October 2026, Big O Speedrun listed this conditional result at rank 1
 with evidence level **Claimed**, ahead of Wharton's earlier conditional
@@ -40,7 +39,8 @@ snapshot; the bounded source/priority audit does not guarantee global novelty.
 
 ## Read and reproduce
 
-- `paper.pdf`: mathematical note, with proofs and exact-certificate appendix.
+- `verification/verification.pdf` and `verification/README.md`: verification supplement and reproduction instructions.
+- `paper.pdf`: original mathematical note, with proofs and exact-certificate appendix.
 - `paper.tex`, `candidate-data.tex`, `certificate-appendix.tex`,
   `references.bib`: complete Overleaf source; select `paper.tex` as main.
 - `review.md` and `review/`: independent findings, corrections and evidence.

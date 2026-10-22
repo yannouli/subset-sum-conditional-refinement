@@ -1,0 +1,128 @@
+{
+  "candidate_archive_sha256": "39bf326c779b95842c012c92cd7836fefb5813c9e56f946ff2d8701e52af646d",
+  "candidate_source_commit": "cb1d2d4e643437633b39deb177e7551e21891cd1",
+  "verification_source_commit": "f2edf57c17a555d31302e68dd2ec43722a249e56",
+  "command": [
+    "lean4checker.exe",
+    "--fresh",
+    "--verbose",
+    "Verification.AllRows"
+  ],
+  "checker_executable_sha256": "dfbcdb1d625ed874d3ff7fd3d265c89298c0e589bb4040b230bf832cef5725b5",
+  "checker_source_commit": "da26eb05e9959402afcb9bd6dfe5dc4f700f70d6",
+  "project_source_hashes": {
+    "Audit.lean": "af3813d1af19d998aa9f0104bdeb7eaa31dd2779c1b09897391fb81720d6999a",
+    "AuditScalar.lean": "716c16fa542a6668257272e444c1d1e061c4ffdd9a12330e35adc93b227a9886",
+    "Verification.lean": "fd8e55d7fb9336bd8670d273798aa900c6cbdd40f1c7b5638aea8529f4b4babf",
+    "Verification/AllRows.lean": "9b6fb5fb50cbfbf49d0c46c315883f33e89e4d1290248d5f2e4fe29d2516cc2f",
+    "Verification/Boundary.lean": "fd6a3d648e2db2b9e96509513404e32505a305930cfa91cc9f1e1f19a4ec9378",
+    "Verification/Concrete.lean": "85f9c7664bdb4f63fd29faec028f5f2409ea357fb366c0beeaafb1b1b34e0c19",
+    "Verification/DataBridge.lean": "763c7447a081e90a9a56fe5e42f53ee3b9ebb4e1bf31bdf2eda9677050ee1275",
+    "Verification/LogScalar.lean": "00a9da121a44975235c82244320c86b913710a7b24df89b27fa91def588d6425",
+    "Verification/Regions.lean": "79239a27cf88606dd52ad8d01fa1e449bb96dd3b6e0d35b5e84161ae04819787",
+    "Verification/Regularity.lean": "2881c26b0fb60d3ff4efd6ab815a548a92e2ac299bbe913fe9ca564b31112bd2",
+    "Verification/RowMargins.lean": "25701e1224d84250cea0a793bd0f39b867c6feb1caaf04a8f53f2fd409861e25",
+    "Verification/Scalar.lean": "411696c096c47c4290efeeea49df71da70a77182bbba5503a45977ed04cbfb50"
+  },
+  "project_olean_hashes": {
+    ".lake/build/lib/lean/Verification.olean": "71488363eed5178092dbc8db81496f1134d81e7017f70c81207e1fd111e95b80",
+    ".lake/build/lib/lean/Verification/AllRows.olean": "6cf4aaa9ccdb3787895849d8d1d6e132daebe7b74a14c2b8503d85643d07ca1c",
+    ".lake/build/lib/lean/Verification/Boundary.olean": "0591a7c867cbf0b3e4d74cc2974f70b22ec2e41a8aec43df9e53a8cee7dfe957",
+    ".lake/build/lib/lean/Verification/Concrete.olean": "d04af6a24fa0d80d8bc858a82f79fd973fe6ecd6b155abf47ec88c92b03104f0",
+    ".lake/build/lib/lean/Verification/DataBridge.olean": "5aa9a1106ce8dfde6b148ef8c385c7682bbb6a51de0738d04c4f8e408be72570",
+    ".lake/build/lib/lean/Verification/LogScalar.olean": "89c48d4472cd186263307fb58d7ce67175da0448985b7954115de72fdb7b9461",
+    ".lake/build/lib/lean/Verification/Regions.olean": "6ec3a71401905b21ea1dd070580398336e1f2830a344ac64c1e11875ab0b9996",
+    ".lake/build/lib/lean/Verification/Regularity.olean": "9df2b8d3dea4f9a8a79f9000a700f11f10d756884834995e8bbfa03a2314d7d6",
+    ".lake/build/lib/lean/Verification/RowMargins.olean": "89447b49c719665a78ab5232a9ec6e994ac559182dbf76f9b64674f3622d0dbf",
+    ".lake/build/lib/lean/Verification/Scalar.olean": "1d8b754ab712122b3866912c2396626583f12876945f16264c1552b9b04b2bb9"
+  },
+  "preparation_build": {
+    "command": "lake build +Verification",
+    "exit_code": 0,
+    "result": "Build completed successfully (7410 jobs). All project modules newly built; dependency package cache explicitly reused.",
+    "warning": "Inherited upstream CertificateTransfer unused hk0."
+  },
+  "supervision": "Direct executable under Python standard-library subprocess.run(timeout=900); checker fresh path inspected independently as in-process, no external child launch. No custom process-control wrapper.",
+  "timeout_seconds": 900,
+  "lean_threads": 1,
+  "working_set_stop_bytes": 6442450944,
+  "memory_sampling_target_seconds": 20,
+  "start_utc": "2026-10-22T14:03:59.033422+00:00",
+  "status": "timeout",
+  "exit_code": null,
+  "termination": "Python subprocess.run killed and waited for the directly supervised checker at timeout.",
+  "elapsed_seconds": 901.4707488999993,
+  "end_utc": "2026-10-22T14:19:00.504999+00:00",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "classification": "incomplete_timeout",
+  "completed_stronger_replay": false,
+  "attempt_count": 1,
+  "extensions_or_retries": 0,
+  "working_directory": "verification/lean",
+  "environment": {
+    "os": "Windows x64",
+    "supervisor_python": "Python 3.12.14 standard-library subprocess.run",
+    "lean": "Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+    "lake": "Lake version 5.0.0-src+797c613 (Lean version 4.24.0)",
+    "LEAN_NUM_THREADS": "1",
+    "search_path": "Resolved once with pinned Lake; new candidate project output plus explicitly reused pinned dependency-package cache and pinned Lean installation. No old project oleans copied.",
+    "lake_generated_unused_search_path": "Cli dependency output directory was absent; Lake includes this package search entry. The source build passed. No search path was changed for the replay."
+  },
+  "checker_main_sha256": "70dd0524049da7f66151785901c1cac0465e3bc53aabafc88d5613d575563899",
+  "dependency_reuse": {
+    "pins": {
+      "subset_sum_bound": "bed8e18f96db5955c1424abf3005b4fed4bd8d77",
+      "mathlib": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "plausible": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "LeanSearchClient": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "importGraph": "d768126816be17600904726ca7976b185786e6b9",
+      "proofwidgets": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "aesop": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "Qq": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "batteries": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "Cli": "91c18fa62838ad0ab7384c03c9684d99d306e1da"
+    },
+    "tracked_dependency_sources_clean": true,
+    "reuse": "Only declared dependency-package source/build cache; project build directory initially absent and is not copied."
+  },
+  "source_integrity": {
+    "candidate_regular_files_checked_after_execution": 144,
+    "all_unchanged": true,
+    "project_build_initially_absent": true,
+    "new_project_source_build_passed": true
+  },
+  "resources": {
+    "sample_count": 43,
+    "target_interval_seconds": 20,
+    "measured_interval_seconds": {
+      "min": 20.075452,
+      "median": 20.099093500000002,
+      "max": 40.696175
+    },
+    "max_sampled_working_set_bytes": 4912455680,
+    "max_sampled_private_bytes": 1085546496,
+    "last_sampled_cpu_seconds": 874.84375,
+    "last_sample_utc": "2026-10-22T14:18:40.4241521Z",
+    "memory_stop_triggered": false,
+    "qualification": "Sampled working set, not a hard OS allocation cap or complete instantaneous peak; includes an initial monitoring-setup gap."
+  },
+  "termination_confirmation": {
+    "utc": "2026-10-22T14:19:12.8303889Z",
+    "remaining_owned_checkers": 0,
+    "remaining_owned_checker_children": 0,
+    "sampling_monitor_exit_code": 1,
+    "sampling_monitor_disposition": "The final identity guard reported Checker identity changed; monitor stopped without acting. after the last sample. No memory stop was executed. A subsequent independent process query confirmed the owned checker and its children absent. No replacement process was acted on; the transient identity could not be recovered."
+  },
+  "output": {
+    "file": "checker.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "interpretation": "No checker verdict or diagnostic was emitted before timeout; empty output does not establish successful replay or rule out a later rejection."
+  },
+  "resources_file": {
+    "file": "resources.jsonl",
+    "sha256": "a77badbc5a466a2a04349807a9f62c13c35fd9c0b32e21837fad9205d34a04cd"
+  },
+  "scope": "New producer execution only. Clean project-source build, axiom/statement audits, numerical checks and independent source review are separate evidence. No site verification status or full algorithm proof is asserted.",
+  "public_metadata": "Workstation paths and process identifiers omitted from this new publication receipt. Raw environment, process identities and samples are preserved privately for independent review."
+}

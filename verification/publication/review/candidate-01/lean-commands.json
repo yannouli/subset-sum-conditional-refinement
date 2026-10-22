@@ -1,0 +1,34 @@
+[
+  {
+    "command": [
+      "<reused-Lean-4.24.0>/bin\\lake.exe",
+      "build",
+      "+Verification"
+    ],
+    "cwd": "<fresh-extraction>\\verification\\lean",
+    "exit": 0,
+    "seconds": 176.9541625000129
+  },
+  {
+    "command": [
+      "<reused-Lean-4.24.0>/bin\\lake.exe",
+      "env",
+      "lean",
+      "Audit.lean"
+    ],
+    "cwd": "<fresh-extraction>\\verification\\lean",
+    "exit": 0,
+    "seconds": 38.14015429999563
+  },
+  {
+    "command": [
+      "<reused-Lean-4.24.0>/bin\\lake.exe",
+      "env",
+      "lean",
+      "AuditScalar.lean"
+    ],
+    "cwd": "<fresh-extraction>\\verification\\lean",
+    "exit": 0,
+    "seconds": 23.77969779999694
+  }
+]

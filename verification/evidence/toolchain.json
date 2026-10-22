@@ -1,0 +1,20 @@
+{
+  "lean": "4.24.0",
+  "lean_commit": "797c613eb9b6d4ec95db23e3e00af9ac6657f24b",
+  "lake": "5.0.0-src+797c613",
+  "official_windows_archive_url": "https://github.com/leanprover/lean4/releases/download/v4.24.0/lean-4.24.0-windows.zip",
+  "official_archive_bytes": 662142928,
+  "verified_archive_sha256": "c2fcf1cba1089e526e184de2a6f6763a6e15596a2991f096dfacd4a6e3ce2cdd",
+  "download_and_extract_seconds": 27.97768169999472,
+  "wharton_revision": "bed8e18f96db5955c1424abf3005b4fed4bd8d77",
+  "mathlib_revision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "lean4checker_revision": "da26eb05e9959402afcb9bd6dfe5dc4f700f70d6",
+  "checker_build": "passed",
+  "fresh_replay": "five-minute capped attempt unfinished",
+  "python": "3.12.14",
+  "python_flint": "0.8.0",
+  "moment_bits": 160,
+  "moment_threads": 1,
+  "mathlib_cache": "7335 files fetched from standard pinned mathlib cache after source inspection; total retrieval duration was not measured",
+  "limits": "Dedicated portable tools only; no PATH/shared defaults/admin changes; at most two implementation workers, final commands sequential."
+}

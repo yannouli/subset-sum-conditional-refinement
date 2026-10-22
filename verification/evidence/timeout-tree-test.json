@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "timed_out_parent_and_child_terminated": true,
+  "seconds": 0.7678577000042424,
+  "child_pid": 37080,
+  "scope_correction": "Only live-parent fixture passed. Reviewer caught exited-parent/inherited-pipe counterexample (1bbe61e8); timeout wrapper subsequently removed from deliverable. This is not evidence of a robust timeout harness."
+}

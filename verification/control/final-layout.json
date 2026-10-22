@@ -1,0 +1,10 @@
+{
+    "pages":  18,
+    "pdf_sha256":  "13643f168094ebc234f693e1cc6b89783320cbabfde32b1455be5aee013e1d7b",
+    "tex_layout_warnings":  0,
+    "all_pages_rendered_and_inspected":  true,
+    "clipping_or_overlap":  false,
+    "renderer":  "PyMuPDF",
+    "source_commit":  "ba896d6",
+    "status":  "Final PDF awaiting independent artifact review"
+}

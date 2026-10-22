@@ -1,0 +1,12 @@
+[
+  {
+    "file": "audit.log",
+    "queries": 16,
+    "permitted_only": true
+  },
+  {
+    "file": "audit-scalar.log",
+    "queries": 15,
+    "permitted_only": true
+  }
+]

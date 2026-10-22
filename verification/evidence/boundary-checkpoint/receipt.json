@@ -1,0 +1,63 @@
+{
+  "utc": "2026-10-21T20:31:57.928254+00:00",
+  "plan": "sequential, one Lean worker, explicit per-step caps",
+  "steps": [
+    {
+      "name": "source-build",
+      "command": [
+        "C:/Users/yanni/.slock/agents/e0bd6c98-fa69-4e47-ac88-0c43db43a5d5/subset-sum-verification/tools/lean-4.24.0-windows/bin/lake.exe",
+        "build",
+        "+Verification.DataBridge"
+      ],
+      "timeout_seconds": 180,
+      "seconds": 67.79141080001136,
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "name": "statements-axioms",
+      "command": [
+        "C:/Users/yanni/.slock/agents/e0bd6c98-fa69-4e47-ac88-0c43db43a5d5/subset-sum-verification/tools/lean-4.24.0-windows/bin/lake.exe",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "timeout_seconds": 90,
+      "seconds": 16.460543599998346,
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "name": "fresh-replay",
+      "command": [
+        "C:/Users/yanni/.slock/agents/e0bd6c98-fa69-4e47-ac88-0c43db43a5d5/subset-sum-verification/tools/lean-4.24.0-windows/bin/lake.exe",
+        "env",
+        "C:/Users/yanni/.slock/agents/e0bd6c98-fa69-4e47-ac88-0c43db43a5d5/subset-sum-verification/tools/lean4checker-4.24.0/.lake/build/bin/lean4checker.exe",
+        "--fresh",
+        "--verbose",
+        "Verification.DataBridge"
+      ],
+      "timeout_seconds": 300,
+      "seconds": 326.01877639998565,
+      "status": "timeout",
+      "exit_code": null
+    }
+  ],
+  "source_sha256": {
+    "Audit.lean": "af3813d1af19d998aa9f0104bdeb7eaa31dd2779c1b09897391fb81720d6999a",
+    "Verification\\Boundary.lean": "fd6a3d648e2db2b9e96509513404e32505a305930cfa91cc9f1e1f19a4ec9378",
+    "Verification\\Concrete.lean": "85f9c7664bdb4f63fd29faec028f5f2409ea357fb366c0beeaafb1b1b34e0c19",
+    "Verification\\DataBridge.lean": "763c7447a081e90a9a56fe5e42f53ee3b9ebb4e1bf31bdf2eda9677050ee1275",
+    "Verification\\LogScalar.lean": "ac3a2e3488a561cc2cb294756ca2e7895f8180b3450632cdbe67abda6f4ed483",
+    "Verification\\Regularity.lean": "2881c26b0fb60d3ff4efd6ab815a548a92e2ac299bbe913fe9ca564b31112bd2",
+    "Verification.lean": "1bfd368f73445840e1d27b5192e493bb9320a6e2411d64c36bb6650d5fe6ed7b"
+  },
+  "fresh_replay_note": "Five-minute cap exceeded; lake timeout left its child checker alive with an open inherited pipe. Verified owned checker path and stopped that specific child PID40872 at 20:38Z. No replay success claimed.",
+  "accepted_source_sha256": {
+    "Verification\\Concrete.lean": "85f9c7664bdb4f63fd29faec028f5f2409ea357fb366c0beeaafb1b1b34e0c19",
+    "Verification\\Boundary.lean": "fd6a3d648e2db2b9e96509513404e32505a305930cfa91cc9f1e1f19a4ec9378",
+    "Verification\\Regularity.lean": "2881c26b0fb60d3ff4efd6ab815a548a92e2ac299bbe913fe9ca564b31112bd2",
+    "Verification\\DataBridge.lean": "763c7447a081e90a9a56fe5e42f53ee3b9ebb4e1bf31bdf2eda9677050ee1275",
+    "Audit.lean": "af3813d1af19d998aa9f0104bdeb7eaa31dd2779c1b09897391fb81720d6999a"
+  }
+}

@@ -1,0 +1,15 @@
+⚠ [7353/7378] Replayed SubsetSum.CertificateTransfer
+warning: SubsetSum/CertificateTransfer.lean:90:5: unused variable `hk0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [7401/7410] Built Verification.Concrete (11s)
+✔ [7402/7410] Built Verification.Boundary (11s)
+✔ [7403/7410] Built Verification.Regularity (11s)
+✔ [7404/7410] Built Verification.DataBridge (37s)
+✔ [7405/7410] Built Verification.LogScalar (13s)
+✔ [7406/7410] Built Verification.Scalar (13s)
+✔ [7407/7410] Built Verification.RowMargins (15s)
+✔ [7408/7410] Built Verification.Regions (27s)
+✔ [7409/7410] Built Verification.AllRows (14s)
+✔ [7410/7410] Built Verification (11s)
+Build completed successfully (7410 jobs).

@@ -1,0 +1,68 @@
+Verification.Published.low_pattern_domination (U : Fin 43 → ℝ) (W : ℝ) (hregion : W ≤ Verification.Published.budget)
+  (hselect : ∀ j ∈ SubsetSum.FilterData.certificate_3_0.comparisons, U j ≤ U 3)
+  (hsample : SubsetSum.samplingFraction Verification.Published.budget W * U 3 < Verification.Published.delta) :
+  -SubsetSum.samplingFraction Verification.Published.budget W * U 3 ≤
+    -Verification.Published.delta +
+      Verification.Published.lowExponent Verification.Published.delta Verification.Published.budget U W
+Verification.Published.extended_pattern_domination (U : Fin 43 → ℝ) (W : ℝ) (hlower : Verification.Published.budget < W)
+  (hupper : W ≤ Verification.Published.bandTop)
+  (hselect : ∀ j ∈ SubsetSum.FilterData.certificate_3_1.comparisons, U j ≤ U 3)
+  (hsample : SubsetSum.samplingFraction Verification.Published.budget W * U 3 < Verification.Published.delta) :
+  -SubsetSum.samplingFraction Verification.Published.budget W * U 3 ≤
+    -Verification.Published.delta +
+      Verification.Published.bandExponent Verification.Published.slope Verification.Published.budget
+        Verification.Published.newUpperWeight U W
+Verification.Published.complete_region_coverage (W : ℝ) :
+  W ≤ Verification.Published.budget ∨
+    Verification.Published.budget < W ∧ W ≤ Verification.Published.bandTop ∨
+      Verification.Published.bandTop < W ∧ W ≤ 8 / 5 * Verification.Published.gammaB ∨
+        8 / 5 * Verification.Published.gammaB < W ∧ W ≤ 2 * Verification.Published.gammaB ∨
+          2 * Verification.Published.gammaB < W ∧ W ≤ 13 / 5 * Verification.Published.gammaB ∨
+            13 / 5 * Verification.Published.gammaB < W ∧ W ≤ 7 / 2 * Verification.Published.gammaB ∨
+              7 / 2 * Verification.Published.gammaB < W ∧ W ≤ 5 * Verification.Published.gammaB ∨
+                5 * Verification.Published.gammaB < W ∧ W ≤ 8 * Verification.Published.gammaB ∨
+                  8 * Verification.Published.gammaB < W ∧ W ≤ 15 * Verification.Published.gammaB ∨
+                    15 * Verification.Published.gammaB < W
+Verification.Published.concrete_low_moment_identity :
+  MeasureTheory.Integrable (Verification.Published.integrand Verification.Published.oldLow)
+      Verification.Published.circleDomain ∧
+    MeasureTheory.Integrable (Verification.Published.integrand Verification.Published.newLow)
+        Verification.Published.circleDomain ∧
+      0 < Verification.Published.moment Verification.Published.oldLow ∧
+        Verification.Published.moment Verification.Published.newLow =
+          Verification.Published.exp2 Verification.Published.lowShift *
+            Verification.Published.moment Verification.Published.oldLow
+Verification.Published.concrete_band_moment_identity :
+  MeasureTheory.Integrable (Verification.Published.integrand Verification.Published.oldBand)
+      Verification.Published.circleDomain ∧
+    MeasureTheory.Integrable (Verification.Published.integrand Verification.Published.newBand)
+        Verification.Published.circleDomain ∧
+      0 < Verification.Published.moment Verification.Published.oldBand ∧
+        Verification.Published.moment Verification.Published.newBand =
+          Verification.Published.exp2 Verification.Published.bandShift *
+            Verification.Published.moment Verification.Published.oldBand
+Verification.Published.rawFilter_index_in_bounds (v : Fin 43) : ↑v < SubsetSum.FilterData.filters.length
+Verification.Published.comparison_zip_no_truncation (c : SubsetSum.FilterData.RawCertificate)
+  (hc : c ∈ SubsetSum.FilterData.certificates) :
+  have offset := if ↑c.region = 0 ∨ ↑c.region = 9 then 2 else 3;
+  (List.drop offset c.multipliers).length = c.comparisons.length ∧
+    (c.comparisons.zip (List.drop offset c.multipliers)).length = c.comparisons.length
+Verification.Published.exact_pair_coverage :
+  List.map (fun c => (↑c.filterIndex, ↑c.region)) Verification.Published.expectedCertificates =
+    List.flatMap (fun v => List.map (fun j => (v, j)) (List.range 10)) (List.range 43)
+'Verification.Published.exact_special_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Verification.Published.concrete_budgets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Verification.Published.low_pattern_domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Verification.Published.extended_pattern_domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Verification.Published.complete_region_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Verification.Published.concrete_low_moment_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Verification.Published.concrete_band_moment_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Verification.Published.filter_transcription' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Verification.Published.certificate_transcription' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Verification.Published.source_filter_dimensions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Verification.Published.exact_pair_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Verification.Published.comparison_zip_no_truncation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Verification.Published.exact_comparisons_lengths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Verification.Published.exact_multipliers_lengths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Verification.Published.source_comparisons_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Verification.Published.non_special_low_cap' depends on axioms: [propext, Classical.choice, Quot.sound]

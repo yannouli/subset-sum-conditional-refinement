@@ -1,0 +1,273 @@
+{
+  "plan": {
+    "scope": "Build pinned upstream finite-data source prerequisites once, then aggregate; no new mathematical claims from a build alone",
+    "target_count": 43,
+    "worker_processes": 2,
+    "lean_runtime_threads_per_worker": 1,
+    "per_target_timeout_seconds": 120,
+    "batch_wall_stop_seconds": 1200,
+    "probe_file_seconds": 26.186742899997625,
+    "expected_batch_seconds_from_probe": 563.014972349949
+  },
+  "elapsed_seconds": 410.835571899981,
+  "results": [
+    {
+      "index": 0,
+      "target": "+SubsetSum.FilterData.Filter00",
+      "exit_code": 0,
+      "seconds": 22.16031579999253
+    },
+    {
+      "index": 1,
+      "target": "+SubsetSum.FilterData.Filter01",
+      "exit_code": 0,
+      "seconds": 21.847568400000455
+    },
+    {
+      "index": 2,
+      "target": "+SubsetSum.FilterData.Filter02",
+      "exit_code": 0,
+      "seconds": 19.57822510000551
+    },
+    {
+      "index": 3,
+      "target": "+SubsetSum.FilterData.Filter03",
+      "exit_code": 0,
+      "seconds": 7.941575700009707
+    },
+    {
+      "index": 4,
+      "target": "+SubsetSum.FilterData.Filter04",
+      "exit_code": 0,
+      "seconds": 18.519965100014815
+    },
+    {
+      "index": 5,
+      "target": "+SubsetSum.FilterData.Filter05",
+      "exit_code": 0,
+      "seconds": 18.729782600014005
+    },
+    {
+      "index": 6,
+      "target": "+SubsetSum.FilterData.Filter06",
+      "exit_code": 0,
+      "seconds": 18.52569969999604
+    },
+    {
+      "index": 7,
+      "target": "+SubsetSum.FilterData.Filter07",
+      "exit_code": 0,
+      "seconds": 18.4651964000077
+    },
+    {
+      "index": 8,
+      "target": "+SubsetSum.FilterData.Filter08",
+      "exit_code": 0,
+      "seconds": 18.688248799997382
+    },
+    {
+      "index": 9,
+      "target": "+SubsetSum.FilterData.Filter09",
+      "exit_code": 0,
+      "seconds": 18.909503500006394
+    },
+    {
+      "index": 10,
+      "target": "+SubsetSum.FilterData.Filter10",
+      "exit_code": 0,
+      "seconds": 18.80497880000621
+    },
+    {
+      "index": 11,
+      "target": "+SubsetSum.FilterData.Filter11",
+      "exit_code": 0,
+      "seconds": 18.852898900018772
+    },
+    {
+      "index": 12,
+      "target": "+SubsetSum.FilterData.Filter12",
+      "exit_code": 0,
+      "seconds": 18.860163900011685
+    },
+    {
+      "index": 13,
+      "target": "+SubsetSum.FilterData.Filter13",
+      "exit_code": 0,
+      "seconds": 18.82973800000036
+    },
+    {
+      "index": 14,
+      "target": "+SubsetSum.FilterData.Filter14",
+      "exit_code": 0,
+      "seconds": 18.746179400011897
+    },
+    {
+      "index": 15,
+      "target": "+SubsetSum.FilterData.Filter15",
+      "exit_code": 0,
+      "seconds": 18.83083570000599
+    },
+    {
+      "index": 16,
+      "target": "+SubsetSum.FilterData.Filter16",
+      "exit_code": 0,
+      "seconds": 18.7892611999996
+    },
+    {
+      "index": 17,
+      "target": "+SubsetSum.FilterData.Filter17",
+      "exit_code": 0,
+      "seconds": 18.8443874999939
+    },
+    {
+      "index": 18,
+      "target": "+SubsetSum.FilterData.Filter18",
+      "exit_code": 0,
+      "seconds": 19.22128110000631
+    },
+    {
+      "index": 19,
+      "target": "+SubsetSum.FilterData.Filter19",
+      "exit_code": 0,
+      "seconds": 19.413590299984207
+    },
+    {
+      "index": 20,
+      "target": "+SubsetSum.FilterData.Filter20",
+      "exit_code": 0,
+      "seconds": 19.160872700012987
+    },
+    {
+      "index": 21,
+      "target": "+SubsetSum.FilterData.Filter21",
+      "exit_code": 0,
+      "seconds": 19.02527650000411
+    },
+    {
+      "index": 22,
+      "target": "+SubsetSum.FilterData.Filter22",
+      "exit_code": 0,
+      "seconds": 19.032560799998464
+    },
+    {
+      "index": 23,
+      "target": "+SubsetSum.FilterData.Filter23",
+      "exit_code": 0,
+      "seconds": 19.15365270001348
+    },
+    {
+      "index": 24,
+      "target": "+SubsetSum.FilterData.Filter24",
+      "exit_code": 0,
+      "seconds": 19.196043699979782
+    },
+    {
+      "index": 25,
+      "target": "+SubsetSum.FilterData.Filter25",
+      "exit_code": 0,
+      "seconds": 19.022254800016526
+    },
+    {
+      "index": 26,
+      "target": "+SubsetSum.FilterData.Filter26",
+      "exit_code": 0,
+      "seconds": 19.061383599997498
+    },
+    {
+      "index": 27,
+      "target": "+SubsetSum.FilterData.Filter27",
+      "exit_code": 0,
+      "seconds": 19.812435200001346
+    },
+    {
+      "index": 28,
+      "target": "+SubsetSum.FilterData.Filter28",
+      "exit_code": 0,
+      "seconds": 19.35522869997658
+    },
+    {
+      "index": 29,
+      "target": "+SubsetSum.FilterData.Filter29",
+      "exit_code": 0,
+      "seconds": 19.165250999998534
+    },
+    {
+      "index": 30,
+      "target": "+SubsetSum.FilterData.Filter30",
+      "exit_code": 0,
+      "seconds": 19.218616400001338
+    },
+    {
+      "index": 31,
+      "target": "+SubsetSum.FilterData.Filter31",
+      "exit_code": 0,
+      "seconds": 19.065704000007827
+    },
+    {
+      "index": 32,
+      "target": "+SubsetSum.FilterData.Filter32",
+      "exit_code": 0,
+      "seconds": 18.97792540001683
+    },
+    {
+      "index": 33,
+      "target": "+SubsetSum.FilterData.Filter33",
+      "exit_code": 0,
+      "seconds": 19.034599200007506
+    },
+    {
+      "index": 34,
+      "target": "+SubsetSum.FilterData.Filter34",
+      "exit_code": 0,
+      "seconds": 19.769787400000496
+    },
+    {
+      "index": 35,
+      "target": "+SubsetSum.FilterData.Filter35",
+      "exit_code": 0,
+      "seconds": 20.444347000011476
+    },
+    {
+      "index": 36,
+      "target": "+SubsetSum.FilterData.Filter36",
+      "exit_code": 0,
+      "seconds": 19.917702700011432
+    },
+    {
+      "index": 37,
+      "target": "+SubsetSum.FilterData.Filter37",
+      "exit_code": 0,
+      "seconds": 19.133084800007055
+    },
+    {
+      "index": 38,
+      "target": "+SubsetSum.FilterData.Filter38",
+      "exit_code": 0,
+      "seconds": 19.150167100015096
+    },
+    {
+      "index": 39,
+      "target": "+SubsetSum.FilterData.Filter39",
+      "exit_code": 0,
+      "seconds": 19.073681500012754
+    },
+    {
+      "index": 40,
+      "target": "+SubsetSum.FilterData.Filter40",
+      "exit_code": 0,
+      "seconds": 19.021092500013765
+    },
+    {
+      "index": 41,
+      "target": "+SubsetSum.FilterData.Filter41",
+      "exit_code": 0,
+      "seconds": 20.146095099975355
+    },
+    {
+      "index": 42,
+      "target": "+SubsetSum.FilterData.Filter42",
+      "exit_code": 0,
+      "seconds": 18.71127259999048
+    }
+  ]
+}

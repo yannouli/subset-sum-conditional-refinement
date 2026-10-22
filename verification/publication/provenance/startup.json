@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-10-22T13:53:26.076830+00:00",
+  "public_refs": [
+    "5380ae2c6411f70769df6076ca82a54d43ff09c3\tHEAD",
+    "5380ae2c6411f70769df6076ca82a54d43ff09c3\trefs/heads/main",
+    "5380ae2c6411f70769df6076ca82a54d43ff09c3\trefs/tags/v1.0.0"
+  ],
+  "published_baseline": "5380ae2c6411f70769df6076ca82a54d43ff09c3",
+  "verification_source": "f2edf57c17a555d31302e68dd2ec43722a249e56",
+  "original_files": 56,
+  "baseline_changes_at_startup": [],
+  "released_tags": [
+    "v1.0.0"
+  ],
+  "proposed_tag": "v1.1.0",
+  "proposed_tag_currently_unused": true,
+  "public_writes": false
+}

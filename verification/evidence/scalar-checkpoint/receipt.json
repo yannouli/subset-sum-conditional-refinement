@@ -1,0 +1,41 @@
+{
+  "steps": [
+    {
+      "name": "source-build",
+      "command": [
+        "lake",
+        "build",
+        "+Verification"
+      ],
+      "seconds": 71.04521660000319,
+      "exit_code": 0
+    },
+    {
+      "name": "statements-axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "AuditScalar.lean"
+      ],
+      "seconds": 20.58790109999245,
+      "exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "Audit.lean": "af3813d1af19d998aa9f0104bdeb7eaa31dd2779c1b09897391fb81720d6999a",
+    "AuditScalar.lean": "716c16fa542a6668257272e444c1d1e061c4ffdd9a12330e35adc93b227a9886",
+    "Verification\\AllRows.lean": "9b6fb5fb50cbfbf49d0c46c315883f33e89e4d1290248d5f2e4fe29d2516cc2f",
+    "Verification\\Boundary.lean": "fd6a3d648e2db2b9e96509513404e32505a305930cfa91cc9f1e1f19a4ec9378",
+    "Verification\\Concrete.lean": "85f9c7664bdb4f63fd29faec028f5f2409ea357fb366c0beeaafb1b1b34e0c19",
+    "Verification\\DataBridge.lean": "763c7447a081e90a9a56fe5e42f53ee3b9ebb4e1bf31bdf2eda9677050ee1275",
+    "Verification\\LogScalar.lean": "00a9da121a44975235c82244320c86b913710a7b24df89b27fa91def588d6425",
+    "Verification\\Regions.lean": "79239a27cf88606dd52ad8d01fa1e449bb96dd3b6e0d35b5e84161ae04819787",
+    "Verification\\Regularity.lean": "2881c26b0fb60d3ff4efd6ab815a548a92e2ac299bbe913fe9ca564b31112bd2",
+    "Verification\\RowMargins.lean": "25701e1224d84250cea0a793bd0f39b867c6feb1caaf04a8f53f2fd409861e25",
+    "Verification\\Scalar.lean": "411696c096c47c4290efeeea49df71da70a77182bbba5503a45977ed04cbfb50",
+    "Verification.lean": "fd8e55d7fb9336bd8670d273798aa900c6cbdd40f1c7b5638aea8529f4b4babf"
+  },
+  "axioms": "Only propext, Classical.choice, Quot.sound in AuditScalar output",
+  "stronger_replay": "Historical boundary full-import fresh attempt timed out; no stronger success claimed"
+}
