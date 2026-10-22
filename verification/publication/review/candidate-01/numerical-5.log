@@ -1,0 +1,26 @@
+{
+  "status": "PASS conditional scalar checks; no original moment quadrature verified",
+  "candidate_sha256": "75f66f5cc9aedb10aae7632f62bc9a9cdb330142cec488f4937045963dc602c1",
+  "minimum_per_row_moment": {
+    "exact": "3902371521037655454639/28700680100629750000000000000",
+    "approx": 1.359679111211037e-07
+  },
+  "limiting_row": "4:0",
+  "max_actual_multiplier_sum": {
+    "exact": "5514233982655263032243019/13180787336214212687500",
+    "approx": 418.3539148306342
+  },
+  "error_exponent": {
+    "exact": "24367/250000000000",
+    "approx": 9.7468e-08
+  },
+  "internal_exponent": {
+    "exact": "24383614001/50000000000",
+    "approx": 0.48767228002
+  },
+  "absorption_gap": {
+    "exact": "999/50000000000",
+    "approx": 1.998e-08
+  },
+  "rows_checked": 430
+}

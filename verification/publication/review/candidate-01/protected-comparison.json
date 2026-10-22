@@ -1,0 +1,18 @@
+{
+  "5380ae2c6411f70769df6076ca82a54d43ff09c3": {
+    "count": 56,
+    "changed": [
+      "README.md"
+    ],
+    "missing": []
+  },
+  "f2edf57c17a555d31302e68dd2ec43722a249e56": {
+    "count": 136,
+    "changed": [
+      "README.md",
+      "verification/README.md"
+    ],
+    "missing": []
+  },
+  "candidate_sha256": "39bf326c779b95842c012c92cd7836fefb5813c9e56f946ff2d8701e52af646d"
+}

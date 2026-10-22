@@ -1,0 +1,12 @@
+[
+  {
+    "test": "missing",
+    "exit": 1,
+    "rejected": true
+  },
+  {
+    "test": "duplicate",
+    "exit": 1,
+    "rejected": true
+  }
+]

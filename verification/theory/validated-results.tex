@@ -1,0 +1,79 @@
+\section{All 430 original moments: validated numerical results}\label{sec:validated-results}
+The full batch now supplies a validated enclosure for every exact pair
+$(v,i)\in\{0,\ldots,42\}\times\{0,\ldots,9\}$, with no duplicate,
+missing or inferred pair. All 430 enclosures satisfy
+\begin{equation}\label{eq:validated-old-moments}
+ I_{v,i}<2^{.51613-m_i},\qquad
+ m_0=m_1=.00025,\quad m_{2:8}=4,\quad m_9=17.
+\end{equation}
+The accepted artifact is \texttt{evidence/all-moments.json}, SHA256
+\begin{quote}\small
+\nolinkurl{9646407eba82509f62c6464293d9fb472370d2e2c08a45ae07636c7bd0c84476}.
+\end{quote}
+Its source hash is
+\nolinkurl{b397531cc5997e88c439d5290774861b46a34aa32d9cd71fa7dcced130359298},
+the unchanged pinned Kapila input. Each row preserves its node average,
+analytic outer error, enlarged integral enclosure, exact-threshold
+enclosure, strict gap and the needed inner/strip conditions.
+
+The implementation uses Python 3.12.14 and \texttt{python-flint 0.8.0},
+160-bit ball arithmetic and one thread, with common half-width
+$\beta=.08$ and inner width $\sigma=.1$.
+The four-row pilot covered $(3,0),(3,1),(4,0),(4,9)$. The full run
+used at most 8192 outer nodes and completed in 36.81 seconds, within
+its 600-second and 131072-node ceilings. These are validation-batch
+times, not subset-sum solver times. The numerical code was frozen in
+implementation commits \texttt{398e7aa}/\texttt{f36b062}; the latter
+also preserves direct-sum checks of the DFT convention.
+
+For scale, the following deliberately outward rounded bounds summarize
+the pilot pairs as present in the full artifact. They are not a
+substitute for its other 426 separate certificates.
+\begin{center}\small
+\begin{tabular}{rrrr}\toprule
+Pair $(v,i)$ & Nodes & Integral upper bound & Threshold lower bound\\\midrule
+$(3,0)$ & 4096 & $1.385921$ & $1.429866$\\
+$(3,1)$ & 512 & $1.426917$ & $1.429866$\\
+$(4,0)$ & 1024 & $1.425608$ & $1.429866$\\
+$(4,9)$ & 2048 & $3\cdot10^{-37}$ & $1.09109\cdot10^{-5}$\\\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Independent replay and trust boundary.}
+Procopius independently replayed every pair in a separate Python
+environment in 36.14 seconds. Every numerical enclosure, threshold,
+gap and node count matched; timing metadata naturally differed.
+The review also checked exact Cartesian pair coverage, coefficient
+and row correspondence, nonnegative multipliers, both tilted
+normalizers, positive inner denominators, all comparison filters on
+the common zero-free strip, and the explicit inner/outer remainders.
+Direct finite-sum tests checked the library DFT sign and normalization;
+separate missing, duplicate and altered source-record copies were
+rejected. The numerical review is recorded in review commit
+\texttt{7f1e398}, receipt \texttt{47a33c19}.
+
+These are rigorous numerical results conditional on the correctness
+of the source parser, Python bindings, FLINT/Arb ball elementary
+functions and DFT implementation, together with the written analytic
+error theorem proved here. They are not proofs checked inside Lean.
+The enclosures include discretization and rounding errors; neither
+mesh agreement nor a heuristic integration error estimate is their
+justification. Internal agent review is not independent human peer
+review or a site-awarded status.
+
+The portable commands and exact environment are in
+\texttt{moments/README.md}. From the repository root, the documented
+pinned fetch places the input under \texttt{verification/evidence/};
+\texttt{verification/moments/validate.py} with \texttt{--all} regenerates
+all certificates. Use a new output filename when replaying so the
+accepted artifact remains unchanged. Certificate evaluation is
+independent of parameter discovery; no optimization is rerun.
+
+\paragraph{Assumption change.}
+Before this validation, all 430 inequalities in
+\eqref{eq:validated-old-moments} were separate inherited assumptions.
+They may now be replaced by the accepted validated evidence under
+the computational trust just stated. The precise thresholds needed
+by the released theorem are covered, including the stronger middle
+and tail margins. No alias-coverage, checksum-estimator or complete
+implementation theorem follows merely from those integral bounds.

@@ -1,0 +1,354 @@
+\section{Two inherited algorithmic obligations reconstructed}\label{sec:algorithmic}
+The following local results have complete written proofs. They do not
+settle the separate alias-estimator or finite-precision arguments.
+
+\begin{theorem}[Transformation and isolated bin]\label{thm:isolation}
+Let $a_i$ be positive integers and $t\ge0$. Choose a power of two
+$N_0\in[12n,24n)$, independent uniform $u_i\in\{1,\ldots,N_0\}$,
+and put $C=1+nN_0$, $c_i=Ca_i+u_i$, $t_s=Ct+s$ for
+$0\le s\le nN_0$. For every choice of the tie weights,
+\[
+ \exists I\subseteq[n]:a(I)=t
+ \quad\Longleftrightarrow\quad
+ \exists s,I:c(I)=t_s.
+\]
+On a NO input every transformed bin is empty. On a YES input the
+probability that at least one transformed bin has exactly one index-set
+representation is at least $11/12$.
+\end{theorem}
+\begin{proof}
+If $a(I)=t$, take $s=u(I)\in[0,nN_0]$. Conversely,
+$c(I)=Ct+s$ implies $C(a(I)-t)=s-u(I)$, whose absolute value is at
+most $nN_0<C$. Since $a(I)-t$ is an integer, it is zero.
+
+For completeness, let $\mathcal F$ be any nonempty family of subsets
+of $[n]$, here the original solution family. For each coordinate $i$,
+fix all $u_j$, $j\ne i$. If both classes exist, let $m_0$ be the
+least tie sum among members not containing $i$ and $m_1$ the least
+tie sum excluding $u_i$ among members containing $i$. Equality of the
+two class minima requires $u_i=m_0-m_1$, at most one of its $N_0$
+possible values. If either class is empty there is no such event.
+If the overall minimum is attained by two different subsets, some
+coordinate distinguishes them, so that coordinate's class minima
+are equal. A union bound, conditioning on the other weights for each
+coordinate, gives probability at most $n/N_0\le1/12$ of a nonunique
+minimum. A unique minimum solution has a unique tie sum within the
+solution family, and hence a unique transformed bin by the equivalence
+already proved. Nothing excludes repeated $a_i$ or the empty subset.
+\end{proof}
+
+\begin{lemma}[Deficiency on uniform half-blocks]\label{lem:deficiency}
+For fixed transformed weights define
+\[
+ \Sigma_c(V)=\{c(I):I\subseteq V\},\qquad
+ d_c(V)=|V|-\log_2|\Sigma_c(V)|.
+\]
+Inserting one index changes deficiency by a value in $[0,1]$.
+Replacing one index by another changes it by at most one in absolute
+value. For a uniformly sampled $k$-subset $V_k$,
+\[
+ \operatorname{Var}(d_c(V_k))\le k/4\le n/4.
+\]
+Also $f(k)=\mathbb E d_c(V_k)$ is nondecreasing in $k$.
+\end{lemma}
+\begin{proof}
+For $i\notin V$,
+$\Sigma_c(V\cup\{i\})=\Sigma_c(V)\cup(c_i+\Sigma_c(V))$.
+Its cardinality lies between $|\Sigma_c(V)|$ and
+$2|\Sigma_c(V)|$, proving the insertion claim. Two sets differing
+by an exchange both arise by inserting an index into their common
+part, so their deficiencies lie in an interval of length one.
+Sampling a uniform $(k+1)$-subset and deleting a uniform member
+couples the uniform sizes $k+1,k$; monotonicity follows.
+
+Expose the first $k$ members $X_1,\ldots,X_k$ of a uniformly random
+ordered sample without replacement, and let $M_j$ be the conditional
+expectation of the final deficiency after $j$ exposures. At a fixed
+prefix, compare next choices $a,b$. Transposing $a,b$ gives a bijection
+between the possible remaining completions. The corresponding final
+sets are either identical (both indices eventually occur) or differ
+by one exchange. Hence the two conditional expectations differ by at
+most one. Conditional on the prefix, $M_j$ therefore lies in an
+interval of length at most one. A real random variable in an interval
+of length one has variance at most $1/4$: expand
+$(X-\min X)(\max X-X)\ge0$ and complete the square in its mean.
+Thus each martingale difference has conditional second moment at most
+$1/4$. Distinct differences are orthogonal by iterated conditional
+expectation. Summing their variances gives the bound $k/4$.
+\end{proof}
+
+\begin{theorem}[A capped preliminary search and the LD split]\label{thm:preliminary}
+Let $n\ge2$, $b\ge1$, and use the fixed published $0<\tau<1/2$.
+Fix the tie weights and $\zeta>0$. The condition
+\begin{equation}\label{eq:LD}
+ \mathbb E d_c(V_{\lfloor n/2\rfloor})
+       \le(\tfrac12-\tau+\zeta)n
+       \tag{LD}
+\end{equation}
+is exactly the low-deficiency condition used here. There is a
+preliminary procedure returning an exact decision or CONTINUE, using
+$O(2^{\tau n}\operatorname{poly}(n+b+2))$ word operations on every
+history. If LD fails, for all sufficiently large $n$ it returns
+CONTINUE with probability at most
+\[
+ \frac{2}{\zeta^2 n}+n2^{-n^2}.
+\]
+This conclusion concerns a fixed-input probability; an observed
+CONTINUE is not a certificate that LD holds.
+\end{theorem}
+\begin{proof}
+Sample a uniform half-block $V$ and its complement, of sizes
+$\lfloor n/2\rfloor$ and $\lceil n/2\rceil$. If LD fails, either
+block $U$ has expected deficiency greater than
+$(\tfrac12-\tau+\zeta)n$, by Lemma~\ref{lem:deficiency}.
+Chebyshev's inequality with variance at most $n/4$ gives
+\[
+ \Pr\{d_c(U)<(\tfrac12-\tau+\zeta/2)n\}
+ \le \frac1{\zeta^2n}.
+\]
+Outside these two bad events,
+\[
+ \log_2|\Sigma_c(U)|=|U|-d_c(U)
+ \le\tau n-\zeta n/2+1/2<\tau n
+\]
+when $n>1/\zeta$. Both lists of distinct half sums fit within
+$B_n=2^{\lceil\tau n\rceil}$.
+
+Construct such a sorted list by starting with $\{0\}$ and, for each
+weight, merging the current sorted list with its translate, deleting
+duplicate values. If the next distinct output would exceed $B_n$,
+return CONTINUE before writing it. The number of distinct sums is
+nondecreasing under insertions, so if the final list fits, every prefix
+fits. Each merge costs $O(B_n)$ operations. Once both full lists fit,
+the sorted two-pointer search answers exactly whether some left and
+right sums total any required $t_s$. There are $O(n^2)$ targets, so
+even checking them separately costs only a polynomial times $B_n$.
+If either list hits its cap, no inexact decision is emitted.
+
+For an explicit bounded sampler, expose a uniform ordered sample
+without replacement using partial Fisher--Yates swaps. A required
+integer in $\{0,\ldots,m-1\}$ is obtained by masking a fresh uniform
+word to $\lceil\log_2m\rceil$ bits and rejecting values at least $m$.
+Acceptance is at least $1/2$. Cap each draw at $n^2$ proposals and
+return CONTINUE on exhaustion. Couple this with the ideal unbounded
+sampler: at most $n$ draws are made, so discrepancy probability is at
+most $n2^{-n^2}$. The ideal subset is exactly uniform. The bounded
+sampler has polynomial cost on every history.
+
+All sums have $O(b+\log n)$ bits: $N_0<24n$ and $C<24n^2+1$
+give $\sum_i c_i<31n^3 2^b$ for $n\ge2$, $b\ge1$.
+The bit bound $b+3\log_2n+5$ is below the prescribed
+$\lceil4(n+b+\log_2(n+2))\rceil$ word size on this domain, so sums
+and keys occupy a fixed number of words. Two capped final lists plus
+the alternating merge workspace can be kept in at most $4(B_n+1)$
+words: the translated list is read implicitly, not copied. The partial
+Fisher--Yates array, input and counters require at most $K n$ additional
+words for a fixed implementation constant $K$. Thus simultaneous
+storage is at most $4(B_n+1)+K n$, whose address length is
+$\tau n+O(\log n)$. Since $\tau<1/2$, this is below the prescribed
+word size for all $n$ above a fixed implementation cutoff. For the
+finitely many smaller $n\ge2$, enumerate subsets with a running sum
+in $O(n)$ storage and answer exactly; its $2^n$ time contributes only
+a fixed factor to the stated $O(2^{\tau n}\operatorname{poly}(n+b+2))$
+bound. This cutoff is independent of the input bit length and of $c$.
+Fixed rational $\tau$ permits exact calculation of its ceiling.
+Every allocation and loop has an explicit cap,
+including the failure histories, proving the stated all-history cost.
+\end{proof}
+
+These proofs reconstruct the transformation and preliminary-search
+results of the pinned OpenAI setup and Kapila Sections~2.1/4
+\cite{openai,kapila}. They establish the local statements under their
+displayed hypotheses without assuming an exact subset-sum solver or
+an LD oracle. In the composed analysis one fixes the tie weights first,
+splits according to LD, and draws the main procedure's independent
+randomness whether or not an earlier exact answer makes it unused.
+This avoids conditioning the main proof on the observed continuation.
+
+\section{The consequential algorithmic dependencies that remain}\label{sec:remaining}
+\begin{proposition}[Exact alias classes and sound insertion]\label{prop:alias-sound}
+Use the actual integer key $(c(A),b(A))$ for each half-block subset,
+where $b_i=c_i\bmod P$ is the least nonnegative residue. Keep a
+dictionary key $(\kappa_L,\kappa_R,Z)$ only once, and store the value-map
+phase sums $\Phi_L,\Phi_R$ over all subsets with the respective key.
+Every insertion made by Kapila's Section~5.2 matching/expansion rule
+is an alias class. If all alias classes are reached, the exact output
+equals the full alias phase sum, with no multiplicity error from
+repeated discoveries or repeated original weights.
+\end{proposition}
+\begin{proof}
+For precision, $T_{s,q}=(t_s\bmod P)+qP$, $0\le q<n$.
+Every modular representation has exactly one such carry: its integer
+sum of reduced weights is in $[0,n(P-1)]\subset[0,nP)$ and is congruent
+to the least residue of $t_s$. Subtracting that residue and dividing
+by $P$ gives an integer in $\{0,\ldots,n-1\}$.
+Write $c^F_i=(-1)^{[i\in F]}c_i$ on the large block, and similarly
+for $b^F$. Directly partitioning $Z$ into $Z\setminus F$ and
+$Z\cap F$ proves
+$c^F(Z)=c(Z\triangle F)-c(F)$, and the same identity for $b$.
+In an insertion the masks $X,Y$ are disjoint; put
+$Z=(X\cup Y)\triangle F$. The integer matching condition is
+\[
+ b(\kappa_L)+b^F(X)+b(\kappa_R)+b^F(Y)
+       =T_{s,q}-b(F),
+\]
+where $T_{s,q}\equiv t_s\pmod P$. The sign identity gives
+$b(A\cup Z\cup B)=T_{s,q}$ for every half-block pair having those
+keys, and thus its unreduced sum is congruent to $t_s$ modulo $P$.
+The skipped exact interval in the matching rule excludes precisely
+\[
+ c(\kappa_L)+c^F(X)+c(\kappa_R)+c^F(Y)=t_s-c(F).
+\]
+The same identity therefore shows that each inserted member has
+unreduced sum different from $t_s$. It is an alias, not an exact
+representation.
+
+Every index set $I$ belongs to exactly one class:
+$(\kappa(I\cap L),\kappa(I\cap R),I\cap M)$, for the fixed disjoint
+partition $L,M,R$. Every member of a class has the same unreduced
+and reduced sums. Additivity of the retained phases gives
+\[
+ \sum_{I\text{ in class}}\chi(I)
+ =\left(\sum_{A:\kappa(A)=\kappa_L}\chi(A)\right)
+  \left(\sum_{B:\kappa(B)=\kappa_R}\chi(B)\right)\chi(Z)
+ =\Phi_L(\kappa_L)\Phi_R(\kappa_R)\chi(Z).
+\]
+Distinct class keys partition the relevant index sets, and the
+dictionary stores each key at most once. Consequently reaching every
+alias class suffices for the claimed exact sum. This does not prove
+that the randomized procedure reaches every class before its cap;
+that coverage/cost/probability obligation remains below.
+\end{proof}
+
+The following are exact obligations, not conclusions of the local
+proofs or of scalar certificate checking.
+\begin{enumerate}
+\item \textbf{Alias coverage and cost.} Under LD, with the published
+block sizes and slack, Kapila's Section~5 procedure must return every
+modular alias contribution in its deduplicated value classes with the
+retained signing, except with a uniformly small failure probability.
+Its expected-size estimates must imply the stated deterministic caps
+through the actual abort policy, without losing the per-input success
+bound. The half-block bad-prime bound uses
+$\delta=(\eta-(\mu/2)\log_2 3)/2$; the actual requirements include
+$\delta>1/2-\tau+\zeta$ and the bit-length guard slack $\theta<\delta$.
+\item \textbf{Same-phase cancellation.} For each target and modular
+prime, the alias sum and the checksum must use identical stored phases.
+Every modular representation with a different integer sum must occur
+exactly once in the deduplicated class sum. This gives exact residual
+zero on NO inputs and a modulus-one residual at an isolated bin;
+it does not by itself bound either numerical estimator's error.
+\item \textbf{Block-table estimator.} For the actual finite-circle
+density functions, every selected sampled pattern must satisfy the
+table-coverage/second-moment hypotheses in OpenAI Section~4 as adapted
+by Kapila Section~6. The released $18\epsilon$ allowance belongs here.
+The distribution used to factor coordinate moments must be the original
+independent phase law, not a law conditioned on a favorable pattern,
+table event, alias-success event or CONTINUE.
+\item \textbf{Finite precision and uniform constants.} Scores and
+elementary functions must be evaluated with enough accuracy for the
+actual block thresholds. Stored phases must remain consistent across
+both subroutines; all accumulated errors must stay below the decision
+threshold gap. Section~\ref{sec:finite} supplies effective fixed-score
+evaluation, but not the full propagated complex-arithmetic error bound.
+The program must generate required constants/tables, not receive them
+as advice.
+\item \textbf{Every-history resources.} Prime search, table construction,
+trial lists and visits, rational arithmetic, random draws, memory and
+indirect addresses all require deterministic caps with charged word
+cost. A finite expected work estimate alone is insufficient. The
+published scalar gaps verify proposed exponents, not that a described
+procedure actually obeys each one. The guarded program and exact
+fallback must be a single program independent of the polynomial-bit
+parameter $c$.
+\end{enumerate}
+
+\paragraph{Precise cancellation fact.}
+If $\chi(I)$ is the same retained unit-modulus phase in both sums,
+then, identically,
+\[
+ \sum_{c(I)\equiv t_s\ (\mathrm{mod}\ P)}\chi(I)
+ -\sum_{\substack{c(I)\equiv t_s\ (\mathrm{mod}\ P)\\c(I)\ne t_s}}\chi(I)
+ =\sum_{c(I)=t_s}\chi(I).
+\]
+This is a finite partition identity, valid with repeated original
+weights because subsets are index sets. It proves the cancellation
+\emph{if} the two enumerated/sampled quantities correspond to those
+exact sums with common phases. Completeness of the class algorithm and
+accuracy of the estimates remain separate obligations; renaming their
+outputs by these sums would assume the desired conclusion.
+
+The current supplement therefore does not claim that the complete
+word-RAM algorithm has been independently verified. Any unresolved
+point above remains an explicit inherited dependency even after the
+boundary, scalar and continuous-moment obligations are settled.
+
+\subsection{A bounded precision obligation that can be discharged locally}
+\begin{proposition}[Alias-sum arithmetic, given the correct dictionary]
+\label{prop:alias-precision}
+Suppose the phase maps and dictionary are those of
+Proposition~\ref{prop:alias-sound}, with coverage already supplied.
+Use the same exact retained phase vector modulo $P$ throughout.
+Compute each unit phase to absolute complex error at most
+$\delta_0=2^{-2n^2}$, and round each real and imaginary component
+after addition or multiplication to absolute error at most
+$R=2^{-n^2}$. Then the total alias-output error is at most
+\[
+ 32\,2^{-n^2+3n}<1/16\qquad(n\ge8).
+\]
+These operations can be performed with polynomially many charged word
+operations per phase or arithmetic operation. This is not a proof of
+coverage or of the separate checksum estimator's precision.
+\end{proposition}
+\begin{proof}
+There are at most $2^n$ summands in either half-map and at most $2^n$
+dictionary keys: distinct dictionary classes are nonempty and disjoint
+subsets of the $2^n$ possible index sets. The Euclidean error of a
+complex rounding is at most $2R$. Thus either computed half-map sum
+differs from its exact value by at most
+$2^n\delta_0+2^{n+1}R\le3\,2^nR=:e$.
+The exact sum has modulus at most $2^n$, and its approximation has
+modulus at most $2^{n+1}$ for $n\ge2$.
+
+In one class product $\Phi_L\Phi_R\chi(Z)$, replacing the factors
+by their approximations changes the value by at most
+\[
+ e2^n+2^{n+1}e+2^{2n+2}\delta_0
+ \le13\,2^{2n}R.
+\]
+Two rounded multiplications contribute at most $6R$, because the
+approximate unit phase has modulus at most two. Hence a class term
+has error at most $20\,2^{2n}R$. Summing at most $2^n$ terms and
+rounding the additions gives error at most
+$20\,2^{3n}R+2^{n+1}R\le32\,2^{3n}R$. The displayed strict
+$1/16$ bound holds already at $n=8$ and improves thereafter.
+All estimates are deterministic and uniform over the retained phases.
+
+For an explicit effective phase evaluation, first sum the integer
+residues modulo $P$ exactly, then approximate the bounded angle
+$2\pi k/P$. The identity
+$\pi/4=\arctan(1/2)+\arctan(1/3)$ and the alternating arctangent
+series give a rational $\pi$ enclosure to error $2^{-8n^2}$ using
+$16n^2$ terms. Rational division at the same precision gives an angle
+error $O(2^{-8n^2})$. Evaluate sine and cosine by their Taylor
+polynomials through degree $16n^2$, on $|x|\le8$. The remainder
+is bounded by the exponential-series tail
+\[
+ \frac{8^{N+1}}{(N+1)!}\,
+       \frac1{1-8/(N+2)},\qquad N=16n^2.
+\]
+For $n\ge8$, use $N!\ge(N/2)^{N/2}$ and $N\ge1024$;
+this bound is at most $16\,2^{-24n^2}$.
+The angle error and Taylor errors together are strictly less than
+$2^{-2n^2}$ in complex norm, with ample slack.
+
+All exact input phases have $O(n)$ bits because the published prime
+interval has $\log_2P=O(n)$. Real and imaginary intermediate magnitudes
+are at most $2^{O(n)}$, even when summing all dictionary terms.
+Keeping $n^2$ fractional bits therefore uses polynomially many bits,
+as do the rational Taylor calculations. Elementary multiword integer
+arithmetic implements each operation with polynomially many word
+operations, charging retained storage and rounding. No transcendental
+oracle or uncharged table is required. Finite smaller $n$ can use
+the exact fallback already described.
+\end{proof}

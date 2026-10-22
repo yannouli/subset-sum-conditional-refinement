@@ -1,0 +1,16 @@
+{
+  "exact_pairs": 430,
+  "all_strict_thresholds": true,
+  "threshold_margins": {
+    "0,1": "0.00025",
+    "2..8": "4",
+    "9": "17"
+  },
+  "differences_from_accepted": [
+    "seconds"
+  ],
+  "accepted_seconds": 36.80986569999368,
+  "fresh_seconds": 33.48752289998811,
+  "source_sha256": "b397531cc5997e88c439d5290774861b46a34aa32d9cd71fa7dcced130359298",
+  "trust": "Python/FLINT/Arb and previously reviewed analytic method; not Lean proof"
+}
